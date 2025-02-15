@@ -1,0 +1,3378 @@
+[
+  {
+    "cannabis_strains": [
+      {
+        "name": "Mule Fuel",
+        "type": "mostly indica",
+        "photo": "https://cdn.seedfinder.eu/pics/00breeder/thugpug.jpg",
+        "origin": "USA",
+        "parent_strains": [
+          "GMO",
+          "Lurch"
+        ],
+        "thc_percentage": 30
+      },
+      {
+        "name": "The White",
+        "type": "mostly indica",
+        "photo": "https://cdn.seedfinder.eu/pics/01seeds/Clone_Only_Strains/Clone_Only_Strains_-_The_White.jpg",
+        "origin": "Clone Only Strains",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Auto Rainbow Bubble",
+        "type": "Sativa / Indica hybrid",
+        "photo": "https://cdn.seedfinder.eu/pics/01seeds/Mudro_Seeds/Mudro_Seeds_-_Auto_Rainbow_Bubble.jpg",
+        "origin": "Mudro Seeds",
+        "parent_strains": [
+          "Bubblegum",
+          "Big Bud",
+          "Skunk #1",
+          "Ruderalis Indica"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "s-4",
+        "type": "",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "s-6",
+        "type": "",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "b-7",
+        "type": "",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "s-2 strain",
+        "type": "",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "s-5",
+        "type": "",
+        "photo": "https://cdn.seedfinder.eu/pics/seedfinder-logo.png",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "b-8",
+        "type": "",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "c-2",
+        "type": "",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "h-3 strain",
+        "type": "",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "K-2 x Mexican Haze x Victorie",
+        "type": "mostly sativa",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "s-7 Strain",
+        "type": "",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "b-2",
+        "type": "",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "T-34",
+        "type": "mostly indica",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "T-34",
+        "type": "mostly sativa",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "b-3",
+        "type": "",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "OG Shark",
+        "type": "Hybrid",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 21.4
+      },
+      {
+        "name": "Afghani",
+        "type": "Indica",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 15.6
+      },
+      {
+        "name": "Skywalker OG",
+        "type": "Hybrid",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 22.9
+      },
+      {
+        "name": "Lemon sour diesel",
+        "type": "Sativa",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 18.3
+      },
+      {
+        "name": "Jack Herer",
+        "type": "Hybrid",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 17.9
+      },
+      {
+        "name": "Jean Guy",
+        "type": "Hybrid",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 17.3
+      },
+      {
+        "name": "White widow",
+        "type": "Hybrid",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 18.7
+      },
+      {
+        "name": "Pink kush",
+        "type": "Indica",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 25.8
+      },
+      {
+        "name": "Master kush",
+        "type": "Indica",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 25.6
+      },
+      {
+        "name": "Sweet Skunk CBD",
+        "type": "Hybrid",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 9.1
+      },
+      {
+        "name": "Auto Rainbow Bubble",
+        "type": "Hybrid",
+        "photo": "",
+        "origin": "USA, Unknown Hybrid",
+        "parent_strains": [
+          "Bubblegum",
+          "Big Bud",
+          "Skunk # 1",
+          "Ruderalis Indica"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Bubblegum",
+        "type": "Hybrid",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Big Bud",
+        "type": "Indica",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Skunk # 1",
+        "type": "Hybrid",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Ruderalis Indica",
+        "type": "Ruderalis",
+        "photo": "",
+        "origin": "Ungarn",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Acapulco Gold",
+        "type": "",
+        "photo": "",
+        "origin": "Acapulco, Mexico",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Bedrocan",
+        "type": "medicinal",
+        "photo": "",
+        "origin": "Netherlands",
+        "parent_strains": [],
+        "thc_percentage": 22
+      },
+      {
+        "name": "Blue Dream",
+        "type": "hybrid",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Charlotte's Web",
+        "type": "high-CBD",
+        "photo": "",
+        "origin": "Colorado, USA",
+        "parent_strains": [],
+        "thc_percentage": 0.3
+      },
+      {
+        "name": "Skunk",
+        "type": "",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Sour Diesel",
+        "type": "hybrid",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Cold Creek Kush",
+        "type": "Indica-dominant hybrid",
+        "photo": "",
+        "origin": "Canada",
+        "parent_strains": [
+          "MK Ultra",
+          "Chemdawg"
+        ],
+        "thc_percentage": 29
+      },
+      {
+        "name": "Bubba Kush",
+        "type": "Indica-dominant hybrid",
+        "photo": "",
+        "origin": "Canada",
+        "parent_strains": [
+          "OG Kush",
+          "West Coast Dawg"
+        ],
+        "thc_percentage": 26
+      },
+      {
+        "name": "Tsunami",
+        "type": "Indica-dominant hybrid",
+        "photo": "",
+        "origin": "Canada",
+        "parent_strains": [
+          "Northern Lights"
+        ],
+        "thc_percentage": 28
+      },
+      {
+        "name": "Kade’s Kush",
+        "type": "Indica-dominant hybrid",
+        "photo": "",
+        "origin": "Canada",
+        "parent_strains": [
+          "OG Kush",
+          "Chem Dawg"
+        ],
+        "thc_percentage": 30
+      },
+      {
+        "name": "Aravalli (Wappa)",
+        "type": "Indica-dominant hybrid",
+        "photo": "",
+        "origin": "Canada",
+        "parent_strains": [],
+        "thc_percentage": 24.5
+      },
+      {
+        "name": "Sensi Star",
+        "type": "Indica-dominant hybrid",
+        "photo": "",
+        "origin": "Canada",
+        "parent_strains": [],
+        "thc_percentage": 26
+      },
+      {
+        "name": "DelaHaze",
+        "type": "Sativa-dominant hybrid",
+        "photo": "",
+        "origin": "Canada",
+        "parent_strains": [],
+        "thc_percentage": 25.77
+      },
+      {
+        "name": "Tropical Punch",
+        "type": "Hybrid",
+        "photo": "https://images.leafly.com/flower-images/defaults/purple/strain-18.png?auto=compress%2Cformat&w=295&dpr=2",
+        "origin": "",
+        "parent_strains": [
+          "Tropicana Cookies",
+          "Purple Punch"
+        ],
+        "thc_percentage": 23
+      },
+      {
+        "name": "9 lb Hammer",
+        "type": "Indica",
+        "photo": "https://leafly-public.imgix.net/strains/photos/dN680700Rbqf10ZWl54R_9-pound-hammer_jman.jpg?auto=compress%2Cformat&w=295&dpr=2",
+        "origin": "",
+        "parent_strains": [
+          "Gooberry",
+          "Hells OG",
+          "Jack the Ripper"
+        ],
+        "thc_percentage": 20
+      },
+      {
+        "name": "White Truffle",
+        "type": "Hybrid",
+        "photo": "https://images.leafly.com/flower-images/defaults/frosty/strain-2.png?auto=compress%2Cformat&w=295&dpr=2",
+        "origin": "Michigan",
+        "parent_strains": [
+          "Gorilla Butter"
+        ],
+        "thc_percentage": 24
+      },
+      {
+        "name": "Durban Poison",
+        "type": "Sativa",
+        "photo": "https://images.leafly.com/flower-images/durban-poison.jpg?auto=compress%2Cformat&w=295&dpr=2",
+        "origin": "South Africa",
+        "parent_strains": [
+          "African"
+        ],
+        "thc_percentage": 19
+      },
+      {
+        "name": "White Widow",
+        "type": "Hybrid",
+        "photo": "https://images.leafly.com/flower-images/white-widow.png?auto=compress%2Cformat&w=295&dpr=2",
+        "origin": "Netherlands",
+        "parent_strains": [
+          "Brazilian sativa landrace",
+          "South Indian indica"
+        ],
+        "thc_percentage": 15
+      },
+      {
+        "name": "Daily Grape",
+        "type": "Hybrid",
+        "photo": "https://images.leafly.com/flower-images/defaults/purple/strain-12.png?auto=compress%2Cformat&w=295&dpr=2",
+        "origin": "",
+        "parent_strains": [
+          "Granddaddy Purple",
+          "Sour Diesel"
+        ],
+        "thc_percentage": 31
+      },
+      {
+        "name": "Poddy Mouth",
+        "type": "Hybrid",
+        "photo": "https://images.leafly.com/flower-images/defaults/frosty/strain-5.png?auto=compress%2Cformat&w=295&dpr=2",
+        "origin": "",
+        "parent_strains": [
+          "Humboldt Pound Cake",
+          "Mtn Top Mint"
+        ],
+        "thc_percentage": 27
+      },
+      {
+        "name": "Space Runtz",
+        "type": "Hybrid",
+        "photo": "https://images.leafly.com/flower-images/defaults/generic/strain-1.png?auto=compress%2Cformat&w=295&dpr=2",
+        "origin": "",
+        "parent_strains": [
+          "Runtz",
+          "Candy Rain"
+        ],
+        "thc_percentage": 22
+      },
+      {
+        "name": "Chili Verde",
+        "type": "Hybrid",
+        "photo": "https://images.leafly.com/flower-images/defaults/generic/strain-37.png?auto=compress%2Cformat&w=295&dpr=2",
+        "origin": "",
+        "parent_strains": [
+          "Key Lime Pie",
+          "Lavender"
+        ],
+        "thc_percentage": 21
+      },
+      {
+        "name": "99 Problems",
+        "type": "Hybrid",
+        "photo": "https://images.leafly.com/flower-images/defaults/generic/strain-4.png?auto=compress%2Cformat&w=295&dpr=2",
+        "origin": "",
+        "parent_strains": [
+          "White 99",
+          "Stardawg"
+        ],
+        "thc_percentage": 28.5
+      },
+      {
+        "name": "Natural Gas",
+        "type": "Hybrid",
+        "photo": "https://images.leafly.com/flower-images/defaults/frosty/strain-6.png?auto=compress%2Cformat&w=295&dpr=2",
+        "origin": "Kind Tree Cannabis",
+        "parent_strains": [
+          "GMO",
+          "Cherry Valley"
+        ],
+        "thc_percentage": 19
+      },
+      {
+        "name": "Donkey Kong",
+        "type": "Hybrid",
+        "photo": "https://images.leafly.com/flower-images/defaults/generic/strain-32.png?auto=compress%2Cformat&w=295&dpr=2",
+        "origin": "",
+        "parent_strains": [
+          "Grease Monkey",
+          "Pure Michigan"
+        ],
+        "thc_percentage": 22
+      },
+      {
+        "name": "Daily Visit",
+        "type": "Hybrid",
+        "photo": "https://images.leafly.com/flower-images/defaults/generic/strain-31.png?auto=compress%2Cformat&w=295&dpr=2",
+        "origin": "",
+        "parent_strains": [
+          "Irene",
+          "Daily Driver"
+        ],
+        "thc_percentage": 22
+      },
+      {
+        "name": "Green Crack",
+        "type": "Sativa",
+        "photo": "https://images.leafly.com/flower-images/green-crack.png?auto=compress%2Cformat&w=295&dpr=2",
+        "origin": "",
+        "parent_strains": [
+          "Skunk #1"
+        ],
+        "thc_percentage": 17
+      },
+      {
+        "name": "Blue Dream",
+        "type": "Hybrid",
+        "photo": "https://images.leafly.com/flower-images/blue-dream.png?auto=compress%2Cformat&w=295&dpr=2",
+        "origin": "California",
+        "parent_strains": [
+          "Blueberry",
+          "Haze"
+        ],
+        "thc_percentage": 21
+      },
+      {
+        "name": "Happy Hour",
+        "type": "Hybrid",
+        "photo": "https://images.leafly.com/flower-images/defaults/generic/strain-13.png?auto=compress%2Cformat&w=295&dpr=2",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 22
+      },
+      {
+        "name": "Kush Mints",
+        "type": "Hybrid",
+        "photo": "https://images.leafly.com/flower-images/defaults/generic/strain-17.png?auto=compress%2Cformat&w=295&dpr=2",
+        "origin": "",
+        "parent_strains": [
+          "Animal Mints",
+          "Bubba Kush"
+        ],
+        "thc_percentage": 28
+      },
+      {
+        "name": "Next Level",
+        "type": "Hybrid",
+        "photo": "https://images.leafly.com/flower-images/defaults/generic/strain-21.png?auto=compress%2Cformat&w=295&dpr=2",
+        "origin": "",
+        "parent_strains": [
+          "Kushco OG",
+          "Scotty2hotty"
+        ],
+        "thc_percentage": 22.5
+      },
+      {
+        "name": "Slurricane",
+        "type": "Indica",
+        "photo": "https://leafly-public.imgix.net/strains/photos/MPWPStPKT0mQMfMPq3fX_Slurricane.jpg?auto=compress%2Cformat&w=295&dpr=2",
+        "origin": "",
+        "parent_strains": [
+          "Do-Si-Dos",
+          "Purple Punch"
+        ],
+        "thc_percentage": 21
+      },
+      {
+        "name": "Bubba Kush",
+        "type": "Indica",
+        "photo": "https://images.leafly.com/flower-images/bubba-kush.png?auto=compress%2Cformat&w=295&dpr=2",
+        "origin": "Florida",
+        "parent_strains": [
+          "OG Kush",
+          "Northern Lights"
+        ],
+        "thc_percentage": 17
+      },
+      {
+        "name": "Jack Herer",
+        "type": "Sativa",
+        "photo": "https://images.leafly.com/flower-images/jack-herer.jpg?auto=compress%2Cformat&w=295&dpr=2",
+        "origin": "Netherlands",
+        "parent_strains": [
+          "Haze",
+          "Northern Lights #5",
+          "Shiva Skunk"
+        ],
+        "thc_percentage": 18
+      },
+      {
+        "name": "Blue Dream",
+        "type": "Hybrid",
+        "photo": "",
+        "origin": "California",
+        "parent_strains": [
+          "Haze",
+          "Blueberry"
+        ],
+        "thc_percentage": 18
+      },
+      {
+        "name": "Gelato",
+        "type": "Hybrid",
+        "photo": "",
+        "origin": "California",
+        "parent_strains": [
+          "Sherbert",
+          "Thin Mint GSC"
+        ],
+        "thc_percentage": 20
+      },
+      {
+        "name": "Purple Punch",
+        "type": "Hybrid",
+        "photo": "",
+        "origin": "California",
+        "parent_strains": [
+          "Larry OG",
+          "Granddaddy Purple"
+        ],
+        "thc_percentage": 18
+      },
+      {
+        "name": "Wedding Cake",
+        "type": "Hybrid",
+        "photo": "",
+        "origin": "California",
+        "parent_strains": [
+          "Cherry Pie",
+          "GSC"
+        ],
+        "thc_percentage": 22
+      },
+      {
+        "name": "Original Glue",
+        "type": "Hybrid",
+        "photo": "",
+        "origin": "California",
+        "parent_strains": [
+          "Chem’s Sister",
+          "Sour Dubb",
+          "Chocolate Diesel"
+        ],
+        "thc_percentage": 26
+      },
+      {
+        "name": "Jack Herer",
+        "type": "Sativa",
+        "photo": "",
+        "origin": "California",
+        "parent_strains": [
+          "Haze",
+          "Northern Lights",
+          "Skunk"
+        ],
+        "thc_percentage": 20
+      },
+      {
+        "name": "GSC",
+        "type": "Hybrid",
+        "photo": "",
+        "origin": "California",
+        "parent_strains": [
+          "OG Kush",
+          "Durban Poison"
+        ],
+        "thc_percentage": 25
+      },
+      {
+        "name": "Sour Diesel",
+        "type": "Sativa",
+        "photo": "",
+        "origin": "California",
+        "parent_strains": [
+          "Chemdawg",
+          "Super Skunk"
+        ],
+        "thc_percentage": 22
+      },
+      {
+        "name": "Granddaddy Purple",
+        "type": "Indica",
+        "photo": "",
+        "origin": "California",
+        "parent_strains": [
+          "Purple Urkle",
+          "Big Bud"
+        ],
+        "thc_percentage": 17
+      },
+      {
+        "name": "Sherbert",
+        "type": "Hybrid",
+        "photo": "",
+        "origin": "California",
+        "parent_strains": [
+          "GSC",
+          "Pink Panties"
+        ],
+        "thc_percentage": 19
+      },
+      {
+        "name": "Blue Dream",
+        "type": "",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Wedding Cake",
+        "type": "",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "GSC",
+          "Cherry Pie"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Granddaddy Purple",
+        "type": "",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Purple Urkle",
+          "Big Bud"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Purple Punch",
+        "type": "",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Larry OG",
+          "Granddaddy Purple"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Original Glue",
+        "type": "",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Chem’s Sister",
+          "Sour Dubb",
+          "Chocolate Diesel"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Green Crack",
+        "type": "",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Sour Diesel",
+        "type": "",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Jack Herer",
+        "type": "",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Haze",
+          "Northern Lights #5",
+          "Shiva Skunk"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "GSC",
+        "type": "",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Durban Poison",
+        "type": "",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Cannatonic",
+        "type": "Hybrid",
+        "photo": "",
+        "origin": "Barcelona, Spain",
+        "parent_strains": [
+          "MK Ultra",
+          "G13 Haze"
+        ],
+        "thc_percentage": 7
+      },
+      {
+        "name": "Dr. Grinspoon",
+        "type": "Sativa",
+        "photo": "",
+        "origin": "Amsterdam, Netherlands",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Lamb’s Bread",
+        "type": "Sativa",
+        "photo": "",
+        "origin": "Jamaica",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Malawi Gold",
+        "type": "Sativa",
+        "photo": "",
+        "origin": "Malawi",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Cheese",
+        "type": "Indica-dominant Hybrid",
+        "photo": "",
+        "origin": "United Kingdom",
+        "parent_strains": [
+          "Skunk #1",
+          "Afghani"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Island Sweet Skunk",
+        "type": "Sativa",
+        "photo": "",
+        "origin": "Vancouver Island, Canada",
+        "parent_strains": [
+          "Skunk #1"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Jean Guy",
+        "type": "sativa-dominant",
+        "photo": "",
+        "origin": "Canada",
+        "parent_strains": [],
+        "thc_percentage": 20
+      },
+      {
+        "name": "Hog’s Breath",
+        "type": "indica",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 18
+      },
+      {
+        "name": "Medicine Man",
+        "type": "indica",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 22
+      },
+      {
+        "name": "Hash Plant",
+        "type": "indica",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 20
+      },
+      {
+        "name": "Willie Nelson",
+        "type": "sativa",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 19
+      },
+      {
+        "name": "Chemo",
+        "type": "indica",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 25
+      },
+      {
+        "name": "Lemon Jack",
+        "type": "sativa-dominant",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Jack Herer",
+          "Lemon Kush"
+        ],
+        "thc_percentage": 21
+      },
+      {
+        "name": "Golden Pineapple",
+        "type": "hybrid",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 20
+      },
+      {
+        "name": "Confidential Cheese",
+        "type": "indica",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "LA Confidential",
+          "Exodus Cheese"
+        ],
+        "thc_percentage": 22
+      },
+      {
+        "name": "K2",
+        "type": "hybrid",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "White Widow",
+          "Hindu Kush"
+        ],
+        "thc_percentage": 18
+      },
+      {
+        "name": "All Time High",
+        "type": "Hybrid",
+        "photo": "https://images.leafly.com/flower-images/defaults/generic/strain-27.png?auto=compress%2Cformat&w=295&dpr=2",
+        "origin": "",
+        "parent_strains": [
+          "OG Kush",
+          "Strawberry Diesel"
+        ],
+        "thc_percentage": 28.2
+      },
+      {
+        "name": "Carbon Fiber",
+        "type": "Hybrid",
+        "photo": "https://images.leafly.com/flower-images/defaults/generic/strain-39.png?auto=compress%2Cformat&w=295&dpr=2",
+        "origin": "",
+        "parent_strains": [
+          "Grape Pie",
+          "Biscotti",
+          "Cookies and Cream"
+        ],
+        "thc_percentage": 24
+      },
+      {
+        "name": "Truffle Cake",
+        "type": "Hybrid",
+        "photo": "https://images.leafly.com/flower-images/defaults/generic/strain-3.png?auto=compress%2Cformat&w=295&dpr=2",
+        "origin": "",
+        "parent_strains": [
+          "Gorilla Butter F2",
+          "Pancakes"
+        ],
+        "thc_percentage": 22
+      },
+      {
+        "name": "Star Dust OG",
+        "type": "Indica",
+        "photo": "https://images.leafly.com/flower-images/defaults/generic/strain-14.png?auto=compress%2Cformat&w=295&dpr=2",
+        "origin": "",
+        "parent_strains": [
+          "Chem Dog",
+          "Key Lime Pie",
+          "Northern Lights"
+        ],
+        "thc_percentage": 21
+      },
+      {
+        "name": "Cookie Dough",
+        "type": "Hybrid",
+        "photo": "https://images.leafly.com/flower-images/defaults/generic/strain-27.png?auto=compress%2Cformat&w=295&dpr=2",
+        "origin": "",
+        "parent_strains": [
+          "GSC",
+          "Dosidos"
+        ],
+        "thc_percentage": 20
+      },
+      {
+        "name": "Purple Punch",
+        "type": "Indica",
+        "photo": "https://images.leafly.com/flower-images/purple-punch-fixed.jpg?auto=compress%2Cformat&w=295&dpr=2",
+        "origin": "",
+        "parent_strains": [
+          "Granddaddy Purple",
+          "Larry OG"
+        ],
+        "thc_percentage": 18
+      },
+      {
+        "name": "Amnesia Haze",
+        "type": "Sativa",
+        "photo": "https://images.leafly.com/flower-images/defaults/generic/strain-25.png?auto=compress%2Cformat&w=295&dpr=2",
+        "origin": "",
+        "parent_strains": [
+          "Haze",
+          "Afghani"
+        ],
+        "thc_percentage": 19
+      },
+      {
+        "name": "Orange Cookies",
+        "type": "Hybrid",
+        "photo": "https://leafly-cms-production.imgix.net/wp-content/uploads/2018/08/06143419/Orange-Cookies_Header1.jpg",
+        "origin": "Oregon",
+        "parent_strains": [
+          "Orange Juice",
+          "GSC"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Harlequin",
+        "type": "CBD-dominant",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Unknown"
+        ],
+        "thc_percentage": 5
+      },
+      {
+        "name": "Sour Tsunami",
+        "type": "CBD-dominant",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 10
+      },
+      {
+        "name": "Dancehall",
+        "type": "CBD-dominant",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 2
+      },
+      {
+        "name": "Cannatonic",
+        "type": "CBD-dominant",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 8
+      },
+      {
+        "name": "Lavender",
+        "type": "THC-dominant",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 15
+      },
+      {
+        "name": "Hindu Kush",
+        "type": "THC-dominant",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 20
+      },
+      {
+        "name": "Jillybean",
+        "type": "THC-dominant",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 18
+      },
+      {
+        "name": "Chocolope",
+        "type": "THC-dominant",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 20
+      },
+      {
+        "name": "ACDC",
+        "type": "CBD-dominant",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 0.1
+      },
+      {
+        "name": "Blackberry Kush",
+        "type": "THC-dominant",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 20
+      },
+      {
+        "name": "Harlequin",
+        "type": "Balanced THC/CBD",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 5
+      },
+      {
+        "name": "The White",
+        "type": "THC-dominant",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 20
+      },
+      {
+        "name": "Blueberry Headband",
+        "type": "THC-dominant",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 20
+      },
+      {
+        "name": "CBD Critical Mass",
+        "type": "Balanced THC/CBD",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 10
+      },
+      {
+        "name": "Master Kush",
+        "type": "THC-dominant",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 20
+      },
+      {
+        "name": "Ice Cream Cake",
+        "type": "",
+        "photo": "https://leafly-cms-production.imgix.net/wp-content/uploads/2021/10/19160112/Hella-Jelly-Courtesy-of-The-Bud-Farm-fun-size-for-web.jpg",
+        "origin": "",
+        "parent_strains": [
+          "Wedding Cake",
+          "Gelato #33"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Kush Mints",
+        "type": "",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Animal Mints",
+          "Bubba Kush"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Tropic Runtz",
+        "type": "",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Runtz",
+          "Tropic Truffles"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Modified Grapes",
+        "type": "",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "GMO",
+          "Purple Punch"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Marshmallow OG",
+        "type": "",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Chemdog D",
+          "Triangle Kush",
+          "Jet Fuel Gelato"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Mimosa #3",
+        "type": "",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Clementine",
+          "Purple Punch"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Sour Tangie",
+        "type": "",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "East Coast Sour Diesel",
+          "Crockett’s Tangie"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Prayer Pupil",
+        "type": "",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Star Pupil",
+          "Prayer Tower"
+        ],
+        "thc_percentage": 30
+      },
+      {
+        "name": "Hella Jelly",
+        "type": "",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Very Cherry",
+          "Notorious THC"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Pennywise",
+        "type": "",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Harlequin",
+          "Jack the Ripper"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "MAC Tyson",
+        "type": "",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "MAC",
+          "Purple Punch"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Gelato #41",
+        "type": "Hybrid",
+        "photo": "https://leafly-cms-production.imgix.net/wp-content/uploads/2021/11/23120153/Ridgeline-Runtz-sungrown-Courtesy-Ridgeline-Farms-and-Cookies.jpg",
+        "origin": "USA",
+        "parent_strains": [
+          "Sunset Sherbert",
+          "Thin Mint Cookies"
+        ],
+        "thc_percentage": 20
+      },
+      {
+        "name": "Strawberry Cough",
+        "type": "Sativa",
+        "photo": "",
+        "origin": "USA",
+        "parent_strains": [
+          "Strawberry Fields",
+          "Haze"
+        ],
+        "thc_percentage": 18
+      },
+      {
+        "name": "Wedding Cake",
+        "type": "Hybrid",
+        "photo": "",
+        "origin": "USA",
+        "parent_strains": [
+          "Animal Mints",
+          "Triangle Kush"
+        ],
+        "thc_percentage": 25
+      },
+      {
+        "name": "Runtz",
+        "type": "Hybrid",
+        "photo": "",
+        "origin": "USA",
+        "parent_strains": [
+          "Zkittlez",
+          "Gelato"
+        ],
+        "thc_percentage": 22
+      },
+      {
+        "name": "Zlushi",
+        "type": "Hybrid",
+        "photo": "",
+        "origin": "USA",
+        "parent_strains": [
+          "Z3",
+          "Mimosa"
+        ],
+        "thc_percentage": 21
+      },
+      {
+        "name": "Carbon Fiber",
+        "type": "Hybrid",
+        "photo": "",
+        "origin": "USA",
+        "parent_strains": [
+          "Biscotti",
+          "Cookies & Cream",
+          "Grape Pie"
+        ],
+        "thc_percentage": 23
+      },
+      {
+        "name": "ZMO",
+        "type": "Hybrid",
+        "photo": "",
+        "origin": "USA",
+        "parent_strains": [
+          "Z3",
+          "GMO Cookies"
+        ],
+        "thc_percentage": 24
+      },
+      {
+        "name": "Violet Fog",
+        "type": "Hybrid",
+        "photo": "",
+        "origin": "USA",
+        "parent_strains": [
+          "Khalifa Mints",
+          "Grape Gasoline"
+        ],
+        "thc_percentage": 20
+      },
+      {
+        "name": "Forbidden Runtz",
+        "type": "Hybrid",
+        "photo": "",
+        "origin": "USA",
+        "parent_strains": [
+          "Forbidden Zkittlez",
+          "Runtz"
+        ],
+        "thc_percentage": 22
+      },
+      {
+        "name": "Beam Me Up Scotti",
+        "type": "Hybrid",
+        "photo": "",
+        "origin": "USA",
+        "parent_strains": [
+          "Biscotti",
+          "OG"
+        ],
+        "thc_percentage": 25
+      },
+      {
+        "name": "Caps Frozen Lemons",
+        "type": "Hybrid",
+        "photo": "",
+        "origin": "USA",
+        "parent_strains": [
+          "Freezer Burn",
+          "Lemon Fire"
+        ],
+        "thc_percentage": 20
+      },
+      {
+        "name": "Hell’s OG",
+        "type": "Indica",
+        "photo": "",
+        "origin": "USA",
+        "parent_strains": [
+          "OG Kush",
+          "Blackberry"
+        ],
+        "thc_percentage": 19
+      },
+      {
+        "name": "Fidel’s Hash Hole",
+        "type": "Hybrid",
+        "photo": "",
+        "origin": "USA",
+        "parent_strains": [],
+        "thc_percentage": 30
+      },
+      {
+        "name": "Khalifa Kush",
+        "type": "",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Pancakes",
+        "type": "",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "London Pound Cake #75",
+          "Kush Mints #11"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Pink Certz",
+        "type": "",
+        "photo": "",
+        "origin": "San Francisco, CA",
+        "parent_strains": [
+          "The Menthol",
+          "Grape Gasoline"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Jealousy",
+        "type": "",
+        "photo": "",
+        "origin": "Los Angeles, CA",
+        "parent_strains": [
+          "Sherbert",
+          "Gelato"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Strawberry Remedy #9",
+        "type": "",
+        "photo": "",
+        "origin": "Oregon",
+        "parent_strains": [
+          "Dragon Desert Frost",
+          "Strawberry Fields"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Forbidden Mintz",
+        "type": "",
+        "photo": "",
+        "origin": "Washington",
+        "parent_strains": [
+          "Forbidden Fruit",
+          "SinMint Cookies"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Zkittlez Mintz",
+        "type": "",
+        "photo": "",
+        "origin": "Washington",
+        "parent_strains": [
+          "Animal Mints",
+          "Zkittlez"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Gator Breath #3",
+        "type": "",
+        "photo": "",
+        "origin": "California",
+        "parent_strains": [
+          "Motor Breath",
+          "Triangle Kush Bx1"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Pineapple Fruz",
+        "type": "",
+        "photo": "",
+        "origin": "California",
+        "parent_strains": [
+          "Animal Mints",
+          "Zkittlez"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Jealousy x Kush Mints",
+        "type": "",
+        "photo": "",
+        "origin": "California",
+        "parent_strains": [
+          "Jealousy",
+          "Kush Mints"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Northern Lights",
+        "type": "indica",
+        "photo": "https://leafly-cms-production.imgix.net/wp-content/uploads/2020/09/17104630/Northern-Lights-1024x607.jpg?auto=compress%2Cformat&w=510&dpr=2",
+        "origin": "Seattle, Washington",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Purple Haze",
+        "type": "sativa",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Durban Poison",
+        "type": "sativa",
+        "photo": "https://leafly-cms-production.imgix.net/wp-content/uploads/2020/09/17104659/Durban-Poison-1024x607.jpg?auto=compress%2Cformat&w=510&dpr=2",
+        "origin": "Durban, South Africa",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "OG Kush",
+        "type": "indica",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Sour Diesel",
+        "type": "sativa",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Jack Herer",
+        "type": "sativa",
+        "photo": "https://leafly-cms-production.imgix.net/wp-content/uploads/2020/09/17104948/Jack-Herer-1-1024x607.jpg?auto=compress%2Cformat&w=510&dpr=2",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Bruce Banner",
+        "type": "sativa",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "OG Kush",
+          "Strawberry Diesel"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Zkittlez",
+        "type": "indica",
+        "photo": "https://leafly-cms-production.imgix.net/wp-content/uploads/2020/09/17104907/Zkittlez-1024x607.jpg?auto=compress%2Cformat&w=510&dpr=2",
+        "origin": "",
+        "parent_strains": [
+          "Grape Ape",
+          "Grapefruit"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Dutch Treat",
+        "type": "",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Ace of Spades",
+        "type": "",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Black Cherry Soda",
+          "Jack the Ripper"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Tickle Kush",
+        "type": "",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "GSC",
+        "type": "Hybrid",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "OG Kush",
+          "Durban Poison"
+        ],
+        "thc_percentage": 20
+      },
+      {
+        "name": "Moon Cookies",
+        "type": "Hybrid",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "GSC"
+        ],
+        "thc_percentage": 20
+      },
+      {
+        "name": "Cookies and Cream",
+        "type": "Hybrid",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "GSC",
+          "Starfighter"
+        ],
+        "thc_percentage": 20
+      },
+      {
+        "name": "Orange Cookies",
+        "type": "Hybrid",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Orange Juice",
+          "GSC"
+        ],
+        "thc_percentage": 20
+      },
+      {
+        "name": "Cannatonic",
+        "type": "CBD",
+        "photo": "",
+        "origin": "Canada",
+        "parent_strains": [],
+        "thc_percentage": 0.5
+      },
+      {
+        "name": "Island Mist",
+        "type": "CBD",
+        "photo": "",
+        "origin": "Canada",
+        "parent_strains": [],
+        "thc_percentage": 0.5
+      },
+      {
+        "name": "Terra",
+        "type": "CBD",
+        "photo": "",
+        "origin": "Canada",
+        "parent_strains": [
+          "Remedy"
+        ],
+        "thc_percentage": 0.5
+      },
+      {
+        "name": "Fleur de CBD",
+        "type": "CBD",
+        "photo": "",
+        "origin": "Canada",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "North Star CBD",
+        "type": "CBD",
+        "photo": "",
+        "origin": "Canada",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Free CBD",
+        "type": "CBD",
+        "photo": "",
+        "origin": "Canada",
+        "parent_strains": [
+          "Treasure Island"
+        ],
+        "thc_percentage": 0.5
+      },
+      {
+        "name": "Temple",
+        "type": "CBD",
+        "photo": "",
+        "origin": "Canada",
+        "parent_strains": [
+          "Cannatonic"
+        ],
+        "thc_percentage": 0.5
+      },
+      {
+        "name": "AC/DC",
+        "type": "CBD",
+        "photo": "",
+        "origin": "Canada",
+        "parent_strains": [
+          "Cannatonic"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "AC/DC",
+        "type": "CBD",
+        "photo": "",
+        "origin": "Canada",
+        "parent_strains": [],
+        "thc_percentage": 1.75
+      },
+      {
+        "name": "Chemdog 91",
+        "type": "Hybrid",
+        "photo": "",
+        "origin": "USA",
+        "parent_strains": [
+          "Chemdog"
+        ],
+        "thc_percentage": 20
+      },
+      {
+        "name": "Mendocino Purps",
+        "type": "Indica",
+        "photo": "",
+        "origin": "California, USA",
+        "parent_strains": [],
+        "thc_percentage": 18
+      },
+      {
+        "name": "Bubba OG",
+        "type": "Hybrid",
+        "photo": "",
+        "origin": "Canada",
+        "parent_strains": [
+          "Pre-98 Bubba Kush",
+          "Ghost OG"
+        ],
+        "thc_percentage": 22
+      },
+      {
+        "name": "Four Way",
+        "type": "Indica",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Skunk #1",
+          "Afghan",
+          "Indian",
+          "Pakistani"
+        ],
+        "thc_percentage": 20
+      },
+      {
+        "name": "Sweet Tooth",
+        "type": "Indica",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Afghani",
+          "Hawaiian",
+          "Nepalese"
+        ],
+        "thc_percentage": 18
+      },
+      {
+        "name": "NYC Diesel",
+        "type": "Sativa",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Mexican",
+          "Afghani"
+        ],
+        "thc_percentage": 19
+      },
+      {
+        "name": "Amnesia Haze",
+        "type": "Sativa",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "South Asian",
+          "Jamaican"
+        ],
+        "thc_percentage": 21
+      },
+      {
+        "name": "Hawaiian Snow",
+        "type": "Sativa",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Neville’s Haze",
+          "Pure Haze",
+          "Hawaiian Haze"
+        ],
+        "thc_percentage": 23
+      },
+      {
+        "name": "Blue Dream",
+        "type": "Hybrid",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Blueberry",
+          "Haze"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Charlotte’s Web",
+        "type": "Sativa",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Hemp"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Acapulco Gold",
+        "type": "Sativa",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Mexican"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "OG Kush",
+        "type": "Hybrid",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Pineapple Express",
+        "type": "Hybrid",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Trainwreck",
+          "Hawaiian"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Sour Diesel",
+        "type": "Sativa",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Chemdawg 91",
+          "Super Skunk"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Alaskan Thunder Fuck",
+        "type": "Sativa",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "North American Sativa"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "AK-47",
+        "type": "Hybrid",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "South American",
+          "Mexican",
+          "Thai",
+          "Afghani"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Champagne Kush",
+        "type": "Hybrid",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Hash Plant",
+          "Burmese Kush"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Aliens On Moonshine",
+        "type": "Balanced THC/CBD",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Sour Alien",
+          "White Moonshine"
+        ],
+        "thc_percentage": 4.5
+      },
+      {
+        "name": "Cannatonic",
+        "type": "Balanced THC/CBD",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "MK Ultra",
+          "G13 Haze"
+        ],
+        "thc_percentage": 5.5
+      },
+      {
+        "name": "CBD Critical Mass",
+        "type": "Balanced THC/CBD",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Critical Mass",
+          "CBD Crew strain"
+        ],
+        "thc_percentage": 6
+      },
+      {
+        "name": "MediHaze",
+        "type": "Balanced THC/CBD",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Super Silver Haze",
+          "Neville’s Haze",
+          "CBD-rich strain"
+        ],
+        "thc_percentage": 5
+      },
+      {
+        "name": "Pennywise",
+        "type": "Balanced THC/CBD",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Harlequin",
+          "Jack The Ripper"
+        ],
+        "thc_percentage": 7.5
+      },
+      {
+        "name": "Stephen Hawking Kush",
+        "type": "Balanced THC/CBD",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Harle-Tsu",
+          "Sin City Kush"
+        ],
+        "thc_percentage": 4
+      },
+      {
+        "name": "Sweet and Sour Widow",
+        "type": "Balanced THC/CBD",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "White Widow",
+          "Unknown strain"
+        ],
+        "thc_percentage": 5
+      },
+      {
+        "name": "Big Smooth",
+        "type": "THC-dominant",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "OG Blueberry",
+          "Cookies and Cream"
+        ],
+        "thc_percentage": 19.5
+      },
+      {
+        "name": "ACDC",
+        "type": "CBD-dominant",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 12.5
+      },
+      {
+        "name": "RudeBoi OG",
+        "type": "THC-dominant",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Irene OG",
+          "Face Off OG"
+        ],
+        "thc_percentage": 21
+      },
+      {
+        "name": "Dogwalker OG",
+        "type": "THC-dominant",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Albert Walker",
+          "Chemdog 91"
+        ],
+        "thc_percentage": 22
+      },
+      {
+        "name": "Plushberry",
+        "type": "THC-dominant",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Space Queen",
+          "Black Cherry Soda"
+        ],
+        "thc_percentage": 17
+      },
+      {
+        "name": "XJ-13",
+        "type": "THC-dominant",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Jack Herer",
+          "G13 Haze"
+        ],
+        "thc_percentage": 18
+      },
+      {
+        "name": "M-39",
+        "type": "",
+        "photo": "",
+        "origin": "Canada",
+        "parent_strains": [
+          "Northern Lights #5",
+          "Skunk #1"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Island Sweet Skunk",
+        "type": "",
+        "photo": "",
+        "origin": "British Columbia, Canada",
+        "parent_strains": [
+          "Sweet Pink Grapefruit",
+          "Big Skunk #1"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "God Bud",
+        "type": "",
+        "photo": "",
+        "origin": "Canada",
+        "parent_strains": [
+          "Hawaiian",
+          "Purple Skunk",
+          "God"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Chemo",
+        "type": "",
+        "photo": "",
+        "origin": "Canada",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Jean Guy",
+        "type": "",
+        "photo": "",
+        "origin": "Montreal, Canada",
+        "parent_strains": [
+          "White Widow"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Love Potion #1",
+        "type": "",
+        "photo": "",
+        "origin": "Canada",
+        "parent_strains": [
+          "G-13",
+          "Santa Marta Colombian Gold"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Romulan",
+        "type": "",
+        "photo": "",
+        "origin": "British Columbia, Canada",
+        "parent_strains": [
+          "White Rhino"
+        ],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Ringo’s Gift",
+        "type": "CBD-dominant",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Harle-Tsu",
+          "ACDC"
+        ],
+        "thc_percentage": 1
+      },
+      {
+        "name": "Sweet and Sour Widow",
+        "type": "Balanced",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Unknown"
+        ],
+        "thc_percentage": 1
+      },
+      {
+        "name": "Stephen Hawking Kush",
+        "type": "CBD-dominant",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Unknown"
+        ],
+        "thc_percentage": 1
+      },
+      {
+        "name": "ACDC",
+        "type": "CBD-dominant",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Unknown"
+        ],
+        "thc_percentage": 1
+      },
+      {
+        "name": "Cannatonic",
+        "type": "Balanced",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Unknown"
+        ],
+        "thc_percentage": 1
+      },
+      {
+        "name": "Harle-Tsu",
+        "type": "CBD-dominant",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Harlequin",
+          "Sour Tsunami"
+        ],
+        "thc_percentage": 1
+      },
+      {
+        "name": "Canna-Tsu",
+        "type": "Balanced",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Unknown"
+        ],
+        "thc_percentage": 1
+      },
+      {
+        "name": "Sour Tsunami",
+        "type": "CBD-dominant",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Sour Diesel",
+          "NYC Diesel"
+        ],
+        "thc_percentage": 1
+      },
+      {
+        "name": "Pennywise",
+        "type": "Balanced",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Harlequin",
+          "Jack the Ripper"
+        ],
+        "thc_percentage": 1
+      },
+      {
+        "name": "Pink Kush",
+        "type": "Indica-dominant hybrid",
+        "photo": "",
+        "origin": "Canada",
+        "parent_strains": [],
+        "thc_percentage": 20
+      },
+      {
+        "name": "Shishkaberry",
+        "type": "Indica-dominant hybrid",
+        "photo": "",
+        "origin": "Canada",
+        "parent_strains": [],
+        "thc_percentage": 20
+      },
+      {
+        "name": "Jean Guy",
+        "type": "Hybrid",
+        "photo": "",
+        "origin": "Canada",
+        "parent_strains": [],
+        "thc_percentage": 20
+      },
+      {
+        "name": "Garlic Cookies/GMO Cookies",
+        "type": "Indica-dominant hybrid",
+        "photo": "",
+        "origin": "Canada",
+        "parent_strains": [
+          "Girl Scout Cookies",
+          "ChemDawg"
+        ],
+        "thc_percentage": 20
+      },
+      {
+        "name": "Black Cherry Punch",
+        "type": "Hybrid",
+        "photo": "",
+        "origin": "Canada",
+        "parent_strains": [],
+        "thc_percentage": 20
+      },
+      {
+        "name": "Wappa",
+        "type": "Indica-leaning hybrid",
+        "photo": "",
+        "origin": "Canada",
+        "parent_strains": [],
+        "thc_percentage": 20
+      },
+      {
+        "name": "Headband",
+        "type": "Hybrid",
+        "photo": "",
+        "origin": "Canada",
+        "parent_strains": [
+          "OG Kush",
+          "Sour Diesel"
+        ],
+        "thc_percentage": 20
+      },
+      {
+        "name": "Death Bubba",
+        "type": "Indica",
+        "photo": "",
+        "origin": "Canada",
+        "parent_strains": [
+          "Death Star",
+          "Bubba Kush"
+        ],
+        "thc_percentage": 20
+      },
+      {
+        "name": "Island Sweet Skunk",
+        "type": "Sativa-dominant hybrid",
+        "photo": "",
+        "origin": "Canada",
+        "parent_strains": [
+          "Sweet Pink Grapefruit",
+          "Skunk #1"
+        ],
+        "thc_percentage": 20
+      },
+      {
+        "name": "Orange Cookies",
+        "type": "",
+        "photo": "https://leafly-cms-production.imgix.net/wp-content/uploads/2017/03/24120926/lemon-meringue-avitas.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Lemon Meringue",
+        "type": "",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Dragon OG",
+        "type": "",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Grape Ape",
+        "type": "indica",
+        "photo": "https://leafly-cms-production.imgix.net/wp-content/uploads/2015/02/12001507/cannabis-strain-highlight-the-great-grape-ape.jpg",
+        "origin": "Washington",
+        "parent_strains": [
+          "Afghani",
+          "Skunk #1",
+          "Mendo Purps"
+        ],
+        "thc_percentage": 19
+      },
+      {
+        "name": "Super Lemon Haze",
+        "type": "Sativa",
+        "photo": "https://leafly-cms-production.imgix.net/wp-content/uploads/2018/10/03135638/ways-ricky-williams.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Purple Punch",
+        "type": "Indica",
+        "photo": "https://leafly-cms-production.imgix.net/wp-content/uploads/2018/10/03135638/ways-ricky-williams.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Lemon Cake",
+        "type": "Hybrid",
+        "photo": "https://leafly-cms-production.imgix.net/wp-content/uploads/2018/10/03135638/ways-ricky-williams.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Forbidden Fruit",
+        "type": "Hybrid",
+        "photo": "https://leafly-cms-production.imgix.net/wp-content/uploads/2018/04/25213828/flow-kana-2-1024x640.jpg",
+        "origin": "California",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Super Lemon Haze",
+        "type": "Sativa",
+        "photo": "",
+        "origin": "California",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Blue Dream CBD PAX Pod",
+        "type": "Hybrid",
+        "photo": "",
+        "origin": "California",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "Headcracker",
+        "type": "Indica Dominant Hybrid",
+        "photo": "https://media.allbud.com/resized/300x200/media/images/strain/headcracker/FhdfTquR/20230914_094508jpg.jpg",
+        "origin": "",
+        "parent_strains": [
+          "Headband",
+          "Green Crack"
+        ],
+        "thc_percentage": 20
+      },
+      {
+        "name": "GovernMint Oasis",
+        "type": "Hybrid",
+        "photo": "https://media.allbud.com/resized/300x200/media/images/strain/governmint-oasis/xbI07w8i/20231210_081219jpg.jpg?t=14478f84e8e2b2fd7b0774918105eb274846a566c98ddf0d9561bf12f652687e",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 30
+      },
+      {
+        "name": "Maltezerz",
+        "type": "Hybrid",
+        "photo": "https://static.allbud.com/static/images/infocard-default-hybrid.6b34d1350a1c.png",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 26
+      },
+      {
+        "name": "Lemon Kush",
+        "type": "Hybrid",
+        "photo": "https://media.allbud.com/resized/300x200/media/feature/strain/lemon-kush.jpg?t=7ff00a2650ae8adcac6e78e6b93ab8a0670921177651b65be1f4cfe65215c6cd",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 17
+      },
+      {
+        "name": "Sundae Driver",
+        "type": "Hybrid",
+        "photo": "https://media.allbud.com/resized/300x200/media/images/strain/sundae-driver/yiwKyTQl/12038310-04be-4798-a8a6-6ddf7e2f3afejpe.jpg?t=bf556e31c66abd96cc2c837e2ebf6dfa766de8b5e67887cec1d7e35ff70e464f",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 14
+      },
+      {
+        "name": "White Runtz",
+        "type": "Hybrid",
+        "photo": "https://media.allbud.com/resized/300x200/media/images/strain/white-runtz/bAWMiFs6/0203201521jpg.jpg?t=d14b8c7b915da5825e6d0f3b79b47e334829794a10820d1483cc9e2078ef4aab",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 23
+      },
+      {
+        "name": "NYC Sour Diesel",
+        "type": "Hybrid",
+        "photo": "https://media.allbud.com/resized/300x200/media/feature/strain/nyc-sour-diesel.jpg?t=feaf049aba019049f7b2c2749bf2e3082c2bc783f5d1bd9e72b590883776e036",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 20
+      },
+      {
+        "name": "Z Cube",
+        "type": "Hybrid",
+        "photo": "https://media.allbud.com/resized/300x200/media/images/strain/z-cube/AFL9zqRw/04c75d7b-58b7-4123-9f16-4e0a31ad453bjpe.jpg?t=3caf1e834513a70c1ffbe5d5c003f630561ba39c3b3615aa049387d63ebc3847",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 25
+      },
+      {
+        "name": "Black Tuna",
+        "type": "Hybrid",
+        "photo": "https://media.allbud.com/resized/300x200/media/images/strain/black-tuna/bY2CkLoX/59f81b44-a055-4b7e-b67d-a5fdcf7db0efjpe.jpg?t=e65a089a20b34aa19c493077ab0a4acc31af6c1413e8fe6cc1f9a9906c5fd743",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 22
+      },
+      {
+        "name": "Shake Shack",
+        "type": "Hybrid",
+        "photo": "https://media.allbud.com/resized/300x200/media/feature/flower/shake_2skOsuX.jpg?t=c74c1a5ec5f32617e25690e566681be1a7a0e7709e9a3860ca70e45100630015",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 27
+      },
+      {
+        "name": "Jimi Hendrix",
+        "type": "Hybrid",
+        "photo": "https://media.allbud.com/resized/300x200/media/images/strain/jimi-hendrix/sApnpsAr/0412192012a_signaturejpg.jpg?t=6c137499baf1af8b6f9a9641ff0b0909f734b625c9fc9a559be09f0915bb082d",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 20
+      },
+      {
+        "name": "Runtz",
+        "type": "Hybrid",
+        "photo": "https://media.allbud.com/resized/300x200/media/images/strain/runtz/TWTmOtm3/011e27a3-4773-4a81-a0ed-669fe9dc245ejpe.jpg?t=ba2befb3fc7e02a029a13afaf8f097708b507d5668c2ae2560279dd1209aeaf5",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 24
+      },
+      {
+        "name": "Pink Runtz",
+        "type": "Hybrid",
+        "photo": "https://media.allbud.com/resized/300x200/media/images/strain/pink-runtz/0X5W22iw/20200828_112100jpg.jpg?t=7bc587b900f6842950de375b36130fd41fe45b859971f02b53dc5c2ebdd46fc0",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 24
+      },
+      {
+        "name": "Blueberry Pie",
+        "type": "Hybrid",
+        "photo": "https://media.allbud.com/resized/300x200/media/images/strain/blueberry-pie/JmeerJ1g/20190518_180235jpg.jpg?t=b74fb4ee69aab71ca67508cf3f4e1b7597dac59208dfdd6771f7a97ffdd3de64",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 19
+      },
+      {
+        "name": "Alien OG",
+        "type": "Hybrid",
+        "photo": "https://media.allbud.com/resized/300x200/media/images/strain/alien-og/7658/ei2h1mdwrfsoyblnr33p.jpg?t=2ec976b85608198ebc0ccdaeb0a686a8e7b738ea59d64eaa4613b53ff76108f4",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 28
+      },
+      {
+        "name": "Birthday Cake Kush",
+        "type": "Hybrid",
+        "photo": "https://media.allbud.com/resized/300x200/media/images/strain/birthday-cake-kush/fBjAFvl9/1004190812-1jpg.jpg?t=a363044dd3fe5877938058eb172ba9e7fe223e001b180d893adeb2a0a04d40a4",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 24
+      },
+      {
+        "name": "Off White Gelato",
+        "type": "Hybrid",
+        "photo": "https://media.allbud.com/resized/300x200/media/images/strain/white-gelato/5nJCh5xl/imagejpg.jpg?t=7c1a0e9a94b6291243410f1ac5c8d3f0dd089dc91dc31e7efe5b243a380a5377",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 30
+      },
+      {
+        "name": "Honey Bananas",
+        "type": "Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 22
+      },
+      {
+        "name": "Big Purple Apple",
+        "type": "Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 37
+      },
+      {
+        "name": "Cherry Diesel",
+        "type": "Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 24
+      },
+      {
+        "name": "Strawberry Diesel",
+        "type": "Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 24
+      },
+      {
+        "name": "Hi-Octane",
+        "type": "Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 24
+      },
+      {
+        "name": "Kitchen Sink",
+        "type": "Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 19
+      },
+      {
+        "name": "Alien Cookies",
+        "type": "Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 21
+      },
+      {
+        "name": "Strawberry Milk",
+        "type": "Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 28
+      },
+      {
+        "name": "Cherry Zkittlez",
+        "type": "Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 22
+      },
+      {
+        "name": "Blue Diamond",
+        "type": "Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 18
+      },
+      {
+        "name": "Florida OG",
+        "type": "Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 24
+      },
+      {
+        "name": "Galactic Punch",
+        "type": "Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 26
+      },
+      {
+        "name": "007Up",
+        "type": "Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 29
+      },
+      {
+        "name": "Lilac Diesel",
+        "type": "Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 21
+      },
+      {
+        "name": "Tally Mon",
+        "type": "Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 28
+      },
+      {
+        "name": "Grape Diamonds",
+        "type": "Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 30
+      },
+      {
+        "name": "Chemdawg #4",
+        "type": "Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 23
+      },
+      {
+        "name": "Bio Diesel",
+        "type": "Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 22
+      },
+      {
+        "name": "Banana Cream OG",
+        "type": "Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 19
+      },
+      {
+        "name": "Alion",
+        "type": "Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 23
+      },
+      {
+        "name": "Godzilla Glue",
+        "type": "Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 19
+      },
+      {
+        "name": "Critical Cheese",
+        "type": "Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 19
+      },
+      {
+        "name": "Theraplant 14008",
+        "type": "Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 17
+      },
+      {
+        "name": "Cali Gold",
+        "type": "Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 19
+      },
+      {
+        "name": "Skywalker OG",
+        "type": "Indica Dominant Hybrid",
+        "photo": "https://allbud.s3.amazonaws.com/media/images/strain/skywalker-og/XAQMf1xW/0418202231ajpg.jpg",
+        "origin": "",
+        "parent_strains": [
+          "Skywalker",
+          "OG Kush"
+        ],
+        "thc_percentage": 22.5
+      },
+      {
+        "name": "Gorilla Glue #4",
+        "type": "Indica Dominant Hybrid",
+        "photo": "https://media.allbud.com/resized/300x200/media/feature/strain/gorilla-glue-4.jpg?t=a54da1807e14df4c14d486642416e23c99cd9f4d9b997fe39fde7086bb242642",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 32
+      },
+      {
+        "name": "Grape Ape",
+        "type": "Indica Dominant Hybrid",
+        "photo": "https://media.allbud.com/resized/300x200/media/feature/strain/grape-ape.jpg?t=b6f1194558ceb7a386b4de1f9fe156373f776d3448bb3683bc050eecd48174b8",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 18
+      },
+      {
+        "name": "Dutch Treat",
+        "type": "Indica Dominant Hybrid",
+        "photo": "https://media.allbud.com/resized/300x200/media/feature/strain/dutch-treat.jpg?t=2937292f90ed51a9f5fa93996bb29f914d7a8cc719ed8f15d4920143a05df51b",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 18
+      },
+      {
+        "name": "Optimus Prime",
+        "type": "Indica Dominant Hybrid",
+        "photo": "https://media.allbud.com/resized/300x200/media/images/strain/optimus-prime/5Um3xbci/181af55d-7b8f-430e-86b9-717ecb4f6a14jpe.jpg?t=52d6e1b01d57b6a858adb3296e7ddb53d642389a30e798982b8b30d582fc3692",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 20
+      },
+      {
+        "name": "Granddaddy Purple",
+        "type": "Indica Dominant Hybrid",
+        "photo": "https://media.allbud.com/resized/300x200/media/images/strain/granddaddy-purple/yG4w7y1T/15846569949195082582483767231831jpg.jpg?t=52c08f54bc479fa674e78954e216928d548574d26ddcbb785622cf11050f43d5",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 20
+      },
+      {
+        "name": "Blueberry Muffin",
+        "type": "Indica Dominant Hybrid",
+        "photo": "https://media.allbud.com/resized/300x200/media/images/strain/blueberry-muffin/D2iNOv0E/15497907913161471589061jpg.jpg?t=4d82d6b7dd0ba8a8eab1d0f25b3ac0bb192fccc9be6269cf54013085d6f23f51",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 16
+      },
+      {
+        "name": "MK Ultra",
+        "type": "Indica Dominant Hybrid",
+        "photo": "https://media.allbud.com/resized/300x200/media/feature/strain/mk-ultra.jpg?t=9953fe18128e2b8e94e5c99ce1b231b7cd3ac029154e7a4331110477fc563452",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 18
+      },
+      {
+        "name": "Off White",
+        "type": "Indica Dominant Hybrid",
+        "photo": "https://media.allbud.com/resized/300x200/media/feature/strain/white.jpg?t=c04350803a5c81d401255e4917744666b7ea9f94ebb6dc596518912a1e38b1ec",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 28
+      },
+      {
+        "name": "Grand Daddy Purple",
+        "type": "Indica Dominant Hybrid",
+        "photo": "https://media.allbud.com/resized/300x200/media/feature/strain/grand-daddy-purple.jpg?t=c02a2cb9d128e8167713ad507b1142887be08295643c482bf042d636fbc17b37",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 17
+      },
+      {
+        "name": "Skywalker OG",
+        "type": "Indica Dominant Hybrid",
+        "photo": "https://media.allbud.com/resized/300x200/media/images/strain/skywalker-og/XAQMf1xW/0418202231ajpg.jpg?t=22a62b41e07cc53e611d08852f6f741cef8bc68ae472a32c12044b40b030a086",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 20
+      },
+      {
+        "name": "Banana Kush",
+        "type": "Indica Dominant Hybrid",
+        "photo": "https://media.allbud.com/resized/300x200/media/feature/strain/banana-kush.jpg?t=8a726b84e9632d3013d785a56d5bbfd80ca6ad27d963f19a67896b17bacfb01a",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 18
+      },
+      {
+        "name": "Death Star",
+        "type": "Indica Dominant Hybrid",
+        "photo": "https://media.allbud.com/resized/300x200/media/feature/strain/death-star.jpg?t=e8045f4d18df69271c91158232771883d09e11fee11376d5ff17d6c9a98e4e54",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 18
+      },
+      {
+        "name": "God's Gift",
+        "type": "Indica Dominant Hybrid",
+        "photo": "https://media.allbud.com/resized/300x200/media/feature/strain/gods-gift.jpg?t=566fcee5a7f79e6d6502bce62d4aa48a41a7714761ee8dbcdf097ba3d9b10c4b",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 27
+      },
+      {
+        "name": "Headband",
+        "type": "Indica Dominant Hybrid",
+        "photo": "https://media.allbud.com/resized/300x200/media/feature/strain/headband.jpg?t=fcd7a8911d087b4f4529fe693cc7d1907e74dea79ddf0dff613b3bb75ae23bc5",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 17
+      },
+      {
+        "name": "Girl Scout Cookies",
+        "type": "Indica Dominant Hybrid",
+        "photo": "https://media.allbud.com/resized/300x200/media/feature/strain/girl-scout-cookies.jpg?t=bfe938bf05b258ee5f1c95c984bcf4693c666a96951daf8e31cbdad8365bfec8",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 28
+      },
+      {
+        "name": "Critical Mass",
+        "type": "Indica Dominant Hybrid",
+        "photo": "https://media.allbud.com/resized/300x200/media/feature/strain/critical-mass.jpg?t=1ca5c17de2272dc6704dada01d17d8b708925d75cf47ccf0be8b4cb1a6f08a3d",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 19
+      },
+      {
+        "name": "Ghost OG",
+        "type": "Indica Dominant Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 18
+      },
+      {
+        "name": "Cherry Pie",
+        "type": "Indica Dominant Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 16
+      },
+      {
+        "name": "UK Cheese",
+        "type": "Indica Dominant Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 20
+      },
+      {
+        "name": "Blueberry",
+        "type": "Indica Dominant Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 16
+      },
+      {
+        "name": "Sunset Sherbet",
+        "type": "Indica Dominant Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 15
+      },
+      {
+        "name": "Blue Magoo",
+        "type": "Indica Dominant Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 16
+      },
+      {
+        "name": "Strawberry Banana",
+        "type": "Indica Dominant Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 22
+      },
+      {
+        "name": "FPOG",
+        "type": "Indica Dominant Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 18
+      },
+      {
+        "name": "Blueberry Headband",
+        "type": "Indica Dominant Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 10
+      },
+      {
+        "name": "Royal Kush",
+        "type": "Indica Dominant Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 23
+      },
+      {
+        "name": "White Fire",
+        "type": "Indica Dominant Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 22
+      },
+      {
+        "name": "Atomic",
+        "type": "Indica Dominant Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 26
+      },
+      {
+        "name": "Gorilla Glue",
+        "type": "Indica Dominant Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 25
+      },
+      {
+        "name": "Night Nurse",
+        "type": "Indica Dominant Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 21
+      },
+      {
+        "name": "Sherbet",
+        "type": "Indica Dominant Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 15
+      },
+      {
+        "name": "Aliens on Moonshine",
+        "type": "Indica Dominant Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 7
+      },
+      {
+        "name": "Cookies",
+        "type": "Indica Dominant Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 24
+      },
+      {
+        "name": "Diamond OG",
+        "type": "Indica Dominant Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 17
+      },
+      {
+        "name": "Dr. Who",
+        "type": "Indica Dominant Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 23
+      },
+      {
+        "name": "Northern Lights #5",
+        "type": "Indica Dominant Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 22
+      },
+      {
+        "name": "Vanilla Kush",
+        "type": "Indica Dominant Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 19
+      },
+      {
+        "name": "White Fire OG",
+        "type": "Indica Dominant Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 22
+      },
+      {
+        "name": "Bubba Kush",
+        "type": "Indica Dominant Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 25
+      },
+      {
+        "name": "DJ Short Blueberry",
+        "type": "Indica Dominant Hybrid",
+        "photo": "https://static.allbud.com/static/images/1px.12c993668732.jpg",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 15
+      },
+      {
+        "name": "OG Kush",
+        "type": "Sativa Dominant Hybrid",
+        "photo": "https://allbud.s3.amazonaws.com/media/feature/strain/og-kush.jpg",
+        "origin": "",
+        "parent_strains": [
+          "Chemdawg",
+          "Hindu Kush"
+        ],
+        "thc_percentage": 23
+      },
+      {
+        "name": "Gary Payton",
+        "type": "Hybrid",
+        "photo": "https://leafly-public.imgix.net/strains/photos/JNC0ZSxRVGZyjFszg0po_GaryPayton%20(1).jpg?auto=compress%2Cformat&w=295&dpr=2",
+        "origin": "",
+        "parent_strains": [
+          "Snowman",
+          "The Y"
+        ],
+        "thc_percentage": 22
+      },
+      {
+        "name": "Acapulco Gold",
+        "type": "Sativa-dominant hybrid",
+        "photo": "",
+        "origin": "Mexican landrace",
+        "parent_strains": [],
+        "thc_percentage": 21.5
+      },
+      {
+        "name": "Bubba Kush",
+        "type": "Indica",
+        "photo": "",
+        "origin": "Hindu Kush mountain chain",
+        "parent_strains": [],
+        "thc_percentage": 27
+      },
+      {
+        "name": "Gorilla Glue",
+        "type": "Indica-dominant hybrid",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Chem's Sister",
+          "Sour Dubb",
+          "Chocolate Diesel"
+        ],
+        "thc_percentage": 32
+      },
+      {
+        "name": "ACDC",
+        "type": "Sativa-dominant hybrid",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Cannatonic",
+          "Ruderalis"
+        ],
+        "thc_percentage": 20
+      },
+      {
+        "name": "Girl Scout Cookies",
+        "type": "Indica-dominant hybrid",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Durban Poison",
+          "OG Kush"
+        ],
+        "thc_percentage": 28
+      },
+      {
+        "name": "Afgoo",
+        "type": "Indica-dominant hybrid",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Maui",
+          "Unnamed Afghanistan Indica"
+        ],
+        "thc_percentage": 28
+      },
+      {
+        "name": "Charlotte's Web",
+        "type": "Indica-dominant hybrid",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 0
+      },
+      {
+        "name": "AK-47",
+        "type": "Sativa-dominant hybrid",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Afghani",
+          "Columbian",
+          "Mexican",
+          "Thai"
+        ],
+        "thc_percentage": 16.5
+      },
+      {
+        "name": "Blue Dream",
+        "type": "Sativa-dominant hybrid",
+        "photo": "",
+        "origin": "California",
+        "parent_strains": [
+          "Blueberry",
+          "Haze"
+        ],
+        "thc_percentage": 24
+      },
+      {
+        "name": "Allen Wrench",
+        "type": "Sativa-dominant hybrid",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "NYC Diesel",
+          "Trainwreck"
+        ],
+        "thc_percentage": 22
+      },
+      {
+        "name": "Banana OG",
+        "type": "Indica-dominant hybrid",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Banana",
+          "OG Kush"
+        ],
+        "thc_percentage": 27
+      },
+      {
+        "name": "Bay 11",
+        "type": "Sativa",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [],
+        "thc_percentage": 19
+      },
+      {
+        "name": "Kosher Kush",
+        "type": "Indica",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "OG Kush"
+        ],
+        "thc_percentage": 25
+      },
+      {
+        "name": "Durban Poison",
+        "type": "Sativa",
+        "photo": "",
+        "origin": "Durban, South Africa",
+        "parent_strains": [],
+        "thc_percentage": 24
+      },
+      {
+        "name": "Super Lemon Haze",
+        "type": "Sativa-dominant hybrid",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Lemon Skunk",
+          "Super Silver Haze"
+        ],
+        "thc_percentage": 25
+      },
+      {
+        "name": "Gelato",
+        "type": "Indica-dominant hybrid",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Thin Mint Girl Scout Cookies",
+          "Sunset Sherbet"
+        ],
+        "thc_percentage": 20
+      },
+      {
+        "name": "Bruce Banner",
+        "type": "Sativa-dominant hybrid",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "OG Kush",
+          "Strawberry Diesel"
+        ],
+        "thc_percentage": 29.5
+      },
+      {
+        "name": "Jack Herer",
+        "type": "Sativa",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Haze",
+          "Northern Lights #5",
+          "Shiva Skunk"
+        ],
+        "thc_percentage": 23
+      },
+      {
+        "name": "Sour Diesel",
+        "type": "Sativa-dominant hybrid",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Super Skunk",
+          "Chemdog"
+        ],
+        "thc_percentage": 26
+      },
+      {
+        "name": "Wedding Cake",
+        "type": "Indica-dominant hybrid",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Cherry Pie",
+          "Girl Scout Cookies"
+        ],
+        "thc_percentage": 25
+      },
+      {
+        "name": "Amnesia",
+        "type": "Sativa-dominant hybrid",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Cinderella 99",
+          "Jack Herer",
+          "Skunk"
+        ],
+        "thc_percentage": 24
+      },
+      {
+        "name": "Trainwreck",
+        "type": "Sativa-dominant hybrid",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Mexican",
+          "Thai",
+          "Afghani"
+        ],
+        "thc_percentage": 21.5
+      },
+      {
+        "name": "Tangerine Haze",
+        "type": "Indica-dominant hybrid",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "NYCD",
+          "G-13/Haze"
+        ],
+        "thc_percentage": 18.5
+      },
+      {
+        "name": "Maui Wowie",
+        "type": "Sativa-dominant hybrid",
+        "photo": "",
+        "origin": "Hawaiian",
+        "parent_strains": [],
+        "thc_percentage": 24
+      },
+      {
+        "name": "Master Kush",
+        "type": "Indica-dominant hybrid",
+        "photo": "",
+        "origin": "",
+        "parent_strains": [
+          "Hindu Kush",
+          "Skunk #1"
+        ],
+        "thc_percentage": 22
+      }
+    ]
+  }
+]
