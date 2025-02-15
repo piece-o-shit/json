@@ -1,0 +1,1386 @@
+[
+
+{
+"documentation":
+
+[
+
+{
+"url": 
+"https://js.langchain.com/docs/versions/v0_3"
+,
+"title": 
+"LangChain v0.3"
+,
+"content": 
+"All LangChain packages now have `@langchain/core` as a peer dependency instead of a direct dependency to help avoid type errors around core version conflicts. You will now need to explicitly install `@langchain/core` rather than relying on an internally resolved version from other packages. Callbacks are now backgrounded and non-blocking by default rather than blocking. This means that if you are using e.g. LangSmith for tracing in a serverless environment, you will need to await the callbacks to ensure they finish before your function ends. Removed deprecated document loader and self-query entrypoints from `langchain` in favor of entrypoints in `@langchain/community` and integration packages. Removed deprecated Google PaLM entrypoints from community in favor of entrypoints in `@langchain/google-vertexai` and `@langchain/google-genai`. Deprecated using objects with a "type" as a `BaseMessageLike` in favor of the more OpenAI-like `MessageWithRole`."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/versions/v0_3/#whats-changed"
+,
+"title": 
+"What's changed"
+,
+"content": 
+"All LangChain packages now have `@langchain/core` as a peer dependency instead of a direct dependency to help avoid type errors around core version conflicts. You will now need to explicitly install `@langchain/core` rather than relying on an internally resolved version from other packages. Callbacks are now backgrounded and non-blocking by default rather than blocking. This means that if you are using e.g. LangSmith for tracing in a serverless environment, you will need to await the callbacks to ensure they finish before your function ends. Removed deprecated document loader and self-query entrypoints from `langchain` in favor of entrypoints in `@langchain/community` and integration packages. Removed deprecated Google PaLM entrypoints from community in favor of entrypoints in `@langchain/google-vertexai` and `@langchain/google-genai`. Deprecated using objects with a "type" as a `BaseMessageLike` in favor of the more OpenAI-like `MessageWithRole`."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/versions/v0_3/#whats-new"
+,
+"title": 
+"What’s new"
+,
+"content": 
+"The following features have been added during the development of 0.2.x: Simplified tool definition and usage. Added a generalized chat model constructor. Added the ability to dispatch custom events. Released LangGraph.js 0.2.0 and made it the recommended way to create agents with LangChain.js. Revamped integration docs and API reference."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/versions/v0_3/#how-to-update-your-code"
+,
+"title": 
+"How to update your code"
+,
+"content": 
+"If you're using `langchain` / `@langchain/community` / `@langchain/core` 0.0 or 0.1, we recommend that you first upgrade to 0.2. If you're using `@langchain/langgraph`, upgrade to `@langchain/langgraph>=0.2.3`. This will work with either 0.2 or 0.3 versions of all the base packages. Here is a complete list of all packages that have been released and what we recommend upgrading your version constraints to in your `package.json`. Any package that now supports `@langchain/core` 0.3 had a minor version bump."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/versions/v0_3/#base-packages"
+,
+"title": 
+"Base packages"
+,
+"content": 
+"| Package | Latest | Recommended `package.json` constraint | | --- | --- | --- | | langchain | 0.3.0 | >=0.3.0 <0.4.0 | | @langchain/community | 0.3.0 | >=0.3.0 <0.4.0 | | @langchain/textsplitters | 0.1.0 | >=0.1.0 <0.2.0 | | @langchain/core | 0.3.0 | >=0.3.0 <0.4.0 |"
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/versions/v0_3/#downstream-packages"
+,
+"title": 
+"Downstream packages"
+,
+"content": 
+"| Package | Latest | Recommended `package.json` constraint | | --- | --- | --- | | @langchain/langgraph | 0.2.3 | >=0.2.3 <0.3 |"
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/versions/v0_3/#integration-packages"
+,
+"title": 
+"Integration packages"
+,
+"content": 
+"| Package | Latest | Recommended `package.json` constraint | | --- | --- | --- | | @langchain/anthropic | 0.3.0 | >=0.3.0 <0.4.0 | | @langchain/aws | 0.1.0 | >=0.1.0 <0.2.0 | | @langchain/azure-cosmosdb | 0.2.0 | >=0.2.0 <0.3.0 | | @langchain/azure-dynamic-sessions | 0.2.0 | >=0.2.0 <0.3.0 | | @langchain/baidu-qianfan | 0.1.0 | >=0.1.0 <0.2.0 | | @langchain/cloudflare | 0.1.0 | >=0.1.0 <0.2.0 | | @langchain/cohere | 0.3.0 | >=0.3.0 <0.4.0 | | @langchain/exa | 0.1.0 | >=0.1.0 <0.2.0 | | @langchain/google-genai | 0.1.0 | >=0.1.0 <0.2.0 | | @langchain/google-vertexai | 0.1.0 | >=0.1.0 <0.2.0 | | @langchain/google-vertexai-web | 0.1.0 | >=0.1.0 <0.2.0 | | @langchain/groq | 0.1.1 | >=0.1.1 <0.2.0 | | @langchain/mistralai | 0.1.0 | >=0.1.0 <0.2.0 | | @langchain/mixedbread-ai | 0.1.0 | >=0.1.0 <0.2.0 | | @langchain/mongodb | 0.1.0 | >=0.1.0 <0.2.0 | | @langchain/nomic | 0.1.0 | >=0.1.0 <0.2.0 | | @langchain/ollama | 0.1.0 | >=0.1.0 <0.2.0 | | @langchain/openai | 0.3.0 | >=0.3.0 <0.4.0 | | @langchain/pinecone | 0.1.0 | >=0.1.0 <0.2.0 | | @langchain/qdrant | 0.1.0 | >=0.1.0 <0.2.0 | | @langchain/redis | 0.1.0 | >=0.1.0 <0.2.0 | | @langchain/weaviate | 0.1.0 | >=0.1.0 <0.2.0 | | @langchain/yandex | 0.1.0 | >=0.1.0 <0.2.0 |"
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/concepts/architecture/"
+,
+"title": 
+"Architecture"
+,
+"content": 
+"LangChain is a framework that consists of a number of packages. The framework includes core components like chat models, vector stores, tools, and more, defined in the @langchain/core package. The main langchain package contains chains and retrieval strategies that make up an application's cognitive architecture. Popular integrations have their own packages for proper versioning. The @langchain/community package contains third-party integrations maintained by the community. The @langchain/langgraph package is an orchestration framework for building multi-actor applications with LLMs. LangSmith is a developer platform for debugging and monitoring LLM applications."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/how_to/vectorstore_retriever/"
+,
+"title": 
+"How use a vector store to retrieve data"
+,
+"content": 
+"This guide assumes familiarity with the following concepts: - Vector stores - Retrievers - Text splitters - Chaining runnables Vector stores can be converted into retrievers using the `.asRetriever()` method, which allows you to more easily compose them in chains. Below, we show a retrieval-augmented generation (RAG) chain that performs question answering over documents using the following steps: 1. Initialize an vector store 2. Create a retriever from that vector store 3. Compose a question answering chain 4. Ask questions! Each of the steps has multiple sub steps and potential configurations, but we'll go through one common flow. First, install the required dependency: See [this section for general instructions on installing integration packages](https://js.langchain.com/docs/how_to/installation#installing-integration-packages). - npm - Yarn - pnpm ```codeBlockLines_AdAo npm install @langchain/openai @langchain/core ``` ```codeBlockLines_AdAo yarn add @langchain/openai @langchain/core ``` ```codeBlockLines_AdAo pnpm add @langchain/openai @langchain/core ``` You can download the `state_of_the_union.txt` file [here](https://github.com/langchain-ai/langchain/blob/master/docs/docs/modules/state_of_the_union.txt). ```codeBlockLines_AdAo import * as fs from "node:fs"; import { OpenAIEmbeddings, ChatOpenAI } from "@langchain/openai"; import { RecursiveCharacterTextSplitter } from "@langchain/textsplitters"; import { MemoryVectorStore } from "langchain/vectorstores/memory"; import { RunnablePassthrough, RunnableSequence, } from "@langchain/core/runnables"; import { StringOutputParser } from "@langchain/core/output_parsers"; import { ChatPromptTemplate } from "@langchain/core/prompts"; import type { Document } from "@langchain/core/documents"; const formatDocumentsAsString = (documents: Document[]) => { return documents.map((document) => document.pageContent).join("\n\n"); }; // Initialize the LLM to use to answer the question. const model = new ChatOpenAI({ model: "gpt-4o", }); const text = fs.readFileSync("state_of_the_union.txt", "utf8"); const textSplitter = new RecursiveCharacterTextSplitter({ chunkSize: 1000 }); const docs = await textSplitter.createDocuments([text]); // Create a vector store from the documents. const vectorStore = await MemoryVectorStore.fromDocuments( docs, new OpenAIEmbeddings() ); // Initialize a retriever wrapper around the vector store const vectorStoreRetriever = vectorStore.asRetriever(); // Create a system & human prompt for the chat model const SYSTEM_TEMPLATE = `Use the following pieces of context to answer the question at the end.\nIf you don't know the answer, just say that you don't know, don't try to make up an answer.\n----------------\n{context}`; const prompt = ChatPromptTemplate.fromMessages([\ ["system", SYSTEM_TEMPLATE],\ ["human", "{question}"],\ ]); const chain = RunnableSequence.from([\ {\ context: vectorStoreRetriever.pipe(formatDocumentsAsString),\ question: new RunnablePassthrough(),\ },\ prompt,\ model,\ new StringOutputParser(),\ ]); const answer = await chain.invoke( "What did the president say about Justice Breyer?" ); console.log({ answer }); /* { answer: 'The president honored Justice Stephen Breyer by recognizing his dedication to serving the country as an Army veteran, Constitutional scholar, and retiring Justice of the United States Supreme Court. He thanked Justice Breyer for his service.' } */ ``` #### API Reference: - OpenAIEmbeddingsfrom `@langchain/openai` - ChatOpenAIfrom `@langchain/openai` - RecursiveCharacterTextSplitterfrom `@langchain/textsplitters` - MemoryVectorStorefrom `langchain/vectorstores/memory` - RunnablePassthroughfrom `@langchain/core/runnables` - RunnableSequencefrom `@langchain/core/runnables` - StringOutputParserfrom `@langchain/core/output_parsers` - ChatPromptTemplatefrom `@langchain/core/prompts` - Documentfrom `@langchain/core/documents` Let's walk through what's happening here. 1. We first load a long text and split it into smaller documents using a text splitter. We then load those documents (which also embeds the documents using the passed `OpenAIEmbeddings` instance) into HNSWLib, our vector store, creating our index. 2. Though we can query the vector store directly, we convert the vector store into a retriever to return retrieved documents in the right format for the question answering chain. 3. We initialize a retrieval chain, which we'll call later in step 4. 4. We ask questions! ## Next steps [​](https://js.langchain.com/docs/how_to/vectorstore_retriever/#next-steps "Direct link to Next steps") You've now learned how to convert a vector store as a retriever. See the individual sections for deeper dives on specific retrievers, the [broader tutorial on RAG](https://js.langchain.com/docs/tutorials/rag), or this section to learn how to [create your own custom retriever over any data source](https://js.langchain.com/docs/how_to/custom_retriever/)."
+}
+
+,
+
+{
+"url": 
+"http://js.langchain.com/v0.2/docs/how_to/custom_retriever"
+,
+"title": 
+"How to write a custom retriever class"
+,
+"content": 
+"This guide assumes familiarity with the following concepts: - Retrievers To create your own retriever, you need to extend the `BaseRetriever` class and implement a `_getRelevantDocuments` method that takes a `string` as its first parameter (and an optional `runManager` for tracing). This method should return an array of `Document` s fetched from some source. This process can involve calls to a database, to the web using `fetch`, or any other source. Note the underscore before `_getRelevantDocuments()`. The base class wraps the non-prefixed version in order to automatically handle tracing of the original call. Here's an example of a custom retriever that returns static documents: ```codeBlockLines_AdAo import { BaseRetriever, type BaseRetrieverInput, } from "@langchain/core/retrievers"; import type { CallbackManagerForRetrieverRun } from "@langchain/core/callbacks/manager"; import { Document } from "@langchain/core/documents"; export interface CustomRetrieverInput extends BaseRetrieverInput {} export class CustomRetriever extends BaseRetriever { lc_namespace = ["langchain", "retrievers"]; constructor(fields?: CustomRetrieverInput) { super(fields); } async _getRelevantDocuments( query: string, runManager?: CallbackManagerForRetrieverRun ): Promise<Document[]> { // Pass `runManager?.getChild()` when invoking internal runnables to enable tracing // const additionalDocs = await someOtherRunnable.invoke(params, runManager?.getChild()); return [\ // ...additionalDocs,\ new Document({\ pageContent: `Some document pertaining to ${query}`,\ metadata: {},\ }),\ new Document({\ pageContent: `Some other document pertaining to ${query}`,\ metadata: {},\ }),\ ]; } } ``` Then, you can call `.invoke()` as follows: ```codeBlockLines_AdAo const retriever = new CustomRetriever({}); await retriever.invoke("LangChain docs"); ``` ```codeBlockLines_AdAo [\ Document {\ pageContent: 'Some document pertaining to LangChain docs',\ metadata: {}\ },\ Document {\ pageContent: 'Some other document pertaining to LangChain docs',\ metadata: {}\ }\ ] ``` ## Next steps [​](https://js.langchain.com/v0.2/docs/how_to/custom_retriever/#next-steps "Direct link to Next steps") You've now seen an example of implementing your own custom retriever. Next, check out the individual sections for deeper dives on specific retrievers, or the broader tutorial on RAG."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/integrations/text_embedding/google_generativeai/"
+,
+"title": 
+"GoogleGenerativeAIEmbeddings | 🦜️🔗 Langchain"
+,
+"content": 
+"This will help you get started with Google Generative AI embedding models using LangChain. For detailed documentation on `GoogleGenerativeAIEmbeddings` features and configuration options, please refer to the API reference."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/integrations/text_embedding/google_generativeai/#integration-details"
+,
+"title": 
+"Integration details"
+,
+"content": 
+"Class: `GoogleGenerativeAIEmbeddings`, Package: `@langchain/google-genai`, Local: ❌, Py support: ✅"
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/integrations/text_embedding/google_generativeai/#setup"
+,
+"title": 
+"Setup"
+,
+"content": 
+"To access Google Generative AI embedding models you’ll need to sign up for a Google AI account, get an API key, and install the `@langchain/google-genai` integration package."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/integrations/text_embedding/google_generativeai/#credentials"
+,
+"title": 
+"Credentials"
+,
+"content": 
+"Get an API key here: https://ai.google.dev/tutorials/setup. Next, set your key as an environment variable named `GOOGLE_API_KEY`."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/integrations/text_embedding/google_generativeai/#installation"
+,
+"title": 
+"Installation"
+,
+"content": 
+"The LangChain `GoogleGenerativeAIEmbeddings` integration lives in the `@langchain/google-genai` package. You may also wish to install the official SDK."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/integrations/text_embedding/google_generativeai/#instantiation"
+,
+"title": 
+"Instantiation"
+,
+"content": 
+"Now we can instantiate our model object and embed text using the `GoogleGenerativeAIEmbeddings` class."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/integrations/text_embedding/google_generativeai/#indexing-and-retrieval"
+,
+"title": 
+"Indexing and Retrieval"
+,
+"content": 
+"Embedding models are often used in retrieval-augmented generation (RAG) flows, both as part of indexing data as well as later retrieving it."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/integrations/text_embedding/google_generativeai/#direct-usage"
+,
+"title": 
+"Direct Usage"
+,
+"content": 
+"Under the hood, the vectorstore and retriever implementations are calling `embeddings.embedDocument(...)` and `embeddings.embedQuery(...)` to create embeddings for the text(s)."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/integrations/text_embedding/google_generativeai/#embed-single-texts"
+,
+"title": 
+"Embed single texts"
+,
+"content": 
+"You can embed queries for search with `embedQuery`. This generates a vector representation specific to the query."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/integrations/text_embedding/google_generativeai/#embed-multiple-texts"
+,
+"title": 
+"Embed multiple texts"
+,
+"content": 
+"You can embed multiple texts for indexing with `embedDocuments`."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/integrations/text_embedding/google_generativeai/#api-reference"
+,
+"title": 
+"API reference"
+,
+"content": 
+"For detailed documentation of all `GoogleGenerativeAIEmbeddings` features and configurations head to the API reference."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/integrations/text_embedding/google_generativeai/#related"
+,
+"title": 
+"Related"
+,
+"content": 
+"Embedding model conceptual guide and how-to guides."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/versions/release_policy/"
+,
+"title": 
+"LangChain releases"
+,
+"content": 
+"The LangChain ecosystem is composed of different component packages (e.g., `@langchain/core`, `langchain`, `@langchain/community`, `@langchain/langgraph`, partner packages etc.)"
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/versions/release_policy/#versioning"
+,
+"title": 
+"Versioning"
+,
+"content": 
+"`langchain` and `@langchain/core` follow semantic versioning in the format of 0. **Y**. **Z**. The packages are under rapid development, and so are currently versioning the packages with a major version of 0. Minor version increases will occur for: - Breaking changes for any public interfaces marked as `beta`. Patch version increases will occur for: - Bug fixes - New features - Any changes to private interfaces - Any changes to `beta` features When upgrading between minor versions, users should review the list of breaking changes and deprecations. From time to time, we will version packages as **release candidates**. These are versions that are intended to be released as stable versions, but we want to get feedback from the community before doing so. Release candidates will be versioned as 0. **Y**. **Z**-rc **.N**. For example, `0.2.0-rc.1`. If no issues are found, the release candidate will be released as a stable version with the same version number. If issues are found, we will release a new release candidate with an incremented `N` value (e.g., `0.2.0-rc.2`)."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/versions/release_policy/#api-stability"
+,
+"title": 
+"API stability"
+,
+"content": 
+"The development of LLM applications is a rapidly evolving field, and we are constantly learning from our users and the community. As such, we expect that the APIs in `langchain` and `@langchain/core` will continue to evolve to better serve the needs of our users. Even though both `langchain` and `@langchain/core` are currently in a pre-1.0 state, we are committed to maintaining API stability in these packages. - Breaking changes to the public API will result in a minor version bump (the second digit) - Any bug fixes or new features will result in a patch version bump (the third digit) We will generally try to avoid making unnecessary changes, and will provide a deprecation policy for features that are being removed."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/versions/release_policy/#deprecation-policy"
+,
+"title": 
+"Deprecation policy"
+,
+"content": 
+"We will generally avoid deprecating features until a better alternative is available. When a feature is deprecated, it will continue to work in the current and next minor version of `langchain` and `@langchain/core`. After that, the feature will be removed. Since we're expecting to space out minor releases by at least 2-3 months, this means that a feature can be removed within 2-6 months of being deprecated. In some situations, we may allow the feature to remain in the code base for longer periods of time, if it's not causing issues in the packages, to reduce the burden on users."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/how_to/chat_streaming/"
+,
+"title": 
+"How to stream chat model responses | 🦜️🔗 Langchain"
+,
+"content": 
+"All chat models implement the Runnable interface, which comes with default implementations of standard runnable methods (i.e. invoke, batch, stream, streamEvents). This guide covers how to use these methods to stream output from chat models. The default implementation does not provide support for token-by-token streaming, and will instead return an AsyncGenerator that will yield all model output in a single chunk. It exists to ensures that the model can be swapped in for any other model as it supports the same standard interface. The ability to stream the output token-by-token depends on whether the provider has implemented token-by-token streaming support. You can see which integrations support token-by-token streaming here. ### Streaming Below, we use a --- to help visualize the delimiter between tokens. ### Pick your chat model: - Groq - OpenAI - Anthropic - FireworksAI - MistralAI - VertexAI #### Install dependencies See this section for general instructions on installing integration packages. - npm - yarn - pnpm ```codeBlockLines_AdAo npm i @langchain/groq ``` ```codeBlockLines_AdAo yarn add @langchain/groq ``` ```codeBlockLines_AdAo pnpm add @langchain/groq ``` #### Add environment variables ```codeBlockLines_AdAo GROQ_API_KEY=your-api-key ``` #### Instantiate the model ```codeBlockLines_AdAo import { ChatGroq } from "@langchain/groq"; const model = new ChatGroq({ model: "mixtral-8x7b-32768", temperature: 0 }); ``` #### Install dependencies See this section for general instructions on installing integration packages. - npm - yarn - pnpm ```codeBlockLines_AdAo npm i @langchain/openai ``` ```codeBlockLines_AdAo yarn add @langchain/openai ``` ```codeBlockLines_AdAo pnpm add @langchain/openai ``` #### Add environment variables ```codeBlockLines_AdAo OPENAI_API_KEY=your-api-key ``` #### Instantiate the model ```codeBlockLines_AdAo import { ChatOpenAI } from "@langchain/openai"; const model = new ChatOpenAI({ model: "gpt-4o-mini", temperature: 0 }); ``` #### Install dependencies See this section for general instructions on installing integration packages. - npm - yarn - pnpm ```codeBlockLines_AdAo npm i @langchain/anthropic ``` ```codeBlockLines_AdAo yarn add @langchain/anthropic ``` ```codeBlockLines_AdAo pnpm add @langchain/anthropic ``` #### Add environment variables ```codeBlockLines_AdAo ANTHROPIC_API_KEY=your-api-key ``` #### Instantiate the model ```codeBlockLines_AdAo import { ChatAnthropic } from "@langchain/anthropic"; const model = new ChatAnthropic({ model: "claude-3-5-sonnet-20240620", temperature: 0 }); ``` #### Install dependencies See this section for general instructions on installing integration packages. - npm - yarn - pnpm ```codeBlockLines_AdAo npm i @langchain/community ``` ```codeBlockLines_AdAo yarn add @langchain/community ``` ```codeBlockLines_AdAo pnpm add @langchain/community ``` #### Add environment variables ```codeBlockLines_AdAo FIREWORKS_API_KEY=your-api-key ``` #### Instantiate the model ```codeBlockLines_AdAo import { ChatFireworks } from "@langchain/community/chat_models/fireworks"; const model = new ChatFireworks({ model: "accounts/fireworks/models/llama-v3p1-70b-instruct", temperature: 0 }); ``` #### Install dependencies See this section for general instructions on installing integration packages. - npm - yarn - pnpm ```codeBlockLines_AdAo npm i @langchain/mistralai ``` ```codeBlockLines_AdAo yarn add @langchain/mistralai ``` ```codeBlockLines_AdAo pnpm add @langchain/mistralai ``` #### Add environment variables ```codeBlockLines_AdAo MISTRAL_API_KEY=your-api-key ``` #### Instantiate the model ```codeBlockLines_AdAo import { ChatMistralAI } from "@langchain/mistralai"; const model = new ChatMistralAI({ model: "mistral-large-latest", temperature: 0 }); ``` #### Install dependencies See this section for general instructions on installing integration packages. - npm - yarn - pnpm ```codeBlockLines_AdAo npm i @langchain/google-vertexai ``` ```codeBlockLines_AdAo yarn add @langchain/google-vertexai ``` ```codeBlockLines_AdAo pnpm add @langchain/google-vertexai ``` #### Add environment variables ```codeBlockLines_AdAo GOOGLE_APPLICATION_CREDENTIALS=credentials.json ``` #### Instantiate the model ```codeBlockLines_AdAo import { ChatVertexAI } from "@langchain/google-vertexai"; const model = new ChatVertexAI({ model: "gemini-1.5-flash", temperature: 0 }); ``` ```codeBlockLines_AdAo const stream = await model.stream( "Write me a 1 verse song about goldfish on the moon" ); for await (const chunk of stream) { console.log(`${chunk.content}\n---`); } ``` ### Stream events Chat models also support the standard streamEvents() method to stream more granular events from within chains. This method is useful if you’re streaming output from a larger LLM application that contains multiple steps (e.g., a chain composed of a prompt, chat model and parser): ```codeBlockLines_AdAo const eventStream = await model.streamEvents( "Write me a 1 verse song about goldfish on the moon", { version: "v2", } ); const events = []; for await (const event of eventStream) { events.push(event); } events.slice(0, 3); ``` ### Next steps You’ve now seen a few ways you can stream chat model responses. Next, check out this guide for more on streaming with other LangChain modules."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/how_to/agent_executor/"
+,
+"title": 
+"How to use legacy LangChain Agents (AgentExecutor)"
+,
+"content": 
+"This guide assumes familiarity with the following concepts: - Tools By themselves, language models can’t take actions - they just output text. Agents are systems that use an LLM as a reasoning engine to determine which actions to take and what the inputs to those actions should be. The results of those actions can then be fed back into the agent and it determine whether more actions are needed, or whether it is okay to finish. In this tutorial we will build an agent that can interact with multiple different tools: one being a local database, the other being a search engine. You will be able to ask this agent questions, watch it call tools, and have conversations with it. This section will cover building with LangChain Agents. LangChain Agents are fine for getting started, but past a certain point you will likely want flexibility and control that they do not offer. For working with more advanced agents, we’d recommend checking out LangGraph. Concepts we will cover are: - Using language models, in particular their tool calling ability - Creating a Retriever to expose specific information to our agent - Using a Search Tool to look up things online - Chat History, which allows a chatbot to “remember” past interactions and take them into account when responding to followup questions. - Debugging and tracing your application using LangSmith. This guide (and most of the other guides in the documentation) uses Jupyter notebooks and assumes the reader is as well. Jupyter notebooks are perfect for learning how to work with LLM systems because oftentimes things can go wrong (unexpected output, API down, etc) and going through guides in an interactive environment is a great way to better understand them. To install LangChain (and cheerio for the web loader) run: - npm yarn pnpm For more details, see our Installation guide. Many of the applications you build with LangChain will contain multiple steps with multiple invocations of LLM calls. As these applications get more and more complex, it becomes crucial to be able to inspect what exactly is going on inside your chain or agent. The best way to do this is with LangSmith. We first need to create the tools we want to use. We will use two tools: Tavily (to search online) and then a retriever over a local index we will create. We have a built-in tool in LangChain to easily use Tavily search engine as tool. Note that this requires an API key - they have a free tier, but if you don’t have one or don’t want to create one, you can always ignore this step. Now that we have populated our index that we will do doing retrieval over, we can easily turn it into a tool (the format needed for an agent to properly use it). Next, let’s learn how to use a language model by to call tools. LangChain supports many different language models that you can use interchangeably - select the one you want to use below! Now that we have defined the tools and the LLM, we can create the agent. We will be using a tool calling agent - for more information on this type of agent, as well as other options, see this guide. Finally, we combine the agent (the brains) with the tools inside the AgentExecutor (which will repeatedly call the agent and execute tools). We can now run the agent on a few queries! Note that for now, these are all stateless queries (it won’t remember previous interactions). As mentioned earlier, this agent is stateless. This means it does not remember previous interactions. To give it memory we need to pass in previous chat_history. That’s a wrap! In this quick start we covered how to create a simple agent. Agents are a complex topic, and there’s lot to learn!"
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/how_to/split_by_token/"
+,
+"title": 
+"How to split text by tokens | 🦜️🔗 Langchain"
+,
+"content": 
+"This guide assumes familiarity with the following concepts: - [Text splitters](https://js.langchain.com/docs/concepts/text_splitters) Language models have a token limit. You should not exceed the token limit. When you split your text into chunks it is therefore a good idea to count the number of tokens. There are many tokenizers. When you count tokens in your text you should use the same tokenizer as used in the language model. ## `js-tiktoken` [​](https://js.langchain.com/docs/how_to/split_by_token/#js-tiktoken "Direct link to js-tiktoken") note [js-tiktoken](https://github.com/openai/js-tiktoken) is a JavaScript version of the `BPE` tokenizer created by OpenAI. We can use `js-tiktoken` to estimate tokens used. It is tuned to OpenAI models. 1. How the text is split: by character passed in. 2. How the chunk size is measured: by the `js-tiktoken` tokenizer. You can use the [`TokenTextSplitter`](https://api.js.langchain.com/classes/langchain_textsplitters.TokenTextSplitter.html) like this: ```codeBlockLines_AdAo import { TokenTextSplitter } from "@langchain/textsplitters"; import * as fs from "node:fs"; // Load an example document const rawData = await fs.readFileSync( "../../../../examples/state_of_the_union.txt" ); const stateOfTheUnion = rawData.toString(); const textSplitter = new TokenTextSplitter({ chunkSize: 10, chunkOverlap: 0, }); const texts = await textSplitter.splitText(stateOfTheUnion); console.log(texts[0]); ``` ```codeBlockLines_AdAo Madam Speaker, Madam Vice President, our ``` **Note:** Some written languages (e.g. Chinese and Japanese) have characters which encode to 2 or more tokens. Using the `TokenTextSplitter` directly can split the tokens for a character between two chunks causing malformed Unicode characters. ## Next steps [​](https://js.langchain.com/docs/how_to/split_by_token/#next-steps "Direct link to Next steps") You’ve now learned a method for splitting text based on token count. Next, check out the [full tutorial on retrieval-augmented\ generation](https://js.langchain.com/docs/tutorials/rag)."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/how_to/tool_configure/"
+,
+"title": 
+"How to access the RunnableConfig from a tool | 🦜️🔗 Langchain"
+,
+"content": 
+"Tools are runnables, and you can treat them the same way as any other runnable at the interface level - you can call `invoke()`, `batch()`, and `stream()` on them as normal. However, when writing custom tools, you may want to invoke other runnables like chat models or retrievers. In order to properly trace and configure those sub-invocations, you’ll need to manually access and pass in the tool’s current `RunnableConfig` object. This guide covers how to do this for custom tools created in different ways. ## From the `tool` method Accessing the `RunnableConfig` object for a custom tool created with the `tool` helper method is simple - it’s always the second parameter passed into your custom function. Here’s an example: ```codeBlockLines_AdAo import { z } from "zod"; import { tool } from "@langchain/core/tools"; import type { RunnableConfig } from "@langchain/core/runnables"; const reverseTool = tool( async (input: { text: string }, config?: RunnableConfig) => { const originalString = input.text + (config?.configurable?.additional_field ?? ""); return originalString.split("").reverse().join(""); }, { name: "reverse", description: "A test tool that combines input text with a configurable parameter.", schema: z.object({ text: z.string(), }), } ); ``` Then, if we invoke the tool with a `config` containing a `configurable` field, we can see that `additional_field` is passed through correctly: ```codeBlockLines_AdAo await reverseTool.invoke( { text: "abc" }, { configurable: { additional_field: "123" } } ); ``` ```codeBlockLines_AdAo 321cba ``` ## Next steps You’ve now seen how to configure and stream events from within a tool. Next, check out the following guides for more on using tools: - Pass [tool results back to a model](https://js.langchain.com/docs/how_to/tool_results_pass_to_model) - Building [tool-using chains and agents](https://js.langchain.com/docs/how_to#tools) - Getting [structured outputs](https://js.langchain.com/docs/how_to/structured_output/) from models"
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/concepts/tool_calling/"
+,
+"title": 
+"Tool calling"
+,
+"content": 
+"Many AI applications interact directly with humans. In these cases, it is appropriate for models to respond in natural language. But what about cases where we want a model to also interact directly with systems, such as databases or an API? These systems often have a particular input schema; for example, APIs frequently have a required payload structure. This need motivates the concept of tool calling. You can use tool calling to request model responses that match a particular schema."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/concepts/tool_calling/#key-concepts"
+,
+"title": 
+"Key concepts"
+,
+"content": 
+"(1) Tool Creation: Use the tool function to create a tool. A tool is an association between a function and its schema. (2) Tool Binding: The tool needs to be connected to a model that supports tool calling. This gives the model awareness of the tool and the associated input schema required by the tool. (3) Tool Calling: When appropriate, the model can decide to call a tool and ensure its response conforms to the tool's input schema. (4) Tool Execution: The tool can be executed using the arguments provided by the model."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/concepts/tool_calling/#recommended-usage"
+,
+"title": 
+"Recommended usage"
+,
+"content": 
+"This pseudo-code illustrates the recommended workflow for using tool calling. Created tools are passed to .bindTools() method as a list. This model can be called, as usual. If a tool call is made, model's response will contain the tool call arguments. The tool call arguments can be passed directly to the tool."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/concepts/tool_calling/#tool-creation"
+,
+"title": 
+"Tool creation"
+,
+"content": 
+"The recommended way to create a tool is using the tool function. Example: const multiply = tool(({ a, b }: { a: number; b: number }): number => { return a * b; }, { name: "multiply", description: "Multiply two numbers", schema: z.object({ a: z.number(), b: z.number(), }), });"
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/concepts/tool_calling/#tool-binding"
+,
+"title": 
+"Tool binding"
+,
+"content": 
+"Many model providers support tool calling. The central concept to understand is that LangChain provides a standardized interface for connecting tools to models. The .bindTools() method can be used to specify which tools are available for a model to call."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/concepts/tool_calling/#tool-calling-1"
+,
+"title": 
+"Tool calling"
+,
+"content": 
+"A key principle of tool calling is that the model decides when to use a tool based on the input's relevance. The model doesn't always need to call a tool. For example, given an unrelated input, the model would not call the tool. However, if we pass an input relevant to the tool, the model should choose to call it."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/concepts/tool_calling/#tool-execution"
+,
+"title": 
+"Tool execution"
+,
+"content": 
+"Tools implement the Runnable interface, which means that they can be invoked (e.g., tool.invoke(args)) directly. LangGraph offers pre-built components that will often invoke the tool in behalf of the user."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/concepts/tool_calling/#best-practices"
+,
+"title": 
+"Best practices"
+,
+"content": 
+"When designing tools to be used by a model, it is important to keep in mind that: Models that have explicit tool-calling APIs will be better at tool calling than non-fine-tuned models. Models will perform better if the tools have well-chosen names and descriptions. Simple, narrowly scoped tools are easier for models to use than complex tools. Asking the model to select from a large list of tools poses challenges for the model."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/concepts/vectorstores/"
+,
+"title": 
+"Vector stores"
+,
+"content": 
+"Vector stores are specialized data stores that enable indexing and retrieving information based on vector representations. These vectors, called embeddings, capture the semantic meaning of data that has been embedded. Vector stores are frequently used to search over unstructured data, such as text, images, and audio, to retrieve relevant information based on semantic similarity rather than exact keyword matches."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/integrations/vectorstores/"
+,
+"title": 
+"Integrations"
+,
+"content": 
+"LangChain has a large number of vectorstore integrations, allowing users to easily switch between different vectorstore implementations. Please see the full list of LangChain vectorstore integrations."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/concepts/vectorstores/#interface"
+,
+"title": 
+"Interface"
+,
+"content": 
+"LangChain provides a standard interface for working with vector stores, allowing users to easily switch between different vectorstore implementations. The interface consists of basic methods for writing, deleting and searching for documents in the vector store. The key methods are: `addDocuments`: Add a list of texts to the vector store. `deleteDocuments` / `delete`: Delete a list of documents from the vector store. `similaritySearch`: Search for similar documents to a given query."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/concepts/vectorstores/#initialization"
+,
+"title": 
+"Initialization"
+,
+"content": 
+"Most vectors in LangChain accept an embedding model as an argument when initializing the vector store. We will use LangChain's MemoryVectorStore implementation to illustrate the API."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/concepts/vectorstores/#adding-documents"
+,
+"title": 
+"Adding documents"
+,
+"content": 
+"To add documents, use the `addDocuments` method. This API works with a list of Document objects. Document objects all have pageContent and metadata attributes, making them a universal way to store unstructured text and associated metadata."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/concepts/vectorstores/#delete"
+,
+"title": 
+"Delete"
+,
+"content": 
+"To delete documents, use the `deleteDocuments` method which takes a list of document IDs to delete."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/concepts/vectorstores/#search"
+,
+"title": 
+"Search"
+,
+"content": 
+"Vector stores embed and store the documents that added. If we pass in a query, the vectorstore will embed the query, perform a similarity search over the embedded documents, and return the most similar ones. This captures two important concepts: first, there needs to be a way to measure the similarity between the query and any embedded document. Second, there needs to be an algorithm to efficiently perform this similarity search across all embedded documents."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/concepts/vectorstores/#similarity-metrics"
+,
+"title": 
+"Similarity metrics"
+,
+"content": 
+"A critical advantage of embeddings vectors is they can be compared using many simple mathematical operations: Cosine Similarity: Measures the cosine of the angle between two vectors. Euclidean Distance: Measures the straight-line distance between two points. Dot Product: Measures the projection of one vector onto another. The choice of similarity metric can sometimes be selected when initializing the vectorstore."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/concepts/vectorstores/#similarity-search"
+,
+"title": 
+"Similarity search"
+,
+"content": 
+"Given a similarity metric to measure the distance between the embedded query and any embedded document, we need an algorithm to efficiently search over all the embedded documents to find the most similar ones. There are various ways to do this. As an example, many vectorstores implement HNSW (Hierarchical Navigable Small World), a graph-based index structure that allows for efficient similarity search."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/concepts/vectorstores/#metadata-filtering"
+,
+"title": 
+"Metadata filtering"
+,
+"content": 
+"While vectorstore implement a search algorithm to efficiently search over all the embedded documents to find the most similar ones, many also support filtering on metadata. This allows structured filters to reduce the size of the similarity search space. These two concepts work well together: Semantic search: Query the unstructured data directly, often using via embedding or keyword similarity. Metadata search: Apply structured query to the metadata, filtering specific documents."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/concepts/vectorstores/#advanced-search-and-retrieval-techniques"
+,
+"title": 
+"Advanced search and retrieval techniques"
+,
+"content": 
+"While algorithms like HNSW provide the foundation for efficient similarity search in many cases, additional techniques can be employed to improve search quality and diversity. For example, maximal marginal relevance is a re-ranking algorithm used to diversify search results, which is applied after the initial similarity search to ensure a more diverse set of results."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/how_to/graph_semantic/"
+,
+"title": 
+"How to add a semantic layer over the database | 🦜️🔗 Langchain"
+,
+"content": 
+"You can use database queries to retrieve information from a graph database like Neo4j. One option is to use LLMs to generate Cypher statements. While that option provides excellent flexibility, the solution could be brittle and not consistently generating precise Cypher statements. Instead of generating Cypher statements, we can implement Cypher templates as tools in a semantic layer that an LLM agent can interact with. The code in this guide will execute Cypher statements against the provided database. For production, make sure that the database connection uses credentials that are narrowly-scoped to only include necessary permissions. Failure to do so may result in data corruption or loss, since the calling code may attempt commands that would result in deletion, mutation of data if appropriately prompted or reading sensitive data if such data is present in the database. ## Setup #### Install dependencies - npm - yarn - pnpm ```codeBlockLines_AdAo npm i langchain @langchain/community @langchain/openai @langchain/core neo4j-driver zod ``` ```codeBlockLines_AdAo yarn add langchain @langchain/community @langchain/openai @langchain/core neo4j-driver zod ``` ```codeBlockLines_AdAo pnpm add langchain @langchain/community @langchain/openai @langchain/core neo4j-driver zod ``` #### Set environment variables We’ll use OpenAI in this example: ```codeBlockLines_AdAo OPENAI_API_KEY=your-api-key # Optional, use LangSmith for best-in-class observability LANGSMITH_API_KEY=your-api-key LANGSMITH_TRACING=true # Reduce tracing latency if you are not in a serverless environment # LANGCHAIN_CALLBACKS_BACKGROUND=true ``` Next, we need to define Neo4j credentials. Follow [these installation steps](https://neo4j.com/docs/operations-manual/current/installation/) to set up a Neo4j database. ```codeBlockLines_AdAo NEO4J_URI="bolt://localhost:7687" NEO4J_USERNAME="neo4j" NEO4J_PASSWORD="password" ``` The below example will create a connection with a Neo4j database and will populate it with example data about movies and their actors. ```codeBlockLines_AdAo import "neo4j-driver"; import { Neo4jGraph } from "@langchain/community/graphs/neo4j_graph"; const url = process.env.NEO4J_URI; const username = process.env.NEO4J_USER; const password = process.env.NEO4J_PASSWORD; const graph = await Neo4jGraph.initialize({ url, username, password }); // Import movie information const moviesQuery = `LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/tomasonjo/blog-datasets/main/movies/movies_small.csv' AS row MERGE (m:Movie {id:row.movieId}) SET m.released = date(row.released), m.title = row.title, m.imdbRating = toFloat(row.imdbRating) FOREACH (director in split(row.director, '|') | MERGE (p:Person {name:trim(director)}) MERGE (p)-[:DIRECTED]->(m)) FOREACH (actor in split(row.actors, '|') | MERGE (p:Person {name:trim(actor)}) MERGE (p)-[:ACTED_IN]->(m)) FOREACH (genre in split(row.genres, '|') | MERGE (g:Genre {name:trim(genre)}) MERGE (m)-[:IN_GENRE]->(g))`; await graph.query(moviesQuery); ``` ## Custom tools with Cypher templates A semantic layer consists of various tools exposed to an LLM that it can use to interact with a knowledge graph. They can be of various complexity. You can think of each tool in a semantic layer as a function. The function we will implement is to retrieve information about movies or their cast. ```codeBlockLines_AdAo const descriptionQuery = `MATCH (m:Movie|Person) WHERE m.title CONTAINS $candidate OR m.name CONTAINS $candidate MATCH (m)-[r:ACTED_IN|HAS_GENRE]-(t) WITH m, type(r) as type, collect(coalesce(t.name, t.title)) as names WITH m, type+": "+reduce(s="", n IN names | s + n + ", ") as types WITH m, collect(types) as contexts WITH m, "type:" + labels(m)[0] + "\ntitle: "+ coalesce(m.title, m.name) + "\nyear: "+coalesce(m.released,"")+"\n" + reduce(s="", c in contexts | s + substring(c, 0, size(c)-2) +"\n") as context RETURN context LIMIT 1`; const getInformation = async (entity: string) => { try { const data = await graph.query(descriptionQuery, { candidate: entity }); return data[0]["context"]; } catch (error) { return "No information was found"; } }; ``` You can observe that we have defined the Cypher statement used to retrieve information. Therefore, we can avoid generating Cypher statements and use the LLM agent to only populate the input parameters. To provide additional information to an LLM agent about when to use the tool and their input parameters, we wrap the function as a tool. ```codeBlockLines_AdAo import { tool } from "@langchain/core/tools"; import { z } from "zod"; const informationTool = tool( (input) => { return getInformation(input.entity); }, { name: "Information", description: "useful for when you need to answer questions about various actors or movies", schema: z.object({ entity: z .string() .describe("movie or a person mentioned in the question"), }), } ); ``` ## OpenAI Agent LangChain expression language makes it very convenient to define an agent to interact with a graph database over the semantic layer. ```codeBlockLines_AdAo import { ChatOpenAI } from "@langchain/openai"; import { AgentExecutor } from "langchain/agents"; import { formatToOpenAIFunctionMessages } from "langchain/agents/format_scratchpad"; import { OpenAIFunctionsAgentOutputParser } from "langchain/agents/openai/output_parser"; import { convertToOpenAIFunction } from "@langchain/core/utils/function_calling"; import { ChatPromptTemplate, MessagesPlaceholder, } from "@langchain/core/prompts"; import { AIMessage, BaseMessage, HumanMessage } from "@langchain/core/messages"; import { RunnableSequence } from "@langchain/core/runnables"; const llm = new ChatOpenAI({ model: "gpt-3.5-turbo", temperature: 0 }); const tools = [informationTool]; const llmWithTools = llm.bind({ functions: tools.map(convertToOpenAIFunction), }); const prompt = ChatPromptTemplate.fromMessages([ [ "system", "You are a helpful assistant that finds information about movies and recommends them. If tools require follow up questions, make sure to ask the user for clarification. Make sure to include any available options that need to be clarified in the follow up questions Do only the things the user specifically requested.", ], new MessagesPlaceholder("chat_history"), ["human", "{input}"], new MessagesPlaceholder("agent_scratchpad"), ]); const _formatChatHistory = (chatHistory) => { const buffer: Array<BaseMessage> = []; for (const [human, ai] of chatHistory) { buffer.push(new HumanMessage({ content: human })); buffer.push(new AIMessage({ content: ai })); } return buffer; }; const agent = RunnableSequence.from([ { input: (x) => x.input, chat_history: (x) => { if ("chat_history" in x) { return _formatChatHistory(x.chat_history); } return []; }, agent_scratchpad: (x) => { if ("steps" in x) { return formatToOpenAIFunctionMessages(x.steps); } return []; }, }, prompt, llmWithTools, new OpenAIFunctionsAgentOutputParser(), ]); const agentExecutor = new AgentExecutor({ agent, tools }); await agentExecutor.invoke({ input: "Who played in Casino?" }); ``` * * * #### Was this page helpful?"
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/how_to/tools_few_shot/"
+,
+"title": 
+"How to use few-shot prompting with tool calling | 🦜️🔗 Langchain"
+,
+"content": 
+"For more complex tool use it’s very useful to add few-shot examples to the prompt. We can do this by adding AIMessages with ToolCalls and corresponding ToolMessages to our prompt. First define a model and a calculator tool: ```codeBlockLines_AdAo import { tool } from "@langchain/core/tools"; import { z } from "zod"; import { ChatOpenAI } from "@langchain/openai"; const llm = new ChatOpenAI({ model: "gpt-4o", temperature: 0 }); const calculatorSchema = z.object({ operation: z .enum(["add", "subtract", "multiply", "divide"]) .describe("The type of operation to execute."), number1: z.number().describe("The first number to operate on."), number2: z.number().describe("The second number to operate on."), }); const calculatorTool = tool( async ({ operation, number1, number2 }) => { if (operation === "add") { return `${number1 + number2}`; } else if (operation === "subtract") { return `${number1 - number2}`; } else if (operation === "multiply") { return `${number1 * number2}`; } else if (operation === "divide") { return `${number1 / number2}`; } else { throw new Error("Invalid operation."); } }, { name: "calculator", description: "Can perform mathematical operations.", schema: calculatorSchema, } ); const llmWithTools = llm.bindTools([calculatorTool]); ``` Our calculator can handle common addition, subtraction, multiplication, and division. But what happens if we ask about a new mathematical operator, `🦜`? Let’s see what happens when we use it naively: ```codeBlockLines_AdAo const res = await llmWithTools.invoke("What is 3 🦜 12"); console.log(res.content); console.log(res.tool_calls); ``` It doesn’t quite know how to interpret `🦜` as an operation, and it defaults to `multiply`. Now, let’s try giving it some examples in the form of a manufactured messages to steer it towards `divide`: ```codeBlockLines_AdAo import { HumanMessage, AIMessage, ToolMessage } from "@langchain/core/messages"; const res = await llmWithTools.invoke([ new HumanMessage("What is 333382 🦜 1932?"), new AIMessage({ content: "The 🦜 operator is shorthand for division, so we call the divide tool.", tool_calls: [ { id: "12345", name: "calculator", args: { number1: 333382, number2: 1932, operation: "divide", }, }, ], }), new ToolMessage({ tool_call_id: "12345", content: "The answer is 172.558.", }), new AIMessage("The answer is 172.558."), new HumanMessage("What is 6 🦜 2?"), new AIMessage({ content: "The 🦜 operator is shorthand for division, so we call the divide tool.", tool_calls: [ { id: "54321", name: "calculator", args: { number1: 6, number2: 2, operation: "divide", }, }, ], }), new ToolMessage({ tool_call_id: "54321", content: "The answer is 3.", }), new AIMessage("The answer is 3."), new HumanMessage("What is 3 🦜 12?"), ]); console.log(res.tool_calls); ``` And we can see that it now equates `🦜` with the `divide` operation in the correct way!"
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/how_to/query_few_shot/"
+,
+"title": 
+"How to add examples to the prompt | 🦜️🔗 Langchain"
+,
+"content": 
+"This guide assumes familiarity with the following: - Query analysis As our query analysis becomes more complex, the LLM may struggle to understand how exactly it should respond in certain scenarios. In order to improve performance here, we can add examples to the prompt to guide the LLM. Let’s take a look at how we can add examples for the LangChain YouTube video query analyzer we built in the query analysis tutorial. ## Setup ### Install dependencies - npm - yarn - pnpm ```codeBlockLines_AdAo npm i @langchain/core zod uuid ``` ### Set environment variables ```codeBlockLines_AdAo # Optional, use LangSmith for best-in-class observability LANGSMITH_API_KEY=your-api-key LANGSMITH_TRACING=true ``` ## Query schema We’ll define a query schema that we want our model to output. To make our query analysis a bit more interesting, we’ll add a `subQueries` field that contains more narrow questions derived from the top level question. ```codeBlockLines_AdAo import { z } from "zod"; const subQueriesDescription = ` If the original question contains multiple distinct sub-questions, or if there are more generic questions that would be helpful to answer in order to answer the original question, write a list of all relevant sub-questions. Make sure this list is comprehensive and covers all parts of the original question. It's ok if there's redundancy in the sub-questions, it's better to cover all the bases than to miss some. Make sure the sub-questions are as narrowly focused as possible in order to get the most relevant results.`; const searchSchema = z.object({ query: z .string() .describe("Primary similarity search query applied to video transcripts."), subQueries: z.array(z.string()).optional().describe(subQueriesDescription), publishYear: z.number().optional().describe("Year video was published"), }); ``` ## Query generation ### Pick your chat model: - Groq - OpenAI - Anthropic - FireworksAI - MistralAI - VertexAI #### Install dependencies ```codeBlockLines_AdAo npm i @langchain/groq ``` #### Add environment variables ```codeBlockLines_AdAo GROQ_API_KEY=your-api-key ``` #### Instantiate the model ```codeBlockLines_AdAo import { ChatGroq } from "@langchain/groq"; const llm = new ChatGroq({ model: "mixtral-8x7b-32768", temperature: 0 }); ``` #### Install dependencies ```codeBlockLines_AdAo npm i @langchain/openai ``` #### Add environment variables ```codeBlockLines_AdAo OPENAI_API_KEY=your-api-key ``` #### Instantiate the model ```codeBlockLines_AdAo import { ChatOpenAI } from "@langchain/openai"; const llm = new ChatOpenAI({ model: "gpt-4o-mini", temperature: 0 }); ``` #### Install dependencies ```codeBlockLines_AdAo npm i @langchain/anthropic ``` #### Add environment variables ```codeBlockLines_AdAo ANTHROPIC_API_KEY=your-api-key ``` #### Instantiate the model ```codeBlockLines_AdAo import { ChatAnthropic } from "@langchain/anthropic"; const llm = new ChatAnthropic({ model: "claude-3-5-sonnet-20240620", temperature: 0 }); ``` #### Install dependencies ```codeBlockLines_AdAo npm i @langchain/community ``` #### Add environment variables ```codeBlockLines_AdAo FIREWORKS_API_KEY=your-api-key ``` #### Instantiate the model ```codeBlockLines_AdAo import { ChatFireworks } from "@langchain/community/chat_models/fireworks"; const llm = new ChatFireworks({ model: "accounts/fireworks/models/llama-v3p1-70b-instruct", temperature: 0 }); ``` #### Install dependencies ```codeBlockLines_AdAo npm i @langchain/mistralai ``` #### Add environment variables ```codeBlockLines_AdAo MISTRAL_API_KEY=your-api-key ``` #### Instantiate the model ```codeBlockLines_AdAo import { ChatMistralAI } from "@langchain/mistralai"; const llm = new ChatMistralAI({ model: "mistral-large-latest", temperature: 0 }); ``` #### Install dependencies ```codeBlockLines_AdAo npm i @langchain/google-vertexai ``` #### Add environment variables ```codeBlockLines_AdAo GOOGLE_APPLICATION_CREDENTIALS=credentials.json ``` #### Instantiate the model ```codeBlockLines_AdAo import { ChatVertexAI } from "@langchain/google-vertexai"; const llm = new ChatVertexAI({ model: "gemini-1.5-flash", temperature: 0 }); ``` ```codeBlockLines_AdAo import { ChatPromptTemplate } from "@langchain/core/prompts"; import { RunnablePassthrough, RunnableSequence, } from "@langchain/core/runnables"; const system = `You are an expert at converting user questions into database queries. You have access to a database of tutorial videos about a software library for building LLM-powered applications. Given a question, return a list of database queries optimized to retrieve the most relevant results. If there are acronyms or words you are not familiar with, do not try to rephrase them.`; const prompt = ChatPromptTemplate.fromMessages([ ["system", system], ["placeholder", "{examples}"], ["human", "{question}"], ]); const llmWithTools = llm.withStructuredOutput(searchSchema, { name: "Search", }); const queryAnalyzer = RunnableSequence.from([ { question: new RunnablePassthrough(), }, prompt, llmWithTools, ]); ``` Let’s try out our query analyzer without any examples in the prompt: ```codeBlockLines_AdAo await queryAnalyzer.invoke( "what's the difference between web voyager and reflection agents? do both use langgraph?" ); ``` ```codeBlockLines_AdAo { query: "difference between Web Voyager and Reflection Agents", subQueries: [ "Do Web Voyager and Reflection Agents use LangGraph?" ] } ``` ## Adding examples and tuning the prompt This works pretty well, but we probably want it to decompose the question even further to separate the queries about Web Voyager and Reflection Agents. To tune our query generation results, we can add some examples of inputs questions and gold standard output queries to our prompt. ```codeBlockLines_AdAo const examples = []; ``` ```codeBlockLines_AdAo const question = "What's chat langchain, is it a langchain template?"; const query = { query: "What is chat langchain and is it a langchain template?", subQueries: ["What is chat langchain", "What is a langchain template"], }; examples.push({ input: question, toolCalls: [query] }); ``` Now we need to update our prompt template and chain so that the examples are included in each prompt. Since we’re working with LLM model function-calling, we’ll need to do a bit of extra structuring to send example inputs and outputs to the model. We’ll create a `toolExampleToMessages` helper function to handle this for us: ```codeBlockLines_AdAo import { AIMessage, BaseMessage, HumanMessage, SystemMessage, ToolMessage, } from "@langchain/core/messages"; import { v4 as uuidV4 } from "uuid"; const toolExampleToMessages = ( example: Record<string, any> ): Array<BaseMessage> => { const messages: Array<BaseMessage> = [ new HumanMessage({ content: example.input }), ]; const openaiToolCalls = example.toolCalls.map((toolCall) => { return { id: uuidV4(), type: "function" as const, function: { name: "search", arguments: JSON.stringify(toolCall), }, }; }); messages.push( new AIMessage({ content: "", additional_kwargs: { tool_calls: openaiToolCalls }, }) ); const toolOutputs = "toolOutputs" in example ? example.toolOutputs : Array(openaiToolCalls.length).fill( "You have correctly called this tool." ); toolOutputs.forEach((output, index) => { messages.push( new ToolMessage({ content: output, tool_call_id: openaiToolCalls[index].id, }) ); }); return messages; }; const exampleMessages = examples.map((ex) => toolExampleToMessages(ex)).flat(); ``` ```codeBlockLines_AdAo import { ChatPromptTemplate, MessagesPlaceholder, } from "@langchain/core/prompts"; import { RunnableSequence } from "@langchain/core/runnables"; const queryAnalyzerWithExamples = RunnableSequence.from([ { question: new RunnablePassthrough(), examples: () => exampleMessages, }, prompt, llmWithTools, ]); ``` ```codeBlockLines_AdAo await queryAnalyzerWithExamples.invoke( "what's the difference between web voyager and reflection agents? do both use langgraph?" ); ``` ```codeBlockLines_AdAo { query: "Difference between Web Voyager and Reflection agents, do they both use LangGraph?", subQueries: [ "Difference between Web Voyager and Reflection agents", "Do Web Voyager and Reflection agents use LangGraph" ] } ``` Thanks to our examples we get a slightly more decomposed search query. With some more prompt engineering and tuning of our examples we could improve query generation even more. You can see that the examples are passed to the model as messages in the LangSmith trace. ## Next steps You’ve now learned some techniques for combining few-shotting with query analysis. Next, check out some of the other query analysis guides in this section, like how to deal with high cardinality data."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/how_to/stream_agent_client/"
+,
+"title": 
+"How to stream agent data to the client"
+,
+"content": 
+"This guide will walk you through how we stream agent data to the client using React Server Components inside this directory. The code in this doc is taken from the page.tsx and action.ts files in this directory. To view the full, uninterrupted code, click here for the actions file and here for the client file. Prerequisites This guide assumes familiarity with the following concepts: - LangChain Expression Language - Chat models - Tool calling - Agents ## Setup First, install the necessary LangChain & AI SDK packages: - npm - Yarn - pnpm In this demo we'll be using the TavilySearchResults tool, which requires an API key. You can get one here, or you can swap it out for another tool of your choice, like WikipediaQueryRun which doesn't require an API key. If you choose to use TavilySearchResults, set your API key like so: ```codeBlockLines_AdAo export TAVILY_API_KEY=your_api_key ``` ## Get started The first step is to create a new RSC file, and add the imports which we'll use for running our agent. In this demo, we'll name it action.ts: ```codeBlockLines_AdAo "use server"; import { ChatOpenAI } from "@langchain/openai"; import { ChatPromptTemplate } from "@langchain/core/prompts"; import { TavilySearchResults } from "@langchain/community/tools/tavily_search"; import { AgentExecutor, createToolCallingAgent } from "langchain/agents"; import { pull } from "langchain/hub"; import { createStreamableValue } from "ai/rsc"; ``` Next, we'll define a runAgent function. This function takes in a single input of string, and contains all the logic for our agent and streaming data back to the client: ```codeBlockLines_AdAo export async function runAgent(input: string) { "use server"; } ``` Next, inside our function we'll define our chat model of choice: ```codeBlockLines_AdAo const llm = new ChatOpenAI({ model: "gpt-4o-2024-05-13", temperature: 0, }); ``` Next, we'll use the createStreamableValue helper function provided by the ai package to create a streamable value: ```codeBlockLines_AdAo const stream = createStreamableValue(); ``` This will be very important later on when we start streaming data back to the client. Next, lets define our async function inside which contains the agent logic: ```codeBlockLines_AdAo (async () => { const tools = [new TavilySearchResults({ maxResults: 1 })]; const prompt = await pull<ChatPromptTemplate>( "hwchase17/openai-tools-agent", ); const agent = createToolCallingAgent({ llm, tools, prompt, }); const agentExecutor = new AgentExecutor({ agent, tools, }); ``` tip As of langchain version 0.2.8, the createToolCallingAgent function now supports OpenAI-formatted tools. Here you can see we're doing a few things: The first is we're defining our list of tools (in this case we're only using a single tool) and pulling in our prompt from the LangChain prompt hub. After that, we're passing our LLM, tools and prompt to the createToolCallingAgent function, which will construct and return a runnable agent. This is then passed into the AgentExecutor class, which will handle the execution & streaming of our agent. Finally, we'll call .streamEvents and pass our streamed data back to the stream variable we defined above, ```codeBlockLines_AdAo const streamingEvents = agentExecutor.streamEvents( { input }, { version: "v2" }, ); for await (const item of streamingEvents) { stream.update(JSON.parse(JSON.stringify(item, null, 2))); } stream.done(); })(); ``` As you can see above, we're doing something a little wacky by stringifying and parsing our data. This is due to a bug in the RSC streaming code, however if you stringify and parse like we are above, you shouldn't experience this. Finally, at the bottom of the function return the stream value: ```codeBlockLines_AdAo return { streamData: stream.value }; ``` Once we've implemented our server action, we can add a couple lines of code in our client function to request and stream this data: First, add the necessary imports: ```codeBlockLines_AdAo "use client"; import { useState } from "react"; import { readStreamableValue } from "ai/rsc"; import { runAgent } from "./action"; ``` Then inside our Page function, calling the runAgent function is straightforward: ```codeBlockLines_AdAo export default function Page() { const [input, setInput] = useState(""); const [data, setData] = useState<StreamEvent[]>([]); async function handleSubmit(e: React.FormEvent) { e.preventDefault(); const { streamData } = await runAgent(input); for await (const item of readStreamableValue(streamData)) { setData((prev) => [...prev, item]); } } } ``` That's it! You've successfully built an agent that streams data back to the client. You can now run your application and see the data streaming in real-time."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/how_to/document_loader_csv/"
+,
+"title": 
+"How to load CSV data"
+,
+"content": 
+"A comma-separated values (CSV) file is a delimited text file that uses a comma to separate values. Each line of the file is a data record. Each record consists of one or more fields, separated by commas. Load CSV data with a single row per document. ## Setup - npm - Yarn - pnpm ```codeBlockLines_AdAo npm install d3-dsv@2 ``` ```codeBlockLines_AdAo yarn add d3-dsv@2 ``` ```codeBlockLines_AdAo pnpm add d3-dsv@2 ``` ## Usage, extracting all columns Example CSV file: ```codeBlockLines_AdAo id,text 1,This is a sentence. 2,This is another sentence. ``` Example code: ```codeBlockLines_AdAo import { CSVLoader } from "@langchain/community/document_loaders/fs/csv"; const loader = new CSVLoader("src/document_loaders/example_data/example.csv"); const docs = await loader.load(); /*[ Document { "metadata": { "line": 1, "source": "src/document_loaders/example_data/example.csv", }, "pageContent": "id: 1\ntext: This is a sentence.", }, Document { "metadata": { "line": 2, "source": "src/document_loaders/example_data/example.csv", }, "pageContent": "id: 2\ntext: This is another sentence.", }, ]*/ ``` ## Usage, extracting a single column Example CSV file: ```codeBlockLines_AdAo id,text 1,This is a sentence. 2,This is another sentence. ``` Example code: ```codeBlockLines_AdAo import { CSVLoader } from "@langchain/community/document_loaders/fs/csv"; const loader = new CSVLoader( "src/document_loaders/example_data/example.csv", "text" ); const docs = await loader.load(); /*[ Document { "metadata": { "line": 1, "source": "src/document_loaders/example_data/example.csv", }, "pageContent": "This is a sentence.", }, Document { "metadata": { "line": 2, "source": "src/document_loaders/example_data/example.csv", }, "pageContent": "This is another sentence.", }, ]*/ ```"
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/how_to/extraction_examples/"
+,
+"title": 
+"How to use reference examples | 🦜️🔗 Langchain"
+,
+"content": 
+"This guide assumes familiarity with the following: - Extraction The quality of extraction can often be improved by providing reference examples to the LLM. While this tutorial focuses how to use examples with a tool calling model, this technique is generally applicable, and will work also with JSON more or prompt based techniques. We’ll use OpenAI’s GPT-4 this time for their robust support for `ToolMessages`: See this section for general instructions on installing integration packages. - npm - yarn - pnpm Let’s define a prompt: import { ChatPromptTemplate, MessagesPlaceholder } from "@langchain/core/prompts"; const SYSTEM_PROMPT_TEMPLATE = `You are an expert extraction algorithm. Only extract relevant information from the text. If you do not know the value of an attribute asked to extract, you may omit the attribute's value.`; // Define a custom prompt to provide instructions and any additional context. // 1) You can add examples into the prompt template to improve extraction quality // 2) Introduce additional parameters to take context into account (e.g., include metadata // about the document from which the text was extracted.) const prompt = ChatPromptTemplate.fromMessages([ ["system", SYSTEM_PROMPT_TEMPLATE], new MessagesPlaceholder("examples"), ["human", "{text}"], ]); Test out the template: import { HumanMessage } from "@langchain/core/messages"; const promptValue = await prompt.invoke({ text: "this is some text", examples: [new HumanMessage("testing 1 2 3")], }); promptValue.toChatMessages(); Define the schema Let’s re-use the people schema from the quickstart. import { z } from "zod"; const personSchema = z .object({ name: z.optional(z.string()).describe("The name of the person"), hair_color: z .optional(z.string()) .describe("The color of the person's hair, if known"), height_in_meters: z .optional(z.string()) .describe("Height measured in meters"), }) .describe("Information about a person."); const peopleSchema = z.object({ people: z.array(personSchema), }); Define reference examples Examples can be defined as a list of input-output pairs. Each example contains an example `input` text and an example `output` showing what should be extracted from the text. The below example is a bit more advanced - the format of the example needs to match the API used (e.g., tool calling or JSON mode etc.). Here, the formatted examples will match the format expected for the OpenAI tool calling API since that’s what we’re using. To provide reference examples to the model, we will mock out a fake chat history containing successful usages of the given tool. Because the model can choose to call multiple tools at once (or the same tool multiple times), the example’s outputs are an array: import { AIMessage, type BaseMessage, HumanMessage, ToolMessage } from "@langchain/core/messages"; import { v4 as uuid } from "uuid"; type OpenAIToolCall = { id: string; type: "function"; function: { name: string; arguments: string; }; }; type Example = { input: string; toolCallOutputs: Record<string, any>[]; }; function toolExampleToMessages(example: Example): BaseMessage[] { const openAIToolCalls: OpenAIToolCall[] = example.toolCallOutputs.map( (output) => { return { id: uuid(), type: "function", function: { name: "extract", arguments: JSON.stringify(output), }, }; } ); const messages: BaseMessage[] = [ new HumanMessage(example.input), new AIMessage({ content: "", additional_kwargs: { tool_calls: openAIToolCalls }, }), ]; const toolMessages = openAIToolCalls.map((toolCall, i) => { return new ToolMessage({ content: "You have correctly called this tool.", tool_call_id: toolCall.id, }); }); return messages.concat(toolMessages); } Next let’s define our examples and then convert them into message format. const examples: Example[] = [ { input: "The ocean is vast and blue. It's more than 20,000 feet deep. There are many fish in it.", toolCallOutputs: [{}], }, { input: "Fiona traveled far from France to Spain.", toolCallOutputs: [ { name: "Fiona", }, ], }, ]; const exampleMessages = []; for (const example of examples) { exampleMessages.push(...toolExampleToMessages(example)); } Let’s test out the prompt const promptValueWithExamples = await prompt.invoke({ text: "this is some text", examples: exampleMessages, }); promptValueWithExamples.toChatMessages(); Create an extractor Here, we’ll create an extractor using **gpt-4**. import { ChatOpenAI } from "@langchain/openai"; const llm = new ChatOpenAI({ model: "gpt-4-0125-preview", temperature: 0, }); const extractionRunnable = prompt.pipe( llm.withStructuredOutput(peopleSchema, { name: "people" }) ); Without examples 😿 Notice that even though we’re using `gpt-4`, it’s unreliable with a **very simple** test case! We run it 5 times below to emphasize this: const text = "The solar system is large, but earth has only 1 moon."; for (let i = 0; i < 5; i++) { const result = await extractionRunnable.invoke({ text, examples: [], }); console.log(result); } With examples 😻 Reference examples help fix the failure! for (let i = 0; i < 5; i++) { const result = await extractionRunnable.invoke({ text, examples: exampleMessages, }); console.log(result); } await extractionRunnable.invoke({ text: "My name is Hair-ison. My hair is black. I am 3 meters tall.", examples: exampleMessages, }); Next steps You’ve now learned how to improve extraction quality using few-shot examples. Next, check out some of the other guides in this section, such as some tips on how to perform extraction on long text."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/how_to/document_loader_pdf/"
+,
+"title": 
+"How to load PDF files"
+,
+"content": 
+"Portable Document Format (PDF), standardized as ISO 32000, is a file format developed by Adobe in 1992 to present documents, including text formatting and images, in a manner independent of application software, hardware, and operating systems. This covers how to load `PDF` documents into the Document format that we use downstream. By default, one document will be created for each page in the PDF file. You can change this behavior by setting the `splitPages` option to `false`. ## Setup - npm - Yarn - pnpm ```codeBlockLines_AdAo npm install pdf-parse ``` ```codeBlockLines_AdAo yarn add pdf-parse ``` ```codeBlockLines_AdAo pnpm add pdf-parse ``` ## Usage, one document per page ```codeBlockLines_AdAo import { PDFLoader } from "@langchain/community/document_loaders/fs/pdf"; const loader = new PDFLoader("src/document_loaders/example_data/example.pdf"); const docs = await loader.load(); ``` ## Usage, one document per file ```codeBlockLines_AdAo import { PDFLoader } from "@langchain/community/document_loaders/fs/pdf"; const loader = new PDFLoader("src/document_loaders/example_data/example.pdf", { splitPages: false, }); const docs = await loader.load(); ``` ## Usage, custom `pdfjs` build By default we use the `pdfjs` build bundled with `pdf-parse`, which is compatible with most environments, including Node.js and modern browsers. If you want to use a more recent version of `pdfjs-dist` or if you want to use a custom build of `pdfjs-dist`, you can do so by providing a custom `pdfjs` function that returns a promise that resolves to the `PDFJS` object. In the following example we use the "legacy" build of `pdfjs-dist`, which includes several polyfills not included in the default build. - npm - Yarn - pnpm ```codeBlockLines_AdAo npm install pdfjs-dist ``` ```codeBlockLines_AdAo yarn add pdfjs-dist ``` ```codeBlockLines_AdAo pnpm add pdfjs-dist ``` ```codeBlockLines_AdAo import { PDFLoader } from "@langchain/community/document_loaders/fs/pdf"; const loader = new PDFLoader("src/document_loaders/example_data/example.pdf", { pdfjs: () => import("pdfjs-dist/legacy/build/pdf.js"), }); ``` ## Eliminating extra spaces PDFs come in many varieties, which makes reading them a challenge. The loader parses individual text elements and joins them together with a space by default, but if you are seeing excessive spaces, this may not be the desired behavior. In that case, you can override the separator with an empty string like this: ```codeBlockLines_AdAo import { PDFLoader } from "@langchain/community/document_loaders/fs/pdf"; const loader = new PDFLoader("src/document_loaders/example_data/example.pdf", { parsedItemSeparator: "", }); const docs = await loader.load(); ```"
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/how_to/prompts_composition/"
+,
+"title": 
+"How to compose prompts together | 🦜️🔗 Langchain"
+,
+"content": 
+"This guide assumes familiarity with the following concepts: - Prompt templates LangChain provides a user friendly interface for composing different parts of prompts together. You can do this with either string prompts or chat prompts. Constructing prompts this way allows for easy reuse of components. ## String prompt composition When working with string prompts, each template is joined together. You can work with either prompts directly or strings (the first element in the list needs to be a prompt). ```codeBlockLines_AdAo import { PromptTemplate } from "@langchain/core/prompts"; const prompt = PromptTemplate.fromTemplate( `Tell me a joke about {topic}, make it funny and in {language}` ); prompt; ``` ```codeBlockLines_AdAo PromptTemplate { lc_serializable: true, lc_kwargs: { inputVariables: [ "topic", "language" ], templateFormat: "f-string", template: "Tell me a joke about {topic}, make it funny and in {language}" }, lc_runnable: true, name: undefined, lc_namespace: [ "langchain_core", "prompts", "prompt" ], inputVariables: [ "topic", "language" ], outputParser: undefined, partialVariables: undefined, templateFormat: "f-string", template: "Tell me a joke about {topic}, make it funny and in {language}", validateTemplate: true } ``` ```codeBlockLines_AdAo await prompt.format({ topic: "sports", language: "spanish" }); ``` ```codeBlockLines_AdAo "Tell me a joke about sports, make it funny and in spanish" ``` ## Chat prompt composition A chat prompt is made up a of a list of messages. Similarly to the above example, we can concatenate chat prompt templates. Each new element is a new message in the final prompt. First, let’s initialize the a [`ChatPromptTemplate`](https://api.python.langchain.com/en/latest/prompts/langchain_core.prompts.chat.ChatPromptTemplate.html) with a [`SystemMessage`](https://api.python.langchain.com/en/latest/messages/langchain_core.messages.system.SystemMessage.html). ```codeBlockLines_AdAo import { AIMessage, HumanMessage, SystemMessage, } from "@langchain/core/messages"; const prompt = new SystemMessage("You are a nice pirate"); ``` You can then easily create a pipeline combining it with other messages _or_ message templates. Use a `BaseMessage` when there are no variables to be formatted, use a `MessageTemplate` when there are variables to be formatted. You can also use just a string (note: this will automatically get inferred as a [`HumanMessagePromptTemplate`](https://api.js.langchain.com/classes/langchain_core.prompts.HumanMessagePromptTemplate.html). ```codeBlockLines_AdAo import { HumanMessagePromptTemplate } from "@langchain/core/prompts"; const newPrompt = HumanMessagePromptTemplate.fromTemplate([ prompt, new HumanMessage("Hi"), new AIMessage("what?"), "{input}", ]); ``` Under the hood, this creates an instance of the ChatPromptTemplate class, so you can use it just as you did before! ```codeBlockLines_AdAo await newPrompt.formatMessages({ input: "i said hi" }); ``` ```codeBlockLines_AdAo [ HumanMessage { lc_serializable: true, lc_kwargs: { content: [ { type: "text", text: "You are a nice pirate" }, { type: "text", text: "Hi" }, { type: "text", text: "what?" }, { type: "text", text: "i said hi" } ], additional_kwargs: {}, response_metadata: {} }, lc_namespace: [ "langchain_core", "messages" ], content: [ { type: "text", text: "You are a nice pirate" }, { type: "text", text: "Hi" }, { type: "text", text: "what?" }, { type: "text", text: "i said hi" } ], name: undefined, additional_kwargs: {}, response_metadata: {} } ] ``` ## Using PipelinePrompt LangChain includes a class called [`PipelinePromptTemplate`](https://api.js.langchain.com/classes/_langchain_core.prompts.PipelinePromptTemplate.html), which can be useful when you want to reuse parts of prompts. A PipelinePrompt consists of two main parts: - Final prompt: The final prompt that is returned - Pipeline prompts: A list of tuples, consisting of a string name and a prompt template. Each prompt template will be formatted and then passed to future prompt templates as a variable with the same name. ```codeBlockLines_AdAo import { PromptTemplate, PipelinePromptTemplate, } from "@langchain/core/prompts"; const fullPrompt = PromptTemplate.fromTemplate(`{introduction} {example} {start}`); const introductionPrompt = PromptTemplate.fromTemplate( `You are impersonating {person}.` ); const examplePrompt = PromptTemplate.fromTemplate(`Here's an example of an interaction: Q: {example_q} A: {example_a}`); const startPrompt = PromptTemplate.fromTemplate(`Now, do this for real! Q: {input} A:`); const composedPrompt = new PipelinePromptTemplate({ pipelinePrompts: [ { name: "introduction", prompt: introductionPrompt, }, { name: "example", prompt: examplePrompt, }, { name: "start", prompt: startPrompt, }, ], finalPrompt: fullPrompt, }); ``` ```codeBlockLines_AdAo const formattedPrompt = await composedPrompt.format({ person: "Elon Musk", example_q: `What's your favorite car?`, example_a: "Telsa", input: `What's your favorite social media site?`, }); console.log(formattedPrompt); ``` ```codeBlockLines_AdAo You are impersonating Elon Musk. Here's an example of an interaction: Q: What's your favorite car? A: Telsa Now, do this for real! Q: What's your favorite social media site? A: ``` ## Next steps You’ve now learned how to compose prompts together. Next, check out the other how-to guides on prompt templates in this section, like [adding few-shot examples to your prompt templates](https://js.langchain.com/docs/how_to/few_shot_examples_chat)."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/how_to/vectorstores/"
+,
+"title": 
+"How to create and query vector stores"
+,
+"content": 
+"This guide assumes familiarity with the following concepts: Vector stores, Embeddings, Document loaders. One of the most common ways to store and search over unstructured data is to embed it and store the resulting embedding vectors, and then at query time to embed the unstructured query and retrieve the embedding vectors that are 'most similar' to the embedded query. A vector store takes care of storing embedded data and performing vector search for you. This walkthrough uses a basic, unoptimized implementation called MemoryVectorStore that stores embeddings in-memory and does an exact, linear search for the most similar embeddings. LangChain contains many built-in integrations."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/how_to/tool_calling/"
+,
+"title": 
+"How to use chat models to call tools | 🦜️🔗 Langchain"
+,
+"content": 
+"Tool calling allows a chat model to respond to a given prompt by “calling a tool”. Remember, while the name “tool calling” implies that the model is directly performing some action, this is actually not the case! The model only generates the arguments to a tool, and actually running the tool (or not) is up to the user. Tool calling is a general technique that generates structured output from a model, and you can use it even when you don’t intend to invoke any tools. An example use-case of that is extraction from unstructured text. Supported models include Anthropic, Cohere, Google, Mistral, OpenAI, and locally-running models via Ollama. LangChain implements standard interfaces for defining tools, passing them to LLMs, and representing tool calls. This guide will cover how to bind tools to an LLM, then invoke the LLM to generate these arguments. Chat models that support tool calling features implement a .bindTools() method, which receives a list of LangChain tool objects and binds them to the chat model in its expected format. As of @langchain/core version 0.2.9, all chat models with tool calling capabilities now support OpenAI-formatted tools. The guide includes examples of installing dependencies, adding environment variables, instantiating models, and invoking tools. It also covers advanced topics like binding model-specific formats and next steps for further learning."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/how_to/qa_citations/"
+,
+"title": 
+"How to return citations | 🦜️🔗 Langchain"
+,
+"content": 
+"This guide assumes familiarity with the following: - Retrieval-augmented generation - Returning structured data from a model How can we get a model to cite which parts of the source documents it referenced in its response? To explore some techniques for extracting citations, let’s first create a simple RAG chain. To start we’ll just retrieve from the web using the TavilySearchAPIRetriever."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/how_to/qa_citations/#setup"
+,
+"title": 
+"Setup"
+,
+"content": 
+"We’ll use an OpenAI chat model and embeddings and a Memory vector store in this walkthrough, but everything shown here works with any ChatModel or LLM, Embeddings, and VectorStore or Retriever. We’ll use the following packages: npm install --save langchain @langchain/community @langchain/openai We need to set environment variables for Tavily Search & OpenAI: export OPENAI_API_KEY=YOUR_KEY export TAVILY_API_KEY=YOUR_KEY"
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/how_to/qa_citations/#tool-calling"
+,
+"title": 
+"Tool calling"
+,
+"content": 
+"Let’s try using tool calling to make the model specify which of the provided documents it’s actually referencing when answering. LangChain has some utils for converting objects or Zod objects to the JSONSchema format expected by providers like OpenAI. We’ll use the .withStructuredOutput() method to get the model to output data matching our desired schema:"
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/how_to/qa_citations/#cite-documents"
+,
+"title": 
+"Cite documents"
+,
+"content": 
+"Now we’re ready to put together our chain. Format the documents into a readable string. The complete chain that calls the retriever -> formats docs to string -> runs answer subchain -> returns just the answer and retrieved docs."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/how_to/qa_citations/#cite-snippets"
+,
+"title": 
+"Cite snippets"
+,
+"content": 
+"What if we want to cite actual text spans? We can try to get our model to return these, too. Note that if we break up our documents so that we have many documents with only a sentence or two instead of a few long documents, citing documents becomes roughly equivalent to citing snippets, and may be easier for the model because the model just needs to return an identifier for each snippet instead of the actual text."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/how_to/qa_citations/#direct-prompting"
+,
+"title": 
+"Direct prompting"
+,
+"content": 
+"Not all models support tool-calling. We can achieve similar results with direct prompting. Let’s see what this looks like using an older Anthropic chat model that is particularly proficient in working with XML:"
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/how_to/qa_citations/#retrieval-post-processing"
+,
+"title": 
+"Retrieval post-processing"
+,
+"content": 
+"Another approach is to post-process our retrieved documents to compress the content, so that the source content is already minimal enough that we don’t need the model to cite specific sources or spans. For example, we could break up each document into a sentence or two, embed those and keep only the most relevant ones."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/how_to/qa_citations/#next-steps"
+,
+"title": 
+"Next steps"
+,
+"content": 
+"You’ve now learned a few ways to return citations from your QA chains. Next, check out some of the other guides in this section, such as how to add chat history."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/how_to/tool_runtime/"
+,
+"title": 
+"How to pass run time values to tools | 🦜️🔗 Langchain"
+,
+"content": 
+"You may need to bind values to a tool that are only known at runtime. This guide assumes familiarity with the following concepts: Chat models, LangChain Tools, How to create tools, How to use a model to call tools. Supported models include Groq, OpenAI, Anthropic, FireworksAI, MistralAI, and VertexAI. The guide provides instructions on installing dependencies, adding environment variables, and instantiating models for each supported chat model. It also discusses using context variables to manage runtime values and provides examples of how to implement tools dynamically at runtime. Additionally, it covers the compatibility requirements for using context variables and provides code snippets for practical implementation."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/tutorials/llm_chain/"
+,
+"title": 
+"Build a simple LLM application with chat models and prompt templates | 🦜️🔗 Langchain"
+,
+"content": 
+"In this quickstart we’ll show you how to build a simple LLM application with LangChain. This application will translate text from English into another language. This is a relatively simple LLM application - it’s just a single LLM call plus some prompting. Still, this is a great way to get started with LangChain - a lot of features can be built with just some prompting and an LLM call! After reading this tutorial, you’ll have a high level overview of: - Using language models - Using prompt templates - Debugging and tracing your application using LangSmith. Let’s dive in!"
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/how_to/document_loader_custom/"
+,
+"title": 
+"How to write a custom document loader"
+,
+"content": 
+"If you want to implement your own Document Loader, you have a few options. ### Subclassing `BaseDocumentLoader` You can extend the `BaseDocumentLoader` class directly. The `BaseDocumentLoader` class provides a few convenience methods for loading documents from a variety of sources. ```codeBlockLines_AdAo abstract class BaseDocumentLoader implements DocumentLoader { abstract load(): Promise<Document[]>; } ``` ### Subclassing `TextLoader` If you want to load documents from a text file, you can extend the `TextLoader` class. The `TextLoader` class takes care of reading the file, so all you have to do is implement a parse method. ```codeBlockLines_AdAo abstract class TextLoader extends BaseDocumentLoader { abstract parse(raw: string): Promise<string[]>; } ``` ### Subclassing `BufferLoader` If you want to load documents from a binary file, you can extend the `BufferLoader` class. The `BufferLoader` class takes care of reading the file, so all you have to do is implement a parse method. ```codeBlockLines_AdAo abstract class BufferLoader extends BaseDocumentLoader { abstract parse( raw: Buffer, metadata: Document["metadata"] ): Promise<Document[]>; } ``` * * *"
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/how_to/qa_sources/"
+,
+"title": 
+"How to return sources | 🦜️🔗 Langchain"
+,
+"content": 
+"This guide assumes familiarity with the following: - Retrieval-augmented generation Often in Q&A applications it’s important to show users the sources that were used to generate the answer. The simplest way to do this is for the chain to return the Documents that were retrieved in each generation. We’ll be using the LLM Powered Autonomous Agents blog post by Lilian Weng for retrieval content this notebook. ## Setup ### Dependencies We’ll use an OpenAI chat model and embeddings and a Memory vector store in this walkthrough, but everything shown here works with any ChatModel or LLM, Embeddings, and VectorStore or Retriever. We’ll use the following packages: ```codeBlockLines_AdAo npm install --save langchain @langchain/openai cheerio ``` We need to set environment variable `OPENAI_API_KEY`: ```codeBlockLines_AdAo export OPENAI_API_KEY=YOUR_KEY ``` ### LangSmith Many of the applications you build with LangChain will contain multiple steps with multiple invocations of LLM calls. As these applications get more and more complex, it becomes crucial to be able to inspect what exactly is going on inside your chain or agent. The best way to do this is with LangSmith. Note that LangSmith is not needed, but it is helpful. If you do want to use LangSmith, after you sign up at the link above, make sure to set your environment variables to start logging traces: ```codeBlockLines_AdAo export LANGSMITH_TRACING=true export LANGSMITH_API_KEY=YOUR_KEY # Reduce tracing latency if you are not in a serverless environment # export LANGCHAIN_CALLBACKS_BACKGROUND=true ``` ## Chain without sources Here is the Q&A app we built over the LLM Powered Autonomous Agents blog post by Lilian Weng in the Quickstart. ```codeBlockLines_AdAo import "cheerio"; import { CheerioWebBaseLoader } from "@langchain/community/document_loaders/web/cheerio"; import { RecursiveCharacterTextSplitter } from "langchain/text_splitter"; import { MemoryVectorStore } from "langchain/vectorstores/memory"; import { OpenAIEmbeddings, ChatOpenAI } from "@langchain/openai"; import { pull } from "langchain/hub"; import { ChatPromptTemplate } from "@langchain/core/prompts"; import { formatDocumentsAsString } from "langchain/util/document"; import { RunnableSequence, RunnablePassthrough, } from "@langchain/core/runnables"; import { StringOutputParser } from "@langchain/core/output_parsers"; const loader = new CheerioWebBaseLoader( "https://lilianweng.github.io/posts/2023-06-23-agent/" ); const docs = await loader.load(); const textSplitter = new RecursiveCharacterTextSplitter({ chunkSize: 1000, chunkOverlap: 200, }); const splits = await textSplitter.splitDocuments(docs); const vectorStore = await MemoryVectorStore.fromDocuments( splits, new OpenAIEmbeddings() ); // Retrieve and generate using the relevant snippets of the blog. const retriever = vectorStore.asRetriever(); const prompt = await pull<ChatPromptTemplate>("rlm/rag-prompt"); const llm = new ChatOpenAI({ model: "gpt-3.5-turbo", temperature: 0 }); const ragChain = RunnableSequence.from([ { context: retriever.pipe(formatDocumentsAsString), question: new RunnablePassthrough(), }, prompt, llm, new StringOutputParser(), ]); ``` Let’s see what this prompt actually looks like: ```codeBlockLines_AdAo console.log(prompt.promptMessages.map((msg) => msg.prompt.template).join("\n")); ``` ```codeBlockLines_AdAo You are an assistant for question-answering tasks. Use the following pieces of retrieved context to answer the question. If you don't know the answer, just say that you don't know. Use three sentences maximum and keep the answer concise. Question: {question} Context: {context} Answer: ``` ```codeBlockLines_AdAo await ragChain.invoke("What is task decomposition?"); ``` ```codeBlockLines_AdAo "Task decomposition is a technique used to break down complex tasks into smaller and simpler steps. T"... 254 more characters ``` ## Adding sources With LCEL, we can easily pass the retrieved documents through the chain and return them in the final response: ```codeBlockLines_AdAo import { RunnableMap, RunnablePassthrough, RunnableSequence, } from "@langchain/core/runnables"; import { formatDocumentsAsString } from "langchain/util/document"; const ragChainWithSources = RunnableMap.from({ // Return raw documents here for now since we want to return them at // the end - we'll format in the next step of the chain context: retriever, question: new RunnablePassthrough(), }).assign({ answer: RunnableSequence.from([ (input) => { return { // Now we format the documents as strings for the prompt context: formatDocumentsAsString(input.context), question: input.question, }; }, prompt, llm, new StringOutputParser(), ]), }); await ragChainWithSources.invoke("What is Task Decomposition"); ``` ```codeBlockLines_AdAo { question: "What is Task Decomposition", context: [ Document { pageContent: "Fig. 1. Overview of a LLM-powered autonomous agent system.\n" + "Component One: Planning#\n" + "A complicated ta"... 898 more characters, metadata: { source: "https://lilianweng.github.io/posts/2023-06-23-agent/", loc: { lines: [Object] } } }, Document { pageContent: 'Task decomposition can be done (1) by LLM with simple prompting like "Steps for XYZ.\n1.", "What are'... 887 more characters, metadata: { source: "https://lilianweng.github.io/posts/2023-06-23-agent/", loc: { lines: [Object] } } }, Document { pageContent: "Agent System Overview\n" + " \n" + " Component One: Planning\n" + " "... 850 more characters, metadata: { source: "https://lilianweng.github.io/posts/2023-06-23-agent/", loc: { lines: [Object] } } }, Document { pageContent: "Resources:\n" + "1. Internet access for searches and information gathering.\n" + "2. Long Term memory management"... 456 more characters, metadata: { source: "https://lilianweng.github.io/posts/2023-06-23-agent/", loc: { lines: [Object] } } } ], answer: "Task decomposition is a technique used to break down complex tasks into smaller and simpler steps fo"... 230 more characters } ``` Check out the LangSmith trace here to see the internals of the chain. ## Next steps You’ve now learned how to return sources from your QA chains. Next, check out some of the other guides around RAG, such as how to stream responses."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/v0.2/docs/how_to/tool_calls_multimodal/"
+,
+"title": 
+"How to call tools with multimodal data | 🦜️🔗 Langchain"
+,
+"content": 
+"This guide assumes familiarity with the following concepts: - Chat models - LangChain Tools Here we demonstrate how to call tools with multimodal data, such as images. Some multimodal models, such as those that can reason over images or audio, support tool calling features as well. To call tools using such models, simply bind tools to them in the usual way, and invoke the model using content blocks of the desired type (e.g., containing image data). Below, we demonstrate examples using OpenAI and Anthropic. We will use the same image and tool in all cases. Let’s first select an image, and build a placeholder tool that expects as input the string “sunny”, “cloudy” or “rainy”. We will ask the models to describe the weather in the image. The tool function is available in @langchain/core version 0.2.7 and above. If you are on an older version of core, you should use instantiate and use DynamicStructuredTool instead. For OpenAI, we can feed the image URL directly in a content block of type “image_url”. For Anthropic, we can format a base64-encoded image into a content block of type “image”. For Google GenAI, we can format a base64-encoded image into a content block of type “image”. Google’s Gemini also supports audio inputs. In this next example we’ll see how we can pass an audio file to the model, and get back a summary in structured format."
+}
+
+,
+
+{
+"url": 
+"http://js.langchain.com/v0.2/docs/how_to/vectorstore_retriever"
+,
+"title": 
+"How use a vector store to retrieve data"
+,
+"content": 
+"This guide assumes familiarity with the following concepts: - Vector stores - Retrievers - Text splitters - Chaining runnables Vector stores can be converted into retrievers using the `.asRetriever()` method, which allows you to more easily compose them in chains. Below, we show a retrieval-augmented generation (RAG) chain that performs question answering over documents using the following steps: 1. Initialize an vector store 2. Create a retriever from that vector store 3. Compose a question answering chain 4. Ask questions! Each of the steps has multiple sub steps and potential configurations, but we'll go through one common flow. First, install the required dependency: See [this section for general instructions on installing integration packages](https://js.langchain.com/v0.2/docs/how_to/installation/#installing-integration-packages). - npm - Yarn - pnpm ```codeBlockLines_AdAo npm install @langchain/openai ``` ```codeBlockLines_AdAo yarn add @langchain/openai ``` ```codeBlockLines_AdAo pnpm add @langchain/openai ``` You can download the `state_of_the_union.txt` file [here](https://github.com/langchain-ai/langchain/blob/master/docs/docs/modules/state_of_the_union.txt). ```codeBlockLines_AdAo import * as fs from "node:fs"; import { OpenAIEmbeddings, ChatOpenAI } from "@langchain/openai"; import { RecursiveCharacterTextSplitter } from "@langchain/textsplitters"; import { MemoryVectorStore } from "langchain/vectorstores/memory"; import { RunnablePassthrough, RunnableSequence, } from "@langchain/core/runnables"; import { StringOutputParser } from "@langchain/core/output_parsers"; import { ChatPromptTemplate } from "@langchain/core/prompts"; import type { Document } from "@langchain/core/documents"; const formatDocumentsAsString = (documents: Document[]) => { return documents.map((document) => document.pageContent).join("\n\n"); }; // Initialize the LLM to use to answer the question. const model = new ChatOpenAI({ model: "gpt-4o", }); const text = fs.readFileSync("state_of_the_union.txt", "utf8"); const textSplitter = new RecursiveCharacterTextSplitter({ chunkSize: 1000 }); const docs = await textSplitter.createDocuments([text]); // Create a vector store from the documents. const vectorStore = await MemoryVectorStore.fromDocuments( docs, new OpenAIEmbeddings() ); // Initialize a retriever wrapper around the vector store const vectorStoreRetriever = vectorStore.asRetriever(); // Create a system & human prompt for the chat model const SYSTEM_TEMPLATE = `Use the following pieces of context to answer the question at the end.\nIf you don't know the answer, just say that you don't know, don't try to make up an answer.\n----------------\n{context}`; const prompt = ChatPromptTemplate.fromMessages([\ ["system", SYSTEM_TEMPLATE],\ ["human", "{question}"],\ ]); const chain = RunnableSequence.from([\ {\ context: vectorStoreRetriever.pipe(formatDocumentsAsString),\ question: new RunnablePassthrough(),\ },\ prompt,\ model,\ new StringOutputParser(),\ ]); const answer = await chain.invoke( "What did the president say about Justice Breyer?" ); console.log({ answer }); /* { answer: 'The president honored Justice Stephen Breyer by recognizing his dedication to serving the country as an Army veteran, Constitutional scholar, and retiring Justice of the United States Supreme Court. He thanked Justice Breyer for his service.' } */ ``` #### API Reference: - OpenAIEmbeddingsfrom `@langchain/openai` - ChatOpenAIfrom `@langchain/openai` - RecursiveCharacterTextSplitterfrom `@langchain/textsplitters` - MemoryVectorStorefrom `langchain/vectorstores/memory` - RunnablePassthroughfrom `@langchain/core/runnables` - RunnableSequencefrom `@langchain/core/runnables` - StringOutputParserfrom `@langchain/core/output_parsers` - ChatPromptTemplatefrom `@langchain/core/prompts` - Documentfrom `@langchain/core/documents` Let's walk through what's happening here. 1. We first load a long text and split it into smaller documents using a text splitter. We then load those documents (which also embeds the documents using the passed `OpenAIEmbeddings` instance) into HNSWLib, our vector store, creating our index. 2. Though we can query the vector store directly, we convert the vector store into a retriever to return retrieved documents in the right format for the question answering chain. 3. We initialize a retrieval chain, which we'll call later in step 4. 4. We ask questions! ## Next steps [​](https://js.langchain.com/v0.2/docs/how_to/vectorstore_retriever/#next-steps "Direct link to Next steps") You've now learned how to convert a vector store as a retriever. See the individual sections for deeper dives on specific retrievers, the [broader tutorial on RAG](https://js.langchain.com/v0.2/docs/tutorials/rag), or this section to learn how to [create your own custom retriever over any data source](https://js.langchain.com/v0.2/docs/how_to/custom_retriever/)."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/how_to/streaming"
+,
+"title": 
+"How to stream | 🦜️🔗 Langchain"
+,
+"content": 
+"This guide assumes familiarity with the following concepts: - Chat models - LangChain Expression Language - Output parsers Streaming is critical in making applications based on LLMs feel responsive to end-users. Important LangChain primitives like LLMs, parsers, prompts, retrievers, and agents implement the LangChain Runnable Interface. This interface provides two general approaches to stream content: - `.stream()`: a default implementation of streaming that streams the final output from the chain. - `streamEvents()` and `streamLog()`: these provide a way to stream both intermediate steps and final output from the chain. Let’s take a look at both approaches!"
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/how_to/fallbacks/"
+,
+"title": 
+"Fallbacks"
+,
+"content": 
+"This guide assumes familiarity with the following concepts: - LangChain Expression Language (LCEL) - Chaining runnables When working with language models, you may encounter issues from the underlying APIs, e.g. rate limits or downtime. As you move your LLM applications into production it becomes more and more important to have contingencies for errors. That's why we've introduced the concept of fallbacks. Crucially, fallbacks can be applied not only on the LLM level but on the whole runnable level. This is important because often times different models require different prompts. So if your call to OpenAI fails, you don't just want to send the same prompt to Anthropic - you probably want want to use e.g. a different prompt template. Handling LLM API errors is maybe the most common use case for fallbacks. A request to an LLM API can fail for a variety of reasons - the API could be down, you could have hit a rate limit, or any number of things. IMPORTANT: By default, many of LangChain's LLM wrappers catch errors and retry. You will most likely want to turn those off when working with fallbacks. Otherwise the first wrapper will keep on retrying rather than failing. See this section for general instructions on installing integration packages. npm Yarn pnpm ```codeBlockLines_AdAo npm install @langchain/anthropic @langchain/openai @langchain/core ``` ```codeBlockLines_AdAo yarn add @langchain/anthropic @langchain/openai @langchain/core ``` ```codeBlockLines_AdAo pnpm add @langchain/anthropic @langchain/openai @langchain/core ``` ```codeBlockLines_AdAo import { ChatOpenAI } from "@langchain/openai"; import { ChatAnthropic } from "@langchain/anthropic"; // Use a fake model name that will always throw an error const fakeOpenAIModel = new ChatOpenAI({ model: "potato!", maxRetries: 0, }); const anthropicModel = new ChatAnthropic({}); const modelWithFallback = fakeOpenAIModel.withFallbacks([anthropicModel]); const result = await modelWithFallback.invoke("What is your name?"); console.log(result); /* AIMessage { content: ' My name is Claude. I was created by Anthropic.', additional_kwargs: {} } */ ``` API Reference: - ChatOpenAIfrom `@langchain/openai` - ChatAnthropicfrom `@langchain/anthropic` Fallbacks for RunnableSequences can also be created for sequences, that are sequences themselves. Here we do that with two different models: ChatOpenAI and then normal OpenAI (which does not use a chat model). Because OpenAI is NOT a chat model, you likely want a different prompt. ```codeBlockLines_AdAo import { ChatOpenAI, OpenAI } from "@langchain/openai"; import { StringOutputParser } from "@langchain/core/output_parsers"; import { ChatPromptTemplate, PromptTemplate } from "@langchain/core/prompts"; const chatPrompt = ChatPromptTemplate.fromMessages<{ animal: string }>([ [ "system", "You're a nice assistant who always includes a compliment in your response", ], ["human", "Why did the {animal} cross the road?"], ]); // Use a fake model name that will always throw an error const fakeOpenAIChatModel = new ChatOpenAI({ model: "potato!", maxRetries: 0, }); const prompt = PromptTemplate.fromTemplate(`Instructions: You should always include a compliment in your response. Question: Why did the {animal} cross the road? Answer:`); const openAILLM = new OpenAI({}); const outputParser = new StringOutputParser(); const badChain = chatPrompt.pipe(fakeOpenAIChatModel).pipe(outputParser); const goodChain = prompt.pipe(openAILLM).pipe(outputParser); const chain = badChain.withFallbacks([goodChain]); const result = await chain.invoke({ animal: "dragon", }); console.log(result); /* I don't know, but I'm sure it was an impressive sight. You must have a great imagination to come up with such an interesting question! */ ``` API Reference: - ChatOpenAIfrom `@langchain/openai` - OpenAIfrom `@langchain/openai` - StringOutputParserfrom `@langchain/core/output_parsers` - ChatPromptTemplatefrom `@langchain/core/prompts` - PromptTemplatefrom `@langchain/core/prompts` Handling long inputs is one of the big limiting factors of LLMs in their context window. Sometimes you can count and track the length of prompts before sending them to an LLM, but in situations where that is hard/complicated you can fallback to a model with longer context length. ```codeBlockLines_AdAo import { ChatOpenAI } from "@langchain/openai"; // Use a model with a shorter context window const shorterLlm = new ChatOpenAI({ model: "gpt-3.5-turbo", maxRetries: 0, }); const longerLlm = new ChatOpenAI({ model: "gpt-3.5-turbo-16k", }); const modelWithFallback = shorterLlm.withFallbacks([longerLlm]); const input = `What is the next number: ${"one, two, ".repeat(3000)}`; try { await shorterLlm.invoke(input); } catch (e) { // Length error console.log(e); } const result = await modelWithFallback.invoke(input); console.log(result); /* AIMessage { content: 'The next number is one.', name: undefined, additional_kwargs: { function_call: undefined } } */ ``` API Reference: - ChatOpenAIfrom `@langchain/openai` Fallback to a better model is often times we ask models to output format in a specific format (like JSON). Models like GPT-3.5 can do this okay, but sometimes struggle. This naturally points to fallbacks - we can try with a faster and cheaper model, but then if parsing fails we can use GPT-4. ```codeBlockLines_AdAo import { z } from "zod"; import { OpenAI, ChatOpenAI } from "@langchain/openai"; import { PromptTemplate } from "@langchain/core/prompts"; import { StructuredOutputParser } from "@langchain/core/output_parsers"; const prompt = PromptTemplate.fromTemplate( `Return a JSON object containing the following value wrapped in an "input" key. Do not return anything else:\n{input}` ); const badModel = new OpenAI({ maxRetries: 0, model: "gpt-3.5-turbo-instruct", }); const normalModel = new ChatOpenAI({ model: "gpt-4", }); const outputParser = StructuredOutputParser.fromZodSchema( z.object({ input: z.string(), }) ); const badChain = prompt.pipe(badModel).pipe(outputParser); const goodChain = prompt.pipe(normalModel).pipe(outputParser); try { const result = await badChain.invoke({ input: "testing0", }); } catch (e) { console.log(e); /* OutputParserException [Error]: Failed to parse. Text: " { "name" : " Testing0 ", "lastname" : " testing ", "fullname" : " testing ", "role" : " test ", "telephone" : "+1-555-555-555 ", "email" : " testing@gmail.com ", "role" : " test ", "text" : " testing0 is different than testing ", "role" : " test ", "immediate_affected_version" : " 0.0.1 ", "immediate_version" : " 1.0.0 ", "leading_version" : " 1.0.0 ", "version" : " 1.0.0 ", "finger prick" : " no ", "finger prick" : " s ", "text" : " testing0 is different than testing ", "role" : " test ", "immediate_affected_version" : " 0.0.1 ", "immediate_version" : " 1.0.0 ", "leading_version" : " 1.0.0 ", "version" : " 1.0.0 ", "finger prick"." Error: SyntaxError: Unexpected end of JSON input */ } const chain = badChain.withFallbacks([goodChain]); const result = await chain.invoke({ input: "testing", }); console.log(result); /* { input: 'testing' } */ ``` API Reference: - OpenAIfrom `@langchain/openai` - ChatOpenAIfrom `@langchain/openai` - PromptTemplatefrom `@langchain/core/prompts` - StructuredOutputParserfrom `@langchain/core/output_parsers`"
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/how_to/functions/"
+,
+"title": 
+"How to run custom functions | 🦜️🔗 Langchain"
+,
+"content": 
+"This guide assumes familiarity with the following concepts: - LangChain Expression Language (LCEL) - Chaining runnables You can use arbitrary functions as Runnables. This is useful for formatting or when you need functionality not provided by other LangChain components, and custom functions used as Runnables are called RunnableLambdas. Note that all inputs to these functions need to be a SINGLE argument. If you have a function that accepts multiple arguments, you should write a wrapper that accepts a single dict input and unpacks it into multiple argument. This guide will cover: - How to explicitly create a runnable from a custom function using the RunnableLambda constructor - Coercion of custom functions into runnables when used in chains - How to accept and use run metadata in your custom function - How to stream with custom functions by having them return generators ## Using the constructor Below, we explicitly wrap our custom logic using a RunnableLambda method: - npm - yarn - pnpm ```codeBlockLines_AdAo npm i @langchain/openai @langchain/core ``` ```codeBlockLines_AdAo yarn add @langchain/openai @langchain/core ``` ```codeBlockLines_AdAo pnpm add @langchain/openai @langchain/core ``` ```codeBlockLines_AdAo import { StringOutputParser } from "@langchain/core/output_parsers"; import { ChatPromptTemplate } from "@langchain/core/prompts"; import { RunnableLambda } from "@langchain/core/runnables"; import { ChatOpenAI } from "@langchain/openai"; const lengthFunction = (input: { foo: string }): { length: string } => { return { length: input.foo.length.toString(), }; }; const model = new ChatOpenAI({ model: "gpt-4o" }); const prompt = ChatPromptTemplate.fromTemplate("What is {length} squared?"); const chain = RunnableLambda.from(lengthFunction) .pipe(prompt) .pipe(model) .pipe(new StringOutputParser()); await chain.invoke({ foo: "bar" }); ``` ```codeBlockLines_AdAo "3 squared is \\(3^2\\), which means multiplying 3 by itself. \n" + "\n" + "\\[3^2 = 3 \\times 3 = 9\\]\n" + "\n" + "So, 3 squared"... 6 more characters ``` ## Automatic coercion in chains When using custom functions in chains with RunnableSequence.from static method, you can omit the explicit RunnableLambda creation and rely on coercion. Here’s a simple example with a function that takes the output from the model and returns the first five letters of it: ```codeBlockLines_AdAo import { RunnableSequence } from "@langchain/core/runnables"; const storyPrompt = ChatPromptTemplate.fromTemplate( "Tell me a short story about {topic}" ); const storyModel = new ChatOpenAI({ model: "gpt-4o" }); const chainWithCoercedFunction = RunnableSequence.from([ storyPrompt, storyModel, (input) => input.content.slice(0, 5), ]); await chainWithCoercedFunction.invoke({ topic: "bears" }); ``` ```codeBlockLines_AdAo "Once " ``` Note that we didn’t need to wrap the custom function (input) => input.content.slice(0, 5) in a RunnableLambda method. The custom function is **coerced** into a runnable. See [this section](https://js.langchain.com/docs/how_to/sequence/#coercion) for more information. ## Passing run metadata Runnable lambdas can optionally accept a RunnableConfig parameter, which they can use to pass callbacks, tags, and other configuration information to nested runs. ```codeBlockLines_AdAo import { type RunnableConfig } from "@langchain/core/runnables"; const echo = (text: string, config: RunnableConfig) => { const prompt = ChatPromptTemplate.fromTemplate( "Reverse the following text: {text}" ); const model = new ChatOpenAI({ model: "gpt-4o" }); const chain = prompt.pipe(model).pipe(new StringOutputParser()); return chain.invoke({ text }, config); }; const output = await RunnableLambda.from(echo).invoke("foo", { tags: ["my-tag"], callbacks: [ { handleLLMEnd: (output) => console.log(output), }, ], }); ``` ```codeBlockLines_AdAo { generations: [ [ { text: "oof", message: AIMessage { lc_serializable: true, lc_kwargs: [Object], lc_namespace: [Array], content: "oof", name: undefined, additional_kwargs: [Object], response_metadata: [Object], tool_calls: [], invalid_tool_calls: [] }, generationInfo: { finish_reason: "stop" } } ] ], llmOutput: { tokenUsage: { completionTokens: 2, promptTokens: 13, totalTokens: 15 } } } ``` # Streaming You can use generator functions (ie. functions that use the yield keyword, and behave like iterators) in a chain. The signature of these generators should be AsyncGenerator<Input> -> AsyncGenerator<Output>. These are useful for: - implementing a custom output parser - modifying the output of a previous step, while preserving streaming capabilities Here’s an example of a custom output parser for comma-separated lists. First, we create a chain that generates such a list as text: ```codeBlockLines_AdAo const streamingPrompt = ChatPromptTemplate.fromTemplate( "Write a comma-separated list of 5 animals similar to: {animal}. Do not include numbers" ); const strChain = streamingPrompt.pipe(model).pipe(new StringOutputParser()); const stream = await strChain.stream({ animal: "bear" }); for await (const chunk of stream) { console.log(chunk); } ``` ```codeBlockLines_AdAo Lion , wolf , tiger , cougar , leopard ``` Next, we define a custom function that will aggregate the currently streamed output and yield it when the model generates the next comma in the list: ```codeBlockLines_AdAo // This is a custom parser that splits an iterator of llm tokens // into a list of strings separated by commas async function* splitIntoList(input) { // hold partial input until we get a comma let buffer = ""; for await (const chunk of input) { // add current chunk to buffer buffer += chunk; // while there are commas in the buffer while (buffer.includes(",")) { // split buffer on comma const commaIndex = buffer.indexOf(","); // yield everything before the comma yield [buffer.slice(0, commaIndex).trim()]; // save the rest for the next iteration buffer = buffer.slice(commaIndex + 1); } } // yield the last chunk yield [buffer.trim()]; } const listChain = strChain.pipe(splitIntoList); const listChainStream = await listChain.stream({ animal: "bear" }); for await (const chunk of listChainStream) { console.log(chunk); } ``` ```codeBlockLines_AdAo [ "wolf" ] [ "lion" ] [ "tiger" ] [ "cougar" ] [ "cheetah" ] ``` Invoking it gives a full array of values: ```codeBlockLines_AdAo await listChain.invoke({ animal: "bear" }); ``` ```codeBlockLines_AdAo [ "lion", "tiger", "wolf", "cougar", "jaguar" ] ``` ## Next steps Now you’ve learned a few different ways to use custom logic within your chains, and how to implement streaming. To learn more, see the other how-to guides on runnables in this section."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/tutorials/sql_qa/"
+,
+"title": 
+"Build a Question/Answering system over SQL data | 🦜️🔗 Langchain"
+,
+"content": 
+"This guide assumes familiarity with the following concepts: Chat models, Tools, Agents, LangGraph. Enabling a LLM system to query structured data can be qualitatively different from unstructured text data. Whereas in the latter it is common to generate text that can be searched against a vector database, the approach for structured data is often for the LLM to write and execute queries in a DSL, such as SQL. In this guide we’ll go over the basic ways to create a Q&A system over tabular data in databases. We will cover implementations using both chains and agents. These systems will allow us to ask a question about the data in a database and get back a natural language answer. The main difference between the two is that our agent can query the database in a loop as many times as it needs to answer the question. Security note: Building Q&A systems of SQL databases requires executing model-generated SQL queries. There are inherent risks in doing this. Make sure that your database connection permissions are always scoped as narrowly as possible for your chain/agent’s needs. This will mitigate though not eliminate the risks of building a model-driven system. For more on general security best practices, see here. Architecture: At a high-level, the steps of these systems are: 1. Convert question to SQL query: Model converts user input to a SQL query. 2. Execute SQL query: Execute the query. 3. Answer the question: Model responds to user input using the query results. Setup: First, get required packages and set environment variables: `bash npm2yarn npm i langchain @langchain/community @langchain/langgraph`. Sample data: The below example will use a SQLite connection with the Chinook database, which is a sample database that represents a digital media store. Follow these installation steps to create `Chinook.db` in the same directory as this notebook. You can also download and build the database via the command line. Chains: Chains are compositions of predictable steps. In LangGraph, we can represent a chain via simple sequence of nodes. Let’s create a sequence of steps that, given a question, does the following: - converts the question into a SQL query; - executes the query; - uses the result to answer the original question. Application state: The LangGraph state of our application controls what data is input to the application, transferred between steps, and output by the application. For this application, we can just keep track of the input question, generated query, query result, and generated answer. Convert question to SQL query: The first step is to take the user input and convert it to a SQL query. To reliably obtain SQL queries (absent markdown formatting and explanations or clarifications), we will make use of LangChain’s structured output abstraction. Execute query: This is the most dangerous part of creating a SQL chain. Consider carefully if it is OK to run automated queries over your data. Minimize the database connection permissions as much as possible. Generate answer: Finally, our last step generates an answer to the question given the information pulled from the database. Orchestrating with LangGraph: Finally, we compile our application into a single graph object. In this case, we are just connecting the three steps into a single sequence. Human-in-the-loop: LangGraph supports a number of features that can be useful for this workflow. One of them is human-in-the-loop: we can interrupt our application before sensitive steps (such as the execution of a SQL query) for human review. Next steps: For more complex query-generation, we may want to create few-shot prompts or add query-checking steps. For advanced techniques like this and more check out: Prompting strategies, Query checking, Large databases. Agents: Agents leverage the reasoning capabilities of LLMs to make decisions during execution. Using agents allows you to offload additional discretion over the query generation and execution process. Although their behavior is less predictable than the above “chain”, they feature some advantages: They can query the database as many times as needed to answer the user question. They can recover from errors by running a generated query, catching the traceback and regenerating it correctly. They can answer questions based on the databases’ schema as well as on the databases’ content (like describing a specific table)."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/how_to/recursive_text_splitter/"
+,
+"title": 
+"How to recursively split text by characters | 🦜️🔗 Langchain"
+,
+"content": 
+"This guide assumes familiarity with the following concepts: - [Text splitters](https://js.langchain.com/docs/concepts/text_splitters) This text splitter is the recommended one for generic text. It is parameterized by a list of characters. It tries to split on them in order until the chunks are small enough. The default list is `['\n\n', '\n', ' ', '']`. This has the effect of trying to keep all paragraphs (and then sentences, and then words) together as long as possible, as those would generically seem to be the strongest semantically related pieces of text. 1. How the text is split: by list of characters. 2. How the chunk size is measured: by number of characters. Below we show example usage. To obtain the string content directly, use `.splitText`. To create LangChain [Document](https://api.js.langchain.com/classes/langchain_core.documents.Document.html) objects (e.g., for use in downstream tasks), use `.createDocuments`. ```codeBlockLines_AdAo import { RecursiveCharacterTextSplitter } from "@langchain/textsplitters"; const text = `Hi.\n\nI'm Harrison.\n\nHow? Are? You?\nOkay then f f f f.\nThis is a weird text to write, but gotta test the splittingggg some how.\n\nBye!\n\n-H.`; const splitter = new RecursiveCharacterTextSplitter({ chunkSize: 10, chunkOverlap: 1, }); const output = await splitter.createDocuments([text]); console.log(output.slice(0, 3)); ``` ```codeBlockLines_AdAo [\ Document {\ pageContent: "Hi.",\ metadata: { loc: { lines: { from: 1, to: 1 } } }\ },\ Document {\ pageContent: "I'm",\ metadata: { loc: { lines: { from: 3, to: 3 } } }\ },\ Document {\ pageContent: "Harrison.",\ metadata: { loc: { lines: { from: 3, to: 3 } } }\ }\ ] ``` You’ll note that in the above example we are splitting a raw text string and getting back a list of documents. We can also split documents directly. ```codeBlockLines_AdAo import { Document } from "@langchain/core/documents"; import { RecursiveCharacterTextSplitter } from "@langchain/textsplitters"; const text = `Hi.\n\nI'm Harrison.\n\nHow? Are? You?\nOkay then f f f f.\nThis is a weird text to write, but gotta test the splittingggg some how.\n\nBye!\n\n-H.`; const splitter = new RecursiveCharacterTextSplitter({ chunkSize: 10, chunkOverlap: 1, }); const docOutput = await splitter.splitDocuments([\ new Document({ pageContent: text }),\ ]); console.log(docOutput.slice(0, 3)); ``` ```codeBlockLines_AdAo [\ Document {\ pageContent: "Hi.",\ metadata: { loc: { lines: { from: 1, to: 1 } } }\ },\ Document {\ pageContent: "I'm",\ metadata: { loc: { lines: { from: 3, to: 3 } } }\ },\ Document {\ pageContent: "Harrison.",\ metadata: { loc: { lines: { from: 3, to: 3 } } }\ }\ ] ``` You can customize the `RecursiveCharacterTextSplitter` with arbitrary separators by passing a `separators` parameter like this: ```codeBlockLines_AdAo import { RecursiveCharacterTextSplitter } from "langchain/text_splitter"; import { Document } from "@langchain/core/documents"; const text = `Some other considerations include: - Do you deploy your backend and frontend together, or separately? - Do you deploy your backend co-located with your database, or separately? **Production Support:** As you move your LangChains into production, we'd love to offer more hands-on support. Fill out [this form](https://airtable.com/appwQzlErAS2qiP0L/shrGtGaVBVAz7NcV2) to share more about what you're building, and our team will get in touch. ## Deployment Options See below for a list of deployment options for your LangChain app. If you don't see your preferred option, please get in touch and we can add it to this list.`; const splitter = new RecursiveCharacterTextSplitter({ chunkSize: 50, chunkOverlap: 1, separators: ["|", "##", ">", "-"], }); const docOutput = await splitter.splitDocuments([\ new Document({ pageContent: text }),\ ]); console.log(docOutput.slice(0, 3)); ``` ```codeBlockLines_AdAo [\ Document {\ pageContent: "Some other considerations include:",\ metadata: { loc: { lines: { from: 1, to: 1 } } }\ },\ Document {\ pageContent: "- Do you deploy your backend and frontend together",\ metadata: { loc: { lines: { from: 3, to: 3 } } }\ },\ Document {\ pageContent: "r, or separately?",\ metadata: { loc: { lines: { from: 3, to: 3 } } }\ }\ ] ``` ## Next steps [​](https://js.langchain.com/docs/how_to/recursive_text_splitter/#next-steps "Direct link to Next steps") You’ve now learned a method for splitting text by character. Next, check out [specific techinques for splitting on\ code](https://js.langchain.com/docs/how_to/code_splitter) or the [full tutorial on\ retrieval-augmented generation](https://js.langchain.com/docs/tutorials/rag)."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/how_to/chat_token_usage_tracking/"
+,
+"title": 
+"How to track token usage"
+,
+"content": 
+"This guide assumes familiarity with the following concepts: - Chat models This notebook goes over how to track your token usage for specific calls. ## Using `AIMessage.usage_metadata` A number of model providers return token usage information as part of the chat generation response. When available, this information will be included on the `AIMessage` objects produced by the corresponding model. LangChain `AIMessage` objects include a [`usage_metadata`](https://api.js.langchain.com/classes/langchain_core.messages.AIMessage.html#usage_metadata) attribute for supported providers. When populated, this attribute will be an object with standard keys (e.g., "input_tokens" and "output_tokens"). #### OpenAI - npm - Yarn - pnpm ```codeBlockLines_AdAo npm install @langchain/openai @langchain/core ``` ```codeBlockLines_AdAo yarn add @langchain/openai @langchain/core ``` ```codeBlockLines_AdAo pnpm add @langchain/openai @langchain/core ``` ```codeBlockLines_AdAo import { ChatOpenAI } from "@langchain/openai"; const chatModel = new ChatOpenAI({ model: "gpt-3.5-turbo-0125", }); const res = await chatModel.invoke("Tell me a joke."); console.log(res.usage_metadata); /* { input_tokens: 12, output_tokens: 17, total_tokens: 29 } */ ``` #### API Reference: - ChatOpenAIfrom `@langchain/openai` #### Anthropic - npm - Yarn - pnpm ```codeBlockLines_AdAo npm install @langchain/anthropic @langchain/core ``` ```codeBlockLines_AdAo yarn add @langchain/anthropic @langchain/core ``` ```codeBlockLines_AdAo pnpm add @langchain/anthropic @langchain/core ``` ```codeBlockLines_AdAo import { ChatAnthropic } from "@langchain/anthropic"; const chatModel = new ChatAnthropic({ model: "claude-3-haiku-20240307", }); const res = await chatModel.invoke("Tell me a joke."); console.log(res.usage_metadata); /* { input_tokens: 12, output_tokens: 98, total_tokens: 110 } */ ``` #### API Reference: - ChatAnthropicfrom `@langchain/anthropic` ## Using `AIMessage.response_metadata` A number of model providers return token usage information as part of the chat generation response. When available, this is included in the `AIMessage.response_metadata` field. #### OpenAI ```codeBlockLines_AdAo import { ChatOpenAI } from "@langchain/openai"; const chatModel = new ChatOpenAI({ model: "gpt-4o-mini", }); const res = await chatModel.invoke("Tell me a joke."); console.log(res.response_metadata); /* { tokenUsage: { completionTokens: 15, promptTokens: 12, totalTokens: 27 }, finish_reason: 'stop' } */ ``` #### API Reference: - ChatOpenAIfrom `@langchain/openai` #### Anthropic ```codeBlockLines_AdAo import { ChatAnthropic } from "@langchain/anthropic"; const chatModel = new ChatAnthropic({ model: "claude-3-sonnet-20240229", }); const res = await chatModel.invoke("Tell me a joke."); console.log(res.response_metadata); /* { id: 'msg_017Mgz6HdgNbi3cwL1LNB9Dw', model: 'claude-3-sonnet-20240229', stop_sequence: null, usage: { input_tokens: 12, output_tokens: 30 }, stop_reason: 'end_turn' } */ ``` #### API Reference: - ChatAnthropicfrom `@langchain/anthropic` ## Streaming Some providers support token count metadata in a streaming context. #### OpenAI For example, OpenAI will return a message chunk at the end of a stream with token usage information. This behavior is supported by `@langchain/openai` >= 0.1.0 and can be enabled by passing a `stream_options` parameter when making your call. ```codeBlockLines_AdAo import type { AIMessageChunk } from "@langchain/core/messages"; import { ChatOpenAI } from "@langchain/openai"; import { concat } from "@langchain/core/utils/stream"; // Instantiate the model const model = new ChatOpenAI(); const response = await model.stream("Hello, how are you?", { // Pass the stream options stream_options: { include_usage: true, }, }); // Iterate over the response, only saving the last chunk let finalResult: AIMessageChunk | undefined; for await (const chunk of response) { if (finalResult) { finalResult = concat(finalResult, chunk); } else { finalResult = chunk; } } console.log(finalResult?.usage_metadata); /* { input_tokens: 13, output_tokens: 30, total_tokens: 43 } */ ``` #### API Reference: - AIMessageChunkfrom `@langchain/core/messages` - ChatOpenAIfrom `@langchain/openai` - concatfrom `@langchain/core/utils/stream` ## Using callbacks You can also use the `handleLLMEnd` callback to get the full output from the LLM, including token usage for supported models. Here's an example of how you could do that: ```codeBlockLines_AdAo import { ChatOpenAI } from "@langchain/openai"; const chatModel = new ChatOpenAI({ model: "gpt-4o-mini", callbacks: [ { handleLLMEnd(output) { console.log(JSON.stringify(output, null, 2)); }, }, ], }); await chatModel.invoke("Tell me a joke."); /* { "generations": [ [ { "text": "Why did the scarecrow win an award?\n\nBecause he was outstanding in his field!", "message": { "lc": 1, "type": "constructor", "id": [ "langchain_core", "messages", "AIMessage" ], "kwargs": { "content": "Why did the scarecrow win an award?\n\nBecause he was outstanding in his field!", "tool_calls": [], "invalid_tool_calls": [], "additional_kwargs": {}, "response_metadata": { "tokenUsage": { "completionTokens": 17, "promptTokens": 12, "totalTokens": 29 }, "finish_reason": "stop" } } }, "generationInfo": { "finish_reason": "stop" } } ] ], "llmOutput": { "tokenUsage": { "completionTokens": 17, "promptTokens": 12, "totalTokens": 29 } } } */ ``` #### API Reference: - ChatOpenAIfrom `@langchain/openai` ## Next steps You've now seen a few examples of how to track chat model token usage for supported providers. Next, check out the other how-to guides on chat models in this section, like [how to get a model to return structured output](https://js.langchain.com/docs/how_to/structured_output) or [how to add caching to your chat models](https://js.langchain.com/docs/how_to/chat_model_caching)."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/how_to/time_weighted_vectorstore/"
+,
+"title": 
+"How to create a time-weighted retriever"
+,
+"content": 
+"This guide covers the `TimeWeightedVectorStoreRetriever`, which uses a combination of semantic similarity and a time decay. The algorithm for scoring them is: ```codeBlockLines_AdAo semantic_similarity + (1.0 - decay_rate) ^ hours_passed ``` Notably, `hours_passed` refers to the hours passed since the object in the retriever **was last accessed**, not since it was created. This means that frequently accessed objects remain "fresh." ```codeBlockLines_AdAo let score = (1.0 - this.decayRate) ** hoursPassed + vectorRelevance; ``` `this.decayRate` is a configurable decimal number between 0 and 1. A lower number means that documents will be "remembered" for longer, while a higher number strongly weights more recently accessed documents. Note that setting a decay rate of exactly 0 or 1 makes `hoursPassed` irrelevant and makes this retriever equivalent to a standard vector lookup. It is important to note that due to required metadata, all documents must be added to the backing vector store using the `addDocuments` method on the **retriever**, not the vector store itself. See [this section for general instructions on installing integration packages](https://js.langchain.com/docs/how_to/installation#installing-integration-packages). ```codeBlockLines_AdAo npm install @langchain/openai @langchain/core ``` ```codeBlockLines_AdAo yarn add @langchain/openai @langchain/core ``` ```codeBlockLines_AdAo pnpm add @langchain/openai @langchain/core ``` ```codeBlockLines_AdAo import { TimeWeightedVectorStoreRetriever } from "langchain/retrievers/time_weighted"; import { MemoryVectorStore } from "langchain/vectorstores/memory"; import { OpenAIEmbeddings } from "@langchain/openai"; const vectorStore = new MemoryVectorStore(new OpenAIEmbeddings()); const retriever = new TimeWeightedVectorStoreRetriever({ vectorStore, memoryStream: [], searchKwargs: 2, }); const documents = [ "My name is John.", "My name is Bob.", "My favourite food is pizza.", "My favourite food is pasta.", "My favourite food is sushi.", ].map((pageContent) => ({ pageContent, metadata: {} })); // All documents must be added using this method on the retriever (not the vector store!) // so that the correct access history metadata is populated await retriever.addDocuments(documents); const results1 = await retriever.invoke("What is my favourite food?"); console.log(results1); const results2 = await retriever.invoke("What is my favourite food?"); console.log(results2); ``` You've now learned how to use time as a factor when performing retrieval. Next, check out the [broader tutorial on RAG](https://js.langchain.com/docs/tutorials/rag), or this section to learn how to [create your own custom retriever over any data source](https://js.langchain.com/docs/how_to/custom_retriever/)."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/how_to/chat_models_universal_init/"
+,
+"title": 
+"How to init any model in one line"
+,
+"content": 
+"Many LLM applications let end users specify what model provider and model they want the application to be powered by. This requires writing some logic to initialize different ChatModels based on some user configuration. The `initChatModel()` helper method makes it easy to initialize a number of different model integrations without having to worry about import paths and class names. Keep in mind this feature is only for chat models. Prerequisites This guide assumes familiarity with the following concepts: - [Chat models](https://js.langchain.com/docs/concepts/chat_models) - [LangChain Expression Language (LCEL)](https://js.langchain.com/docs/concepts/lcel) - [Tool calling](https://js.langchain.com/docs/concepts/tools) Compatibility **This feature is only intended to be used in Node environments. Use in non Node environments or with bundlers is not guaranteed to work and not officially supported.** `initChatModel` requires `langchain>=0.2.11`. See [this guide](https://js.langchain.com/docs/how_to/installation/#installing-integration-packages) for some considerations to take when upgrading. See the [initChatModel()](https://api.js.langchain.com/functions/langchain.chat_models_universal.initChatModel.html) API reference for a full list of supported integrations. ## Basic usage ```codeBlockLines_AdAo import { initChatModel } from "langchain/chat_models/universal"; // Returns a @langchain/openai ChatOpenAI instance. const gpt4o = await initChatModel("gpt-4o", { modelProvider: "openai", temperature: 0, }); // Returns a @langchain/anthropic ChatAnthropic instance. const claudeOpus = await initChatModel("claude-3-opus-20240229", { modelProvider: "anthropic", temperature: 0, }); // Returns a @langchain/google-vertexai ChatVertexAI instance. const gemini15 = await initChatModel("gemini-1.5-pro", { modelProvider: "google-vertexai", temperature: 0, }); // Since all model integrations implement the ChatModel interface, you can use them in the same way. console.log(`GPT-4o: ${(await gpt4o.invoke("what's your name")).content}\n`); console.log( `Claude Opus: ${(await claudeOpus.invoke("what's your name")).content}\n` ); console.log( `Gemini 1.5: ${(await gemini15.invoke("what's your name")).content}\n` ); /* GPT-4o: I'm an AI language model created by OpenAI, and I don't have a personal name. You can call me Assistant or any other name you prefer! How can I help you today? Claude Opus: My name is Claude. It's nice to meet you! Gemini 1.5: I don't have a name. I am a large language model, and I am not a person. I am a computer program that can generate text, translate languages, write different kinds of creative content, and answer your questions in an informative way. */ ``` #### API Reference: - initChatModelfrom `langchain/chat_models/universal` ## Inferring model provider For common and distinct model names `initChatModel()` will attempt to infer the model provider. See the [API reference](https://api.js.langchain.com/functions/langchain.chat_models_universal.initChatModel.html) for a full list of inference behavior. E.g. any model that starts with `gpt-3...` or `gpt-4...` will be inferred as using model provider `openai`. ```codeBlockLines_AdAo import { initChatModel } from "langchain/chat_models/universal"; const gpt4o = await initChatModel("gpt-4o", { temperature: 0, }); const claudeOpus = await initChatModel("claude-3-opus-20240229", { temperature: 0, }); const gemini15 = await initChatModel("gemini-1.5-pro", { temperature: 0, }); ``` #### API Reference: - initChatModelfrom `langchain/chat_models/universal` ## Creating a configurable model You can also create a runtime-configurable model by specifying `configurableFields`. If you don't specify a `model` value, then "model" and "modelProvider" be configurable by default. ```codeBlockLines_AdAo import { initChatModel } from "langchain/chat_models/universal"; const configurableModel = await initChatModel(undefined, { temperature: 0 }); const gpt4Res = await configurableModel.invoke("what's your name", { configurable: { model: "gpt-4o" }, }); console.log("gpt4Res: ", gpt4Res.content); /* gpt4Res: I'm an AI language model created by OpenAI, and I don't have a personal name. You can call me Assistant or any other name you prefer! How can I assist you today? */ const claudeRes = await configurableModel.invoke("what's your name", { configurable: { model: "claude-3-5-sonnet-20240620" }, }); console.log("claudeRes: ", claudeRes.content); /* claudeRes: My name is Claude. It's nice to meet you! */ ``` #### API Reference: - initChatModelfrom `langchain/chat_models/universal` ### Configurable model with default values We can create a configurable model with default model values, specify which parameters are configurable, and add prefixes to configurable params: ```codeBlockLines_AdAo import { initChatModel } from "langchain/chat_models/universal"; const firstLlm = await initChatModel("gpt-4o", { temperature: 0, configurableFields: ["model", "modelProvider", "temperature", "maxTokens"], configPrefix: "first", // useful when you have a chain with multiple models }); const openaiRes = await firstLlm.invoke("what's your name"); console.log("openaiRes: ", openaiRes.content); /* openaiRes: I'm an AI language model created by OpenAI, and I don't have a personal name. You can call me Assistant or any other name you prefer! How can I assist you today? */ const claudeRes = await firstLlm.invoke("what's your name", { configurable: { first_model: "claude-3-5-sonnet-20240620", first_temperature: 0.5, first_maxTokens: 100, }, }); console.log("claudeRes: ", claudeRes.content); /* claudeRes: My name is Claude. It's nice to meet you! */ ``` #### API Reference: - initChatModelfrom `langchain/chat_models/universal` ### Using a configurable model declaratively We can call declarative operations like `bindTools`, `withStructuredOutput`, `withConfig`, etc. on a configurable model and chain a configurable model in the same way that we would a regularly instantiated chat model object. ```codeBlockLines_AdAo import { z } from "zod"; import { tool } from "@langchain/core/tools"; import { initChatModel } from "langchain/chat_models/universal"; const GetWeather = z .object({ location: z.string().describe("The city and state, e.g. San Francisco, CA"), }) .describe("Get the current weather in a given location"); const weatherTool = tool( (_) => { // do something return "138 degrees"; }, { name: "GetWeather", schema: GetWeather, } ); const GetPopulation = z .object({ location: z.string().describe("The city and state, e.g. San Francisco, CA"), }) .describe("Get the current population in a given location"); const populationTool = tool( (_) => { // do something return "one hundred billion"; }, { name: "GetPopulation", schema: GetPopulation, } ); const llm = await initChatModel(undefined, { temperature: 0 }); const llmWithTools = llm.bindTools([weatherTool, populationTool]); const toolCalls1 = ( await llmWithTools.invoke("what's bigger in 2024 LA or NYC", { configurable: { model: "gpt-4o" }, }) ).tool_calls; console.log("toolCalls1: ", JSON.stringify(toolCalls1, null, 2)); /* toolCalls1: [\ {\ "name": "GetPopulation",\ "args": {\ "location": "Los Angeles, CA"\ },\ "type": "tool_call",\ "id": "call_DXRBVE4xfLYZfhZOsW1qRbr5"\ },\ {\ "name": "GetPopulation",\ "args": {\ "location": "New York, NY"\ },\ "type": "tool_call",\ "id": "call_6ec3m4eWhwGz97sCbNt7kOvC"\ }\ ]*/ const toolCalls2 = ( await llmWithTools.invoke("what's bigger in 2024 LA or NYC", { configurable: { model: "claude-3-5-sonnet-20240620" }, }) ).tool_calls; console.log("toolCalls2: ", JSON.stringify(toolCalls2, null, 2)); /* toolCalls2: [\ {\ "name": "GetPopulation",\ "args": {\ "location": "Los Angeles, CA"\ },\ "id": "toolu_01K3jNU8jx18sJ9Y6Q9SooJ7",\ "type": "tool_call"\ },\ {\ "name": "GetPopulation",\ "args": {\ "location": "New York City, NY"\ },\ "id": "toolu_01UiANKaSwYykuF4hi3t5oNB",\ "type": "tool_call"\ }\ ]*/ ``` #### API Reference: - toolfrom `@langchain/core/tools` - initChatModelfrom `langchain/chat_models/universal`"
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/how_to/example_selectors_length_based/"
+,
+"title": 
+"How to select examples by length"
+,
+"content": 
+"This guide assumes familiarity with the following concepts: - Prompt templates - Example selectors This example selector selects which examples to use based on length. This is useful when you are worried about constructing a prompt that will go over the length of the context window. For longer inputs, it will select fewer examples to include, while for shorter inputs it will select more. ```codeBlockLines_AdAo import { PromptTemplate, FewShotPromptTemplate } from "@langchain/core/prompts"; import { LengthBasedExampleSelector } from "@langchain/core/example_selectors"; export async function run() { // Create a prompt template that will be used to format the examples. const examplePrompt = new PromptTemplate({ inputVariables: ["input", "output"], template: "Input: {input}\nOutput: {output}", }); // Create a LengthBasedExampleSelector that will be used to select the examples. const exampleSelector = await LengthBasedExampleSelector.fromExamples( [ { input: "happy", output: "sad" }, { input: "tall", output: "short" }, { input: "energetic", output: "lethargic" }, { input: "sunny", output: "gloomy" }, { input: "windy", output: "calm" }, ], { examplePrompt, maxLength: 25, } ); // Create a FewShotPromptTemplate that will use the example selector. const dynamicPrompt = new FewShotPromptTemplate({ // We provide an ExampleSelector instead of examples. exampleSelector, examplePrompt, prefix: "Give the antonym of every input", suffix: "Input: {adjective}\nOutput:", inputVariables: ["adjective"], }); // An example with small input, so it selects all examples. console.log(await dynamicPrompt.format({ adjective: "big" })); /* Give the antonym of every input Input: happy Output: sad Input: tall Output: short Input: energetic Output: lethargic Input: sunny Output: gloomy Input: windy Output: calm Input: big Output: */ // An example with long input, so it selects only one example. const longString = "big and huge and massive and large and gigantic and tall and much much much much much bigger than everything else"; console.log(await dynamicPrompt.format({ adjective: longString })); /* Give the antonym of every input Input: happy Output: sad Input: big and huge and massive and large and gigantic and tall and much much much much much bigger than everything else Output: */ } ``` #### API Reference: - PromptTemplatefrom `@langchain/core/prompts` - FewShotPromptTemplatefrom `@langchain/core/prompts` - LengthBasedExampleSelectorfrom `@langchain/core/example_selectors` ## Next steps [​](https://js.langchain.com/docs/how_to/example_selectors_length_based/#next-steps "Direct link to Next steps") You've now learned a bit about using a length based example selector. Next, check out this guide on how to use a [similarity based example selector](https://js.langchain.com/docs/how_to/example_selectors_similarity)."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/how_to/example_selectors_similarity/"
+,
+"title": 
+"How to select examples by similarity"
+,
+"content": 
+"This guide assumes familiarity with the following concepts: - [Prompt templates](https://js.langchain.com/docs/concepts/prompt_templates) - [Example selectors](https://js.langchain.com/docs/how_to/example_selectors) - [Vector stores](https://js.langchain.com/docs/concepts/vectorstores) This object selects examples based on similarity to the inputs. It does this by finding the examples with the embeddings that have the greatest cosine similarity with the inputs. The fields of the examples object will be used as parameters to format the `examplePrompt` passed to the `FewShotPromptTemplate`. Each example should therefore contain all required fields for the example prompt you are using. See [this section for general instructions on installing integration packages](https://js.langchain.com/docs/how_to/installation#installing-integration-packages). - npm - Yarn - pnpm ```codeBlockLines_AdAo npm install @langchain/openai @langchain/community @langchain/core ``` ```codeBlockLines_AdAo yarn add @langchain/openai @langchain/community @langchain/core ``` ```codeBlockLines_AdAo pnpm add @langchain/openai @langchain/community @langchain/core ``` ```codeBlockLines_AdAo import { OpenAIEmbeddings } from "@langchain/openai"; import { HNSWLib } from "@langchain/community/vectorstores/hnswlib"; import { PromptTemplate, FewShotPromptTemplate } from "@langchain/core/prompts"; import { SemanticSimilarityExampleSelector } from "@langchain/core/example_selectors"; // Create a prompt template that will be used to format the examples. const examplePrompt = PromptTemplate.fromTemplate( "Input: {input}\nOutput: {output}" ); // Create a SemanticSimilarityExampleSelector that will be used to select the examples. const exampleSelector = await SemanticSimilarityExampleSelector.fromExamples( [ { input: "happy", output: "sad" }, { input: "tall", output: "short" }, { input: "energetic", output: "lethargic" }, { input: "sunny", output: "gloomy" }, { input: "windy", output: "calm" }, ], new OpenAIEmbeddings(), HNSWLib, { k: 1 } ); // Create a FewShotPromptTemplate that will use the example selector. const dynamicPrompt = new FewShotPromptTemplate({ // We provide an ExampleSelector instead of examples. exampleSelector, examplePrompt, prefix: "Give the antonym of every input", suffix: "Input: {adjective}\nOutput:", inputVariables: ["adjective"], }); // Input is about the weather, so should select eg. the sunny/gloomy example console.log(await dynamicPrompt.format({ adjective: "rainy" })); /* Give the antonym of every input Input: sunny Output: gloomy Input: rainy Output: */ // Input is a measurement, so should select the tall/short example console.log(await dynamicPrompt.format({ adjective: "large" })); /* Give the antonym of every input Input: tall Output: short Input: large Output: */ ``` #### API Reference: - OpenAIEmbeddingsfrom `@langchain/openai` - HNSWLibfrom `@langchain/community/vectorstores/hnswlib` - PromptTemplatefrom `@langchain/core/prompts` - FewShotPromptTemplatefrom `@langchain/core/prompts` - SemanticSimilarityExampleSelectorfrom `@langchain/core/example_selectors` By default, each field in the examples object is concatenated together, embedded, and stored in the vectorstore for later similarity search against user queries. If you only want to embed specific keys (e.g., you only want to search for examples that have a similar query to the one the user provides), you can pass an `inputKeys` array in the final `options` parameter. ## Loading from an existing vectorstore [​](https://js.langchain.com/docs/how_to/example_selectors_similarity/#loading-from-an-existing-vectorstore "Direct link to Loading from an existing vectorstore") You can also use a pre-initialized vector store by passing an instance to the `SemanticSimilarityExampleSelector` constructor directly, as shown below. You can also add more examples via the `addExample` method: ```codeBlockLines_AdAo // Ephemeral, in-memory vector store for demo purposes import { MemoryVectorStore } from "langchain/vectorstores/memory"; import { OpenAIEmbeddings, ChatOpenAI } from "@langchain/openai"; import { PromptTemplate, FewShotPromptTemplate } from "@langchain/core/prompts"; import { SemanticSimilarityExampleSelector } from "@langchain/core/example_selectors"; const embeddings = new OpenAIEmbeddings(); const memoryVectorStore = new MemoryVectorStore(embeddings); const examples = [ { query: "healthy food", output: `galbi`, }, { query: "healthy food", output: `schnitzel`, }, { query: "foo", output: `bar`, }, ]; const exampleSelector = new SemanticSimilarityExampleSelector({ vectorStore: memoryVectorStore, k: 2, // Only embed the "query" key of each example inputKeys: ["query"], }); for (const example of examples) { // Format and add an example to the underlying vector store await exampleSelector.addExample(example); } // Create a prompt template that will be used to format the examples. const examplePrompt = PromptTemplate.fromTemplate(`<example> <user_input> {query} </user_input> <output> {output} </output> </example>`); // Create a FewShotPromptTemplate that will use the example selector. const dynamicPrompt = new FewShotPromptTemplate({ // We provide an ExampleSelector instead of examples. exampleSelector, examplePrompt, prefix: `Answer the user's question, using the below examples as reference:`, suffix: "User question: {query}", inputVariables: ["query"], }); const formattedValue = await dynamicPrompt.format({ query: "What is a healthy food?", }); console.log(formattedValue); /* Answer the user's question, using the below examples as reference: <example> <user_input> healthy </user_input> <output> galbi </output> </example> <example> <user_input> healthy </user_input> <output> schnitzel </output> </example> User question: What is a healthy food? */ const model = new ChatOpenAI({}); const chain = dynamicPrompt.pipe(model); const result = await chain.invoke({ query: "What is a healthy food?" }); console.log(result); /* AIMessage { content: 'A healthy food can be galbi or schnitzel.', additional_kwargs: { function_call: undefined } } */ ``` #### API Reference: - MemoryVectorStorefrom `langchain/vectorstores/memory` - OpenAIEmbeddingsfrom `@langchain/openai` - ChatOpenAIfrom `@langchain/openai` - PromptTemplatefrom `@langchain/core/prompts` - FewShotPromptTemplatefrom `@langchain/core/prompts` - SemanticSimilarityExampleSelectorfrom `@langchain/core/example_selectors` ## Metadata filtering [​](https://js.langchain.com/docs/how_to/example_selectors_similarity/#metadata-filtering "Direct link to Metadata filtering") When adding examples, each field is available as metadata in the produced document. If you would like further control over your search space, you can add extra fields to your examples and pass a `filter` parameter when initializing your selector: ```codeBlockLines_AdAo // Ephemeral, in-memory vector store for demo purposes import { MemoryVectorStore } from "langchain/vectorstores/memory"; import { OpenAIEmbeddings, ChatOpenAI } from "@langchain/openai"; import { PromptTemplate, FewShotPromptTemplate } from "@langchain/core/prompts"; import { Document } from "@langchain/core/documents"; import { SemanticSimilarityExampleSelector } from "@langchain/core/example_selectors"; const embeddings = new OpenAIEmbeddings(); const memoryVectorStore = new MemoryVectorStore(embeddings); const examples = [ { query: "healthy food", output: `lettuce`, food_type: "vegetable", }, { query: "healthy food", output: `schnitzel`, food_type: "veal", }, { query: "foo", output: `bar`, food_type: "baz", }, ]; const exampleSelector = new SemanticSimilarityExampleSelector({ vectorStore: memoryVectorStore, k: 2, // Only embed the "query" key of each example inputKeys: ["query"], // Filter type will depend on your specific vector store. // See the section of the docs for the specific vector store you are using. filter: (doc: Document) => doc.metadata.food_type === "vegetable", }); for (const example of examples) { // Format and add an example to the underlying vector store await exampleSelector.addExample(example); } // Create a prompt template that will be used to format the examples. const examplePrompt = PromptTemplate.fromTemplate(`<example> <user_input> {query} </user_input> <output> {output} </output> </example>`); // Create a FewShotPromptTemplate that will use the example selector. const dynamicPrompt = new FewShotPromptTemplate({ // We provide an ExampleSelector instead of examples. exampleSelector, examplePrompt, prefix: `Answer the user's question, using the below examples as reference:`, suffix: "User question:\n{query}", inputVariables: ["query"], }); const model = new ChatOpenAI({}); const chain = dynamicPrompt.pipe(model); const result = await chain.invoke({ query: "What is exactly one type of healthy food?", }); console.log(result); /* AIMessage { content: 'One type of healthy food is lettuce.', additional_kwargs: { function_call: undefined } } */ ``` #### API Reference: - MemoryVectorStorefrom `langchain/vectorstores/memory` - OpenAIEmbeddingsfrom `@langchain/openai` - ChatOpenAIfrom `@langchain/openai` - PromptTemplatefrom `@langchain/core/prompts` - FewShotPromptTemplatefrom `@langchain/core/prompts` - Documentfrom `@langchain/core/documents` - SemanticSimilarityExampleSelectorfrom `@langchain/core/example_selectors` ## Custom vectorstore retrievers [​](https://js.langchain.com/docs/how_to/example_selectors_similarity/#custom-vectorstore-retrievers "Direct link to Custom vectorstore retrievers") You can also pass a vectorstore retriever instead of a vectorstore. One way this could be useful is if you want to use retrieval besides similarity search such as maximal marginal relevance: ```codeBlockLines_AdAo /* eslint-disable @typescript-eslint/no-non-null-assertion */ // Requires a vectorstore that supports maximal marginal relevance search import { Pinecone } from "@pinecone-database/pinecone"; import { OpenAIEmbeddings, ChatOpenAI } from "@langchain/openai"; import { PineconeStore } from "@langchain/pinecone"; import { PromptTemplate, FewShotPromptTemplate } from "@langchain/core/prompts"; import { SemanticSimilarityExampleSelector } from "@langchain/core/example_selectors"; const pinecone = new Pinecone(); const pineconeIndex = pinecone.Index(process.env.PINECONE_INDEX!); /** * Pinecone allows you to partition the records in an index into namespaces. * Queries and other operations are then limited to one namespace, * so different requests can search different subsets of your index. * Read more about namespaces here: https://docs.pinecone.io/guides/indexes/use-namespaces */ const namespace = "pinecone"; const pineconeVectorstore = await PineconeStore.fromExistingIndex( new OpenAIEmbeddings(), { pineconeIndex, namespace } ); const pineconeMmrRetriever = pineconeVectorstore.asRetriever({ searchType: "mmr", k: 2, }); const examples = [ { query: "healthy food", output: `lettuce`, food_type: "vegetable", }, { query: "healthy food", output: `schnitzel`, food_type: "veal", }, { query: "foo", output: `bar`, food_type: "baz", }, ]; const exampleSelector = new SemanticSimilarityExampleSelector({ vectorStoreRetriever: pineconeMmrRetriever, // Only embed the "query" key of each example inputKeys: ["query"], }); for (const example of examples) { // Format and add an example to the underlying vector store await exampleSelector.addExample(example); } // Create a prompt template that will be used to format the examples. const examplePrompt = PromptTemplate.fromTemplate(`<example> <user_input> {query} </user_input> <output> {output} </output> </example>`); // Create a FewShotPromptTemplate that will use the example selector. const dynamicPrompt = new FewShotPromptTemplate({ // We provide an ExampleSelector instead of examples. exampleSelector, examplePrompt, prefix: `Answer the user's question, using the below examples as reference:`, suffix: "User question:\n{query}", inputVariables: ["query"], }); const model = new ChatOpenAI({}); const chain = dynamicPrompt.pipe(model); const result = await chain.invoke({ query: "What is exactly one type of healthy food?", }); console.log(result); /* AIMessage { content: 'lettuce.', additional_kwargs: { function_call: undefined } } */ ``` #### API Reference: - OpenAIEmbeddingsfrom `@langchain/openai` - ChatOpenAIfrom `@langchain/openai` - PineconeStorefrom `@langchain/pinecone` - PromptTemplatefrom `@langchain/core/prompts` - FewShotPromptTemplatefrom `@langchain/core/prompts` - SemanticSimilarityExampleSelectorfrom `@langchain/core/example_selectors` ## Next steps [​](https://js.langchain.com/docs/how_to/example_selectors_similarity/#next-steps "Direct link to Next steps") You've now learned a bit about using similarity in an example selector. Next, check out this guide on how to use a [length-based example selector](https://js.langchain.com/docs/how_to/example_selectors_length_based)."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/how_to/assign/"
+,
+"title": 
+"How to add values to a chain's state | 🦜️🔗 Langchain"
+,
+"content": 
+"This guide assumes familiarity with the following concepts: - LangChain Expression Language (LCEL) - Chaining runnables - Calling runnables in parallel - Custom functions - Passing data through An alternate way of passing data through steps of a chain is to leave the current values of the chain state unchanged while assigning a new value under a given key. The RunnablePassthrough.assign() static method takes an input value and adds the extra arguments passed to the assign function. This is useful in the common LangChain Expression Language pattern of additively creating a dictionary to use as input to a later step. Here’s an example: ```codeBlockLines_AdAo import { RunnableParallel, RunnablePassthrough, } from "@langchain/core/runnables"; const runnable = RunnableParallel.from({ extra: RunnablePassthrough.assign({ mult: (input: { num: number }) => input.num * 3, modified: (input: { num: number }) => input.num + 1, }), }); await runnable.invoke({ num: 1 }); ``` ```codeBlockLines_AdAo { extra: { num: 1, mult: 3, modified: 2 } } ``` Let’s break down what’s happening here. - The input to the chain is {"num": 1}. This is passed into a RunnableParallel, which invokes the runnables it is passed in parallel with that input. - The value under the extra key is invoked. RunnablePassthrough.assign() keeps the original keys in the input dict ( {"num": 1}), and assigns a new key called mult. The value is lambda x: x["num"] * 3), which is 3. Thus, the result is {"num": 1, "mult": 3}. - {"num": 1, "mult": 3} is returned to the RunnableParallel call, and is set as the value to the key extra. - At the same time, the modified key is called. The result is 2, since the lambda extracts a key called "num" from its input and adds one. Thus, the result is {'extra': {'num': 1, 'mult': 3}, 'modified': 2}. ## Streaming One convenient feature of this method is that it allows values to pass through as soon as they are available. To show this off, we’ll use RunnablePassthrough.assign() to immediately return source docs in a retrieval chain: - npm - yarn - pnpm ```codeBlockLines_AdAo npm i @langchain/openai @langchain/core ``` ```codeBlockLines_AdAo yarn add @langchain/openai @langchain/core ``` ```codeBlockLines_AdAo pnpm add @langchain/openai @langchain/core ``` ```codeBlockLines_AdAo import { StringOutputParser } from "@langchain/core/output_parsers"; import { ChatPromptTemplate } from "@langchain/core/prompts"; import { RunnablePassthrough, RunnableSequence, } from "@langchain/core/runnables"; import { ChatOpenAI, OpenAIEmbeddings } from "@langchain/openai"; import { MemoryVectorStore } from "langchain/vectorstores/memory"; const vectorstore = await MemoryVectorStore.fromDocuments( [{ pageContent: "harrison worked at kensho", metadata: {} }], new OpenAIEmbeddings() ); const retriever = vectorstore.asRetriever(); const template = `Answer the question based only on the following context: {context} Question: {question} `; const prompt = ChatPromptTemplate.fromTemplate(template); const model = new ChatOpenAI({ model: "gpt-4o" }); const generationChain = prompt.pipe(model).pipe(new StringOutputParser()); const retrievalChain = RunnableSequence.from([ { context: retriever.pipe((docs) => docs[0].pageContent), question: new RunnablePassthrough(), }, RunnablePassthrough.assign({ output: generationChain }), ]); const stream = await retrievalChain.stream("where did harrison work?"); for await (const chunk of stream) { console.log(chunk); } ``` ```codeBlockLines_AdAo { question: "where did harrison work?" } { context: "harrison worked at kensho" } { output: "" } { output: "H" } { output: "arrison" } { output: " worked" } { output: " at" } { output: " Kens" } { output: "ho" } { output: "." } { output: "" } ``` We can see that the first chunk contains the original "question" since that is immediately available. The second chunk contains "context" since the retriever finishes second. Finally, the output from the generation_chain streams in chunks as soon as it is available. ## Next steps Now you’ve learned how to pass data through your chains to help to help format the data flowing through your chains. To learn more, see the other how-to guides on runnables in this section."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/how_to/routing/"
+,
+"title": 
+"How to route execution within a chain"
+,
+"content": 
+"This guide covers how to do routing in the LangChain Expression Language. Routing allows you to create non-deterministic chains where the output of a previous step defines the next step. Routing helps provide structure and consistency around interactions with LLMs. There are two ways to perform routing: 1. Conditionally return runnables from a RunnableLambda (recommended) 2. Using a RunnableBranch (legacy) We'll illustrate both methods using a two step sequence where the first step classifies an input question as being about LangChain, Anthropic, or Other, then routes to a corresponding prompt chain."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/how_to/routing/#using-a-custom-function"
+,
+"title": 
+"Using a custom function"
+,
+"content": 
+"You can use a custom function to route between different outputs. Here's an example: ..."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/how_to/routing/#routing-by-semantic-similarity"
+,
+"title": 
+"Routing by semantic similarity"
+,
+"content": 
+"One especially useful technique is to use embeddings to route a query to the most relevant prompt. Here's an example: ..."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/how_to/routing/#using-a-runnablebranch"
+,
+"title": 
+"Using a RunnableBranch"
+,
+"content": 
+"A RunnableBranch is initialized with a list of (condition, runnable) pairs and a default runnable. It selects which branch by passing each condition the input it's invoked with. It selects the first condition to evaluate to True, and runs the corresponding runnable to that condition with the input."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/how_to/routing/#next-steps"
+,
+"title": 
+"Next steps"
+,
+"content": 
+"You've now learned how to add routing to your composed LCEL chains. Next, check out the other how-to guides on runnables in this section."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/how_to/binding/"
+,
+"title": 
+"How to attach runtime arguments to a Runnable | 🦜️🔗 Langchain"
+,
+"content": 
+"This guide assumes familiarity with the following concepts: - LangChain Expression Language (LCEL) - Chaining runnables - Tool calling Sometimes we want to invoke a Runnable within a RunnableSequence with constant arguments that are not part of the output of the preceding Runnable in the sequence, and which are not part of the user input. We can use the Runnable.bind() method to set these arguments ahead of time. ## Binding stop sequences Suppose we have a simple prompt + model chain: ```codeBlockLines_AdAo npm i @langchain/openai @langchain/core ``` ```codeBlockLines_AdAo yarn add @langchain/openai @langchain/core ``` ```codeBlockLines_AdAo pnpm add @langchain/openai @langchain/core ``` ```codeBlockLines_AdAo import { StringOutputParser } from "@langchain/core/output_parsers"; import { ChatPromptTemplate } from "@langchain/core/prompts"; import { ChatOpenAI } from "@langchain/openai"; const prompt = ChatPromptTemplate.fromMessages([ [ "system", "Write out the following equation using algebraic symbols then solve it. Use the format\n\nEQUATION:...\nSOLUTION:...\n\n", ], ["human", "{equation_statement}"], ]); const model = new ChatOpenAI({ temperature: 0 }); const runnable = prompt.pipe(model).pipe(new StringOutputParser()); const res = await runnable.invoke({ equation_statement: "x raised to the third plus seven equals 12", }); console.log(res); ``` ```codeBlockLines_AdAo EQUATION: x^3 + 7 = 12 SOLUTION: Subtract 7 from both sides: x^3 = 5 Take the cube root of both sides: x = ∛5 ``` and want to call the model with certain stop words so that we shorten the output, which is useful in certain types of prompting techniques. While we can pass some arguments into the constructor, other runtime args use the .bind() method as follows: ```codeBlockLines_AdAo const runnableWithStop = prompt .pipe(model.bind({ stop: ["SOLUTION"] })) .pipe(new StringOutputParser()); const shorterResponse = await runnableWithStop.invoke({ equation_statement: "x raised to the third plus seven equals 12", }); console.log(shorterResponse); ``` ```codeBlockLines_AdAo EQUATION: x^3 + 7 = 12 ``` What you can bind to a Runnable will depend on the extra parameters you can pass when invoking it. ## Attaching OpenAI tools Another common use-case is tool calling. While you should generally use the .bind_tools() method for tool-calling models, you can also bind provider-specific args directly if you want lower level control: ```codeBlockLines_AdAo const tools = [ { type: "function", function: { name: "get_current_weather", description: "Get the current weather in a given location", parameters: { type: "object", properties: { location: { type: "string", description: "The city and state, e.g. San Francisco, CA", }, unit: { type: "string", enum: ["celsius", "fahrenheit"] }, }, required: ["location"], }, }, }, ]; const modelWithTools = new ChatOpenAI({ model: "gpt-4o" }).bind({ tools }); await modelWithTools.invoke("What's the weather in SF, NYC and LA?"); ``` ```codeBlockLines_AdAo AIMessage { lc_serializable: true, lc_kwargs: { content: "", tool_calls: [ { name: "get_current_weather", args: { location: "San Francisco, CA" }, id: "call_iDKz4zU8PKBaaIT052fJkMMF" }, { name: "get_current_weather", args: { location: "New York, NY" }, id: "call_niQwZDOqO6OJTBiDBFG8FODc" }, { name: "get_current_weather", args: { location: "Los Angeles, CA" }, id: "call_zLXH2cDVQy0nAVC0ViWuEP4m" } ], invalid_tool_calls: [], additional_kwargs: { function_call: undefined, tool_calls: [ { id: "call_iDKz4zU8PKBaaIT052fJkMMF", type: "function", function: [Object] }, { id: "call_niQwZDOqO6OJTBiDBFG8FODc", type: "function", function: [Object] }, { id: "call_zLXH2cDVQy0nAVC0ViWuEP4m", type: "function", function: [Object] } ] }, response_metadata: {} }, lc_namespace: [ "langchain_core", "messages" ], content: "", name: undefined, additional_kwargs: { function_call: undefined, tool_calls: [ { id: "call_iDKz4zU8PKBaaIT052fJkMMF", type: "function", function: { name: "get_current_weather", arguments: '{"location": "San Francisco, CA"}' } }, { id: "call_niQwZDOqO6OJTBiDBFG8FODc", type: "function", function: { name: "get_current_weather", arguments: '{"location": "New York, NY"}' } }, { id: "call_zLXH2cDVQy0nAVC0ViWuEP4m", type: "function", function: { name: "get_current_weather", arguments: '{"location": "Los Angeles, CA"}' } } ] }, response_metadata: { tokenUsage: { completionTokens: 70, promptTokens: 82, totalTokens: 152 }, finish_reason: "tool_calls" }, tool_calls: [ { name: "get_current_weather", args: { location: "San Francisco, CA" }, id: "call_iDKz4zU8PKBaaIT052fJkMMF" }, { name: "get_current_weather", args: { location: "New York, NY" }, id: "call_niQwZDOqO6OJTBiDBFG8FODc" }, { name: "get_current_weather", args: { location: "Los Angeles, CA" }, id: "call_zLXH2cDVQy0nAVC0ViWuEP4m" } ], invalid_tool_calls: [] } ``` ## Next steps You now know how to bind runtime arguments to a Runnable. Next, you might be interested in our how-to guides on passing data through a chain."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/integrations/document_loaders/web_loaders/firecrawl/"
+,
+"title": 
+"FireCrawlLoader | 🦜️🔗 Langchain"
+,
+"content": 
+"This notebook provides a quick overview for getting started with FireCrawlLoader. For detailed documentation of all FireCrawlLoader features and configurations head to the API reference."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/tutorials/#get-started"
+,
+"title": 
+"Get started"
+,
+"content": 
+"Familiarize yourself with LangChain's open-source components by building simple applications."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/tutorials/llm_chain"
+,
+"title": 
+"Chat models and prompts"
+,
+"content": 
+"Build a simple LLM application with prompt templates and chat models."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/tutorials/retrievers"
+,
+"title": 
+"Semantic search"
+,
+"content": 
+"Build a semantic search engine over a PDF with document loaders, embedding models, and vector stores."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/tutorials/classification"
+,
+"title": 
+"Classification"
+,
+"content": 
+"Classify text into categories or labels using chat models with structured outputs."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/tutorials/extraction"
+,
+"title": 
+"Extraction"
+,
+"content": 
+"Extract structured data from text and other unstructured media using chat models and few-shot examples."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/tutorials/chatbot"
+,
+"title": 
+"Chatbots"
+,
+"content": 
+"Build a chatbot that incorporates memory."
+}
+
+,
+
+{
+"url": 
+"https://langchain-ai.github.io/langgraphjs/tutorials/quickstart/"
+,
+"title": 
+"Agents"
+,
+"content": 
+"Build an agent with LangGraph.js that interacts with external tools."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/tutorials/rag"
+,
+"title": 
+"Retrieval Augmented Generation (RAG) Part 1"
+,
+"content": 
+"Build an application that uses your own documents to inform its responses."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/tutorials/qa_chat_history"
+,
+"title": 
+"Retrieval Augmented Generation (RAG) Part 2"
+,
+"content": 
+"Build a RAG application that incorporates a memory of its user interactions and multi-step retrieval."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/tutorials/sql_qa"
+,
+"title": 
+"Question-Answering with SQL"
+,
+"content": 
+"Build a question-answering system that executes SQL queries to inform its responses."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/tutorials/summarization"
+,
+"title": 
+"Summarization"
+,
+"content": 
+"Generate summaries of (potentially long) texts."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/tutorials/graph"
+,
+"title": 
+"Question-Answering with Graph Databases"
+,
+"content": 
+"Build a question-answering system that queries a graph database to inform its responses."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/tutorials/#langsmith"
+,
+"title": 
+"LangSmith"
+,
+"content": 
+"LangSmith allows you to closely trace, monitor and evaluate your LLM application."
+}
+
+,
+
+{
+"url": 
+"https://docs.smith.langchain.com/tutorials/Developers/evaluation"
+,
+"title": 
+"Evaluate your LLM application"
+,
+"content": 
+"LangSmith helps you evaluate the performance of your LLM applications."
+}
+
+,
+
+{
+"url": 
+"https://js.langchain.com/docs/concepts/why_langchain/"
+,
+"title": 
+"Why LangChain?"
+,
+"content": 
+"The goal of the `langchain` package and LangChain the company is to make it as easy possible for developers to build applications that reason. While LangChain originally started as a single open source package, it has evolved into a company and a whole ecosystem. This page will talk about the LangChain ecosystem as a whole. Most of the components within in the LangChain ecosystem can be used by themselves - so if you feel particularly drawn to certain components but not others, that is totally fine! Pick and choose whichever components you like best. There are several primary needs that LangChain aims to address: 1. **Standardized component interfaces:** The growing number of models and related components for AI applications has resulted in a wide variety of different APIs that developers need to learn and use. This diversity can make it challenging for developers to switch between providers or combine components when building applications. LangChain exposes a standard interface for key components, making it easy to switch between providers. 2. **Orchestration:** As applications become more complex, combining multiple components and models, there's a growing need to efficiently connect these elements into control flows that can accomplish diverse tasks. Orchestration is crucial for building such applications. 3. **Observability and evaluation:** As applications become more complex, it becomes increasingly difficult to understand what is happening within them. Furthermore, the pace of development can become rate-limited by the paradox of choice: for example, developers often wonder how to engineer their prompt or which LLM best balances accuracy, latency, and cost. Observability and evaluations can help developers monitor their applications and rapidly answer these types of questions with confidence. LangChain provides common interfaces for components that are central to many AI applications. As an example, all chat models implement the BaseChatModel interface. This provides a standard way to interact with chat models, supporting important but often provider-specific features like tool calling and structured outputs. Many model providers support tool calling, a critical features for many applications (e.g., agents), that allows a developer to request model responses that match a particular schema. The APIs for each provider differ. LangChain's chat model interface provides a common way to bind tools to a model in order to support tool calling. Similarly, getting models to produce structured outputs is an extremely common use case. Providers support different approaches for this, including JSON mode or tool calling, with different APIs. LangChain's chat model interface provides a common way to produce structured outputs using the withStructuredOutput() method. In the context of RAG and LLM application components, LangChain's retriever interface provides a standard way to connect to many different types of data services or databases (e.g., vector stores or databases). The underlying implementation of the retriever depends on the type of data store or database you are connecting to, but all retrievers implement the runnable interface, meaning they can be invoked in a common manner. While standardization for individual components is useful, we've increasingly seen that developers want to combine components into more complex applications. This motivates the need for orchestration. There are several common characteristics of LLM applications that this orchestration layer should support: - **Complex control flow:** The application requires complex patterns such as cycles (e.g., a loop that reiterates until a condition is met). - **Persistence:** The application needs to maintain short-term and / or long-term memory. - **Human-in-the-loop:** The application needs human interaction, e.g., pausing, reviewing, editing, approving certain steps. The recommended way to do orchestration for these complex applications is LangGraph. LangGraph is a library that gives developers a high degree of control by expressing the flow of the application as a set of nodes and edges. LangGraph comes with built-in support for persistence, human-in-the-loop, memory, and other features. It's particularly well suited for building agents or multi-agent applications. Importantly, individual LangChain components can be used within LangGraph nodes, but you can also use LangGraph without using LangChain components. The pace of AI application development is often rate-limited by high-quality evaluations because there is a paradox of choice. Developers often wonder how to engineer their prompt or which LLM best balances accuracy, latency, and cost. High quality tracing and evaluations can help you rapidly answer these types of questions with confidence. LangSmith is our platform that supports observability and evaluation for AI applications. See our conceptual guides on evaluations and tracing for more details. LangChain offers standard interfaces for components that are central to many AI applications, which offers a few specific advantages: - **Ease of swapping providers:** It allows you to swap out different component providers without having to change the underlying code. - **Advanced features:** It provides common methods for more advanced features, such as streaming and tool calling. LangGraph makes it possible to orchestrate complex applications (e.g., agents) and provide features like including persistence, human-in-the-loop, or memory. LangSmith makes it possible to iterate with confidence on your applications, by providing LLM-specific observability and framework for testing and evaluating your application."
+}
+
+]
+}
+]
