@@ -1,0 +1,207 @@
+[
+  {
+    "api_information": [
+      {
+        "method": "POST",
+        "endpoint": "/contents",
+        "response": "200 - application/json containing requestId, results, costDollars.",
+        "parameters": [
+          {
+            "name": "urls",
+            "type": "string[]",
+            "required": true,
+            "description": "Array of URLs to crawl (backwards compatible with 'ids' parameter)."
+          },
+          {
+            "name": "text",
+            "type": "boolean",
+            "required": false,
+            "description": "If true, returns full page text with default settings. If false, disables text return."
+          },
+          {
+            "name": "highlights",
+            "type": "object",
+            "required": false,
+            "description": "Text snippets the LLM identifies as most relevant from each page."
+          },
+          {
+            "name": "summary",
+            "type": "object",
+            "required": false,
+            "description": "Summary of the webpage."
+          },
+          {
+            "name": "livecrawl",
+            "type": "enum",
+            "required": false,
+            "description": "Options for livecrawling pages."
+          },
+          {
+            "name": "livecrawlTimeout",
+            "type": "integer",
+            "required": false,
+            "description": "The timeout for livecrawling in milliseconds."
+          },
+          {
+            "name": "subpages",
+            "type": "integer",
+            "required": false,
+            "description": "The number of subpages to crawl."
+          },
+          {
+            "name": "extras",
+            "type": "object",
+            "required": false,
+            "description": "Extra parameters to pass."
+          }
+        ],
+        "description": "Get the full page contents, summaries, and metadata for a list of URLs. Returns instant results from our cache, with automatic live crawling as fallback for uncached pages."
+      },
+      {
+        "method": "",
+        "endpoint": "",
+        "response": "",
+        "parameters": [],
+        "description": "Get your Exa API key"
+      },
+      {
+        "method": "",
+        "endpoint": "",
+        "response": "",
+        "parameters": [],
+        "description": "Create a .env file"
+      },
+      {
+        "method": "",
+        "endpoint": "",
+        "response": "",
+        "parameters": [],
+        "description": "Make an API request"
+      },
+      {
+        "method": "",
+        "endpoint": "",
+        "response": "",
+        "parameters": [
+          {
+            "name": "query",
+            "type": "string",
+            "required": true,
+            "description": "The search query."
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "required": false,
+            "description": "The type of search."
+          },
+          {
+            "name": "text",
+            "type": "boolean",
+            "required": false,
+            "description": "Whether to include text."
+          }
+        ],
+        "description": "Search and crawl"
+      },
+      {
+        "method": "post",
+        "endpoint": "/search",
+        "response": "200 response with search results.",
+        "parameters": [
+          {
+            "name": "query",
+            "type": "string",
+            "required": true,
+            "description": "The query string for the search."
+          },
+          {
+            "name": "useAutoprompt",
+            "type": "boolean",
+            "required": false,
+            "description": "Autoprompt converts your query to an Exa-style query. Enabled by default for auto search, optional for neural search, and not available for keyword search."
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "required": false,
+            "description": "The type of search. Neural uses an embeddings-based model, keyword is google-like SERP. Default is auto, which automatically decides between keyword and neural."
+          },
+          {
+            "name": "category",
+            "type": "string",
+            "required": false,
+            "description": "A data category to focus on."
+          }
+        ],
+        "description": "Perform a search with a Exa prompt-engineered query and retrieve a list of relevant results. Optionally get contents."
+      },
+      {
+        "method": "post",
+        "endpoint": "/findSimilar",
+        "response": "200 response with similar links.",
+        "parameters": [
+          {
+            "name": "url",
+            "type": "string",
+            "required": true,
+            "description": "The url for which you would like to find similar links."
+          }
+        ],
+        "description": "Find similar links to the link provided. Optionally get contents."
+      },
+      {
+        "method": "post",
+        "endpoint": "/contents",
+        "response": "200 response with contents.",
+        "parameters": [
+          {
+            "name": "urls",
+            "type": "array",
+            "required": true,
+            "description": "Array of URLs to crawl."
+          },
+          {
+            "name": "ids",
+            "type": "array",
+            "required": false,
+            "description": "Deprecated - use 'urls' instead."
+          }
+        ],
+        "description": "Get Contents"
+      },
+      {
+        "method": "post",
+        "endpoint": "/answer",
+        "response": "200 response with generated answer.",
+        "parameters": [
+          {
+            "name": "query",
+            "type": "string",
+            "required": true,
+            "description": "The question or query to answer."
+          },
+          {
+            "name": "stream",
+            "type": "boolean",
+            "required": false,
+            "description": "If true, the response is returned as a server-sent events (SSS) stream."
+          },
+          {
+            "name": "text",
+            "type": "boolean",
+            "required": false,
+            "description": "If true, the response includes full text content in the search results."
+          },
+          {
+            "name": "model",
+            "type": "string",
+            "required": false,
+            "description": "The search model to use for the answer."
+          }
+        ],
+        "description": "Generate an answer from search results"
+      }
+    ]
+  }
+]
